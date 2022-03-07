@@ -1,0 +1,14 @@
+.header-wrapper {
+  padding: 1rem 0;
+
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    nav ul {
+      display: flex;
+      gap: 0.75rem;
+    }
+  }
+}

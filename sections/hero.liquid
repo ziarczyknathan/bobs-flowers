@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+        <h1>{{ section.settings.title }}</h1>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Hero",
+    "tag": "section",
+    "class": "hero-wrapper wrapper",
+    "settings": [
+      {
+        "type": "text",
+        "label": "Titel",
+        "id": "title"
+      }
+    ]
+  }
+{% endschema %}

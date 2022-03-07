@@ -1,0 +1,25 @@
+{
+  "name": "shopify-starter",
+  "version": "1.0.0",
+  "description": "[![Build status](https://github.com/shopify/dawn/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Shopify/dawn/actions/workflows/ci.yml?query=branch%3Amain) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?color=informational)](/.github/CONTRIBUTING.md)",
+  "main": "index.js",
+  "scripts": {
+    "start": "yarn watch",
+    "watch": "node-sass --watch scss -o ../assets",
+    "build": "node-sass scss -o ../assets"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nathanziarczyk/shopify-starter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nathanziarczyk/shopify-starter/issues"
+  },
+  "homepage": "https://github.com/nathanziarczyk/shopify-starter#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

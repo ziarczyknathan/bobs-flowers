@@ -1,0 +1,63 @@
+{% if section.settings.layout == "text-image" %}
+  {% assign imageOrder = "order-2" %}
+  {% assign textOrder = "order-1" %}
+{% endif %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-7 {{imageOrder}}">
+      <img src="{{ section.settings.image | image_url }}" alt="">
+    </div>
+    <div class="col-5 {{textOrder}}">
+      <h2>{{ section.settings.title }}</h2>
+      <div class="body">
+        {{ section.settings.text }}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Story",
+    "tag": "section",
+    "class": "story-wrapper wrapper",
+    "presets": [
+      {
+        "name": "Story"
+      }
+    ],
+    "settings": [
+      {
+        "type": "select",
+        "label": "Layout",
+        "id": "layout",
+        "options": [
+          {
+            "label": "Afbeelding - Tekst",
+            "value": "image-text"
+          },
+          {
+            "label": "Tekst - Afbeelding",
+            "value": "text-image"
+          }
+        ]
+      },
+      {
+        "type": "image_picker",
+        "label": "Afbeelding",
+        "id": "image"
+      },
+      {
+        "type": "text",
+        "label": "Titel",
+        "id": "title"
+      },
+      {
+        "type": "richtext",
+        "label": "Tekst",
+        "id": "text"
+      }
+    ]
+  }
+{% endschema %}

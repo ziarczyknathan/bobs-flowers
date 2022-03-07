@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/**
+* Grid variables
+**/
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+) !default;
+
+$grid-max-breakpoints: (
+  sm: 575px,
+  md: 767px,
+  lg: 991px,
+  xl: 1199px,
+) !default;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+) !default;
+
+/**
+* Colours
+**/
+$primary: #000;
+$secondary: rgb(82, 82, 82);
+
+/**
+* Animation
+**/
+$animation-time: 0.2s;
+
+/**
+* Fonts
+**/
+$font: "Poppins", sans-serif;
+$symbol: "Font Awesome 5 Pro";
