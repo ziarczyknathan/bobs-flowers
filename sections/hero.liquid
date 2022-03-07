@@ -1,7 +1,13 @@
-<div class="container">
-  <div class="row">
-    <div class="col-12">
-        <h1>{{ section.settings.title }}</h1>
+<div class="hero-wrapper wrapper" style="background-image: url('{{ section.settings.image | image_url }}')">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="hero--content-wrapper">
+          <h1>{{ section.settings.title }}</h1>
+          <p>{{ section.settings.subtitle }}</p>
+          <a href="{{section.settings.button_link}}" class="btn">{{section.settings.button_label}}</a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -10,12 +16,31 @@
   {
     "name": "Hero",
     "tag": "section",
-    "class": "hero-wrapper wrapper",
     "settings": [
+      {
+        "type": "image_picker",
+        "label": "Afbeelding",
+        "id": "image"
+      },
       {
         "type": "text",
         "label": "Titel",
         "id": "title"
+      },
+      {
+        "type": "text",
+        "label": "Ondertitel",
+        "id": "subtitle"
+      },
+      {
+        "type": "url",
+        "label": "Knop link",
+        "id": "button_link"
+      },
+      {
+        "type": "text",
+        "label": "Knop label",
+        "id": "button_label"
       }
     ]
   }
