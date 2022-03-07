@@ -1,0 +1,44 @@
+/**
+ * @license
+ *
+ * Font Family: Cabinet Grotesk
+ * Designed by: Indian Type Foundry
+ * URL: https://www.fontshare.com/fonts/cabinet-grotesk
+ * © 2022 Indian Type Foundry
+ *
+ * Font Styles:
+ * Cabinet Grotesk Variable(Variable font)
+ * Cabinet Grotesk Thin
+ * Cabinet Grotesk Extralight
+ * Cabinet Grotesk Light
+ * Cabinet Grotesk Regular
+ * Cabinet Grotesk Medium
+ * Cabinet Grotesk Bold
+ * Cabinet Grotesk Extrabold         
+ * Cabinet Grotesk Black
+ *
+*/
+
+/**
+* This is a variable font
+* You can controll variable axes as shown below:
+* font-variation-settings: 'wght' 900.0;
+*
+* available axes:
+
+* 'wght' (range from 100.0 to 900.0)
+
+*/
+
+@font-face {
+  font-family: "Cabinet Grotesk";
+  src: url("https://cdn.shopify.com/s/files/1/0632/1160/2145/files/CabinetGrotesk-Variable.woff2?v=1646681339")
+      format("woff2"),
+    url("https://cdn.shopify.com/s/files/1/0632/1160/2145/files/CabinetGrotesk-Variable.woff?v=1646681338")
+      format("woff"),
+    url("https://cdn.shopify.com/s/files/1/0632/1160/2145/files/CabinetGrotesk-Variable.ttf?v=1646681339")
+      format("truetype");
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+}
