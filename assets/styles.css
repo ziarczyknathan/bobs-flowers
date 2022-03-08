@@ -159,6 +159,10 @@ html {
   font-size: 16px;
   color: black; }
 
+a {
+  color: #111111;
+  text-decoration: none; }
+
 h1,
 h2,
 h3,
@@ -271,9 +275,14 @@ button,
       background-color: white; }
       .header-wrapper .header-container nav ul a {
         color: black; }
-    .header-wrapper .header-container p {
+    .header-wrapper .header-container .right {
       position: absolute;
-      right: 0; }
+      right: 0;
+      display: flex; }
+      .header-wrapper .header-container .right a {
+        font-weight: 600;
+        color: white;
+        margin-left: 1rem; }
 
 .number-list-wrapper h2 {
   margin-bottom: 1.75rem; }
@@ -379,3 +388,22 @@ button,
       width: 100%; }
       .focus-wrapper .image-container img {
         max-height: 18rem; } }
+
+footer.footer-wrapper {
+  padding: 6rem 0;
+  color: #111111; }
+  @media screen and (max-width: 991px) {
+    footer.footer-wrapper {
+      padding: 3rem 0; } }
+  footer.footer-wrapper div[class^="col-"]:not(.order-4) {
+    margin-bottom: 1.5rem; }
+  footer.footer-wrapper h5 {
+    margin-bottom: 0.5rem; }
+  footer.footer-wrapper ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+  footer.footer-wrapper .body a {
+    color: #f9975d;
+    text-decoration: underline;
+    font-weight: 500; }
