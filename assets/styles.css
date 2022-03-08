@@ -210,7 +210,8 @@ h6 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: calc(8rem + 93px) 0 8rem; }
+  padding: calc(8rem + 93px) 0 8rem;
+  margin: 0; }
   .hero-wrapper * {
     position: relative;
     z-index: 2; }
