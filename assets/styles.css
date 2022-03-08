@@ -180,6 +180,7 @@ h5 {
 h6 {
   font-size: 1.25rem; }
 
+button,
 .btn,
 .number-list-wrapper .cta a {
   display: block;
@@ -199,6 +200,7 @@ h6 {
   box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.15);
   font-size: 1rem;
   transition: background-color 300ms ease-in; }
+  button:hover,
   .btn:hover,
   .number-list-wrapper .cta a:hover {
     background-color: #ffd97d; }
@@ -307,3 +309,22 @@ h6 {
   height: 25rem;
   object-fit: cover;
   object-position: center; }
+
+.products-wrapper h2 {
+  margin-bottom: 1.5rem; }
+
+.products-wrapper .product h4,
+.products-wrapper .product p,
+.products-wrapper .product img {
+  margin: 1rem 0; }
+
+.products-wrapper .product img {
+  width: 100%;
+  object-fit: cover; }
+
+.products-wrapper .product .add-to-cart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .products-wrapper .product .add-to-cart .price {
+    font-weight: 800; }
