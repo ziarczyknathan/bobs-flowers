@@ -16,6 +16,13 @@
           "button_link": "",
           "button_label": "Start jouw abonnement vandaag nog!"
         }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "contact_us_title": "Contacteer ons",
+          "contact_us_body": "<p>Heb jij een vraag of wil je extra informatie? Onze veelgestelde vragen vind je <a href=\"https:\/\/bob-flowers.myshopify.com\/\" title=\"\/\">hier<\/a>, of stuur ons een mailtje op <a href=\"mailto:hello@bobsflowers.be\" title=\"mailto:hello@bobsflowers.be\">hello@bobsflowers.be<\/a><\/p>"
+        }
       }
     },
     "content_for_index": [
