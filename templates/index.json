@@ -90,10 +90,79 @@
         "theme": "orange",
         "title": "Dit kan je verwachten van onze boeketten"
       }
+    },
+    "16467503783e349df2": {
+      "type": "products",
+      "blocks": {
+        "7d2ab516-4684-4faa-8908-3f777130282a": {
+          "type": "product",
+          "settings": {
+            "product": "snoeischaar"
+          }
+        },
+        "88e2ef70-e5fb-477e-bf65-9b533db207f7": {
+          "type": "product",
+          "settings": {
+            "product": "copy-of-snoeischaar"
+          }
+        },
+        "39f0837c-51bb-4d2f-a94c-466b45ea0f99": {
+          "type": "product",
+          "settings": {
+            "product": "snoeischaar-1"
+          }
+        }
+      },
+      "block_order": [
+        "7d2ab516-4684-4faa-8908-3f777130282a",
+        "88e2ef70-e5fb-477e-bf65-9b533db207f7",
+        "39f0837c-51bb-4d2f-a94c-466b45ea0f99"
+      ],
+      "settings": {
+        "title": "Voeg deze extra’s toe aan je abonnement"
+      }
+    },
+    "16467504037529f275": {
+      "type": "focus",
+      "blocks": {
+        "098405c6-0d9a-450b-9922-b9e14f060ae7": {
+          "type": "usp",
+          "settings": {
+            "usp": "Pauzeer of annuleer wanneer je wilt"
+          }
+        },
+        "62301d6f-f6ac-4b65-8442-2a34310a5b75": {
+          "type": "usp",
+          "settings": {
+            "usp": "Wekelijks een nieuwe selectie bloemen"
+          }
+        },
+        "4e5cc991-6b8a-4060-b3b1-db2b6c4323a4": {
+          "type": "usp",
+          "settings": {
+            "usp": "Recycleer de dozen door ze terug aan ons te geven"
+          }
+        }
+      },
+      "block_order": [
+        "098405c6-0d9a-450b-9922-b9e14f060ae7",
+        "62301d6f-f6ac-4b65-8442-2a34310a5b75",
+        "4e5cc991-6b8a-4060-b3b1-db2b6c4323a4"
+      ],
+      "settings": {
+        "theme": "green",
+        "title": "Start uw abonnement vandaag nog af en geniet van gratis verzending",
+        "body": "<p>Breng meer kleur en groen in je leven met onze wekelijkse levering bloemen. Geniet van gratis verzending als je nu een abonnement opstart.<\/p>",
+        "button_text": "Ik wil een abonnement!",
+        "button_link": "",
+        "image": "shopify:\/\/shop_images\/light-pink-and-delicate-flowers.jpg"
+      }
     }
   },
   "order": [
     "164673611361842ddc",
-    "1646736168a20f75d2"
+    "1646736168a20f75d2",
+    "16467503783e349df2",
+    "16467504037529f275"
   ]
 }
