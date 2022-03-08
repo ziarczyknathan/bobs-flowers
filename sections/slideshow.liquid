@@ -11,7 +11,7 @@
       <div class="swiper-wrapper">
         {% for image in section.blocks %}
           <div class="swiper-slide">
-            <img src="{{ image.settings.image | image_url: width: 800 }}" loading="lazy" alt="">
+            <img src="{{ image.settings.image | image_url: width: 800 }}" width="800" height loading="lazy" alt="">
           </div>
         {% endfor %}
       </div>
