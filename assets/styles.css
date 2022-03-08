@@ -133,12 +133,46 @@ h6 {
 .wrapper {
   padding: 6rem 0; }
 
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 1358px; } }
+
 body,
 html {
   font-family: "Poppins", sans-serif;
-  font-size: 16px; }
+  font-size: 16px;
+  color: black; }
 
-.btn {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cabinet Grotesk", sans-serif;
+  line-height: 130%;
+  font-weight: 800; }
+
+h1 {
+  font-size: 3.05rem; }
+
+h2 {
+  font-size: 2.44rem; }
+
+h3 {
+  font-size: 1.95rem; }
+
+h4 {
+  font-size: 1.56rem; }
+
+h5 {
+  font-size: 1.25rem; }
+
+h6 {
+  font-size: 1.25rem; }
+
+.btn,
+.number-list-wrapper .cta a {
   display: block;
   text-decoration: none;
   text-align: center;
@@ -156,17 +190,9 @@ html {
   box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.15);
   font-size: 1rem;
   transition: background-color 300ms ease-in; }
-  .btn:hover {
+  .btn:hover,
+  .number-list-wrapper .cta a:hover {
     background-color: #ffd97d; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Cabinet Grotesk", sans-serif;
-  font-weight: 800; }
 
 .hero-wrapper {
   position: relative;
@@ -229,3 +255,33 @@ h6 {
     .header-wrapper .header-container p {
       position: absolute;
       right: 0; }
+
+.number-list-wrapper h2 {
+  margin-bottom: 1.75rem; }
+
+.number-list-wrapper .item {
+  color: #111111;
+  padding: 0.75rem 0; }
+  .number-list-wrapper .item .index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    border: 1px solid #111111;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem; }
+  .number-list-wrapper .item h4 {
+    margin-bottom: 0.5rem; }
+
+.number-list-wrapper .cta {
+  font-size: 1.56rem;
+  font-weight: 600;
+  margin-top: 1.75rem; }
+  .number-list-wrapper .cta a {
+    display: inline-block;
+    margin-left: 1rem; }

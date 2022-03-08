@@ -1,0 +1,73 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h2>{{section.settings.title}}</h2>
+    </div>
+  </div>
+  <div class="row">
+    {% for item in section.blocks %}
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="item">
+          <div class="index">
+            <p>{{ forloop.index }}</p>
+          </div>
+          <h4>{{ item.settings.title }}</h4>
+          <div>{{ item.settings.body }}</div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="cta">{{ section.settings.cta }}</div>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Number list",
+    "tag": "section",
+    "class": "number-list-wrapper wrapper",
+    "presets": [
+      {
+        "name": "Number list"
+      }
+    ],
+    "settings": [
+      {
+        "type": "text",
+        "label": "Titel",
+        "id": "title"
+      },
+      {
+        "type": "text",
+        "label": "Ondertitel",
+        "id": "subtitle"
+      },
+      {
+        "type": "richtext",
+        "label": "Call to action",
+        "id": "cta"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "List item",
+        "type": "list_item",
+        "limit": 4,
+        "settings": [
+          {
+          "type": "text",
+          "label": "Titel",
+          "id": "title"
+          },
+          {
+          "type": "richtext",
+          "label": "Body",
+          "id": "body"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
