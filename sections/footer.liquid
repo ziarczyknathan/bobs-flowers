@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12  col-lg-3 order-4 order-lg-1">
+      <p>©2022 Bob’s Flowers</p>
+    </div>
+    <div class="col-12 col-lg-3 order-1 order-lg-2">
+      <h5>Index</h5>
+      <ul>
+        {% for link in linklists.footer.links %}
+          <li>
+            <a href="{{ link.url }}">{{ link.title }}</a>
+          </li>
+        {% endfor %}
+    </ul>
+    </div>
+    <div class="col-12 col-lg-3 order-2 order-lg-3">
+      <h5>{{ section.settings.contact_us_title }}</h5>
+      <div class="body">
+        {{section.settings.contact_us_body}}
+      </div>
+    </div>
+    <div class="col-12 col-lg-3 order-3 order-lg-4"></div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Footer",
+    "class": "footer-wrapper",
+    "tag": "footer",
+    "settings": [
+      {
+        "type": "text",
+        "label": "Contacteer ons - Titel",
+        "id": "contact_us_title"
+      },
+      {
+        "type": "richtext",
+        "label": "Contacteer ons - Body",
+        "id": "contact_us_body"
+      }
+    ]
+  }
+{% endschema %}
