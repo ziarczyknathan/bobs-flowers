@@ -1,1 +1,24 @@
-{}
+{
+  "current": {
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "menu": "main-menu"
+        }
+      },
+      "hero": {
+        "type": "hero",
+        "settings": {
+          "title": "",
+          "subtitle": "",
+          "button_link": "",
+          "button_label": ""
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
+  }
+}
