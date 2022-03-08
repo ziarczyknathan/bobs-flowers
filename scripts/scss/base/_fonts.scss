@@ -42,3 +42,14 @@
   font-display: swap;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Raleway";
+  src: url("https://cdn.shopify.com/s/files/1/0632/1160/2145/files/Raleway-VariableFont_wght.woff2?v=1646744938")
+      format("woff2"),
+    url("https://cdn.shopify.com/s/files/1/0632/1160/2145/files/Raleway-VariableFont_wght.ttf?v=1646744958")
+      format("truetype");
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+}
