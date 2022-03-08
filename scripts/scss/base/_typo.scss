@@ -2,9 +2,41 @@ body,
 html {
   font-family: $font;
   font-size: 16px;
+  color: $text-black;
 }
 
-.btn {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font;
+  line-height: 130%;
+  font-weight: 800;
+}
+
+h1 {
+  font-size: $heading-1;
+}
+h2 {
+  font-size: $heading-2;
+}
+h3 {
+  font-size: $heading-3;
+}
+h4 {
+  font-size: $heading-4;
+}
+h5 {
+  font-size: $heading-5;
+}
+h6 {
+  font-size: $heading-5;
+}
+
+.btn,
+%btn {
   display: block;
   text-decoration: none;
   text-align: center;
@@ -26,14 +58,4 @@ html {
   &:hover {
     background-color: $base-yellow-dimmed;
   }
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $heading-font;
-  font-weight: 800;
 }
