@@ -5,8 +5,10 @@
         <h3>Bob's Flowers</h3>
         <nav>
           <ul>
-            {% for link in section.settings.menu.links %}
-              <a href="{{ link.url }}">{{ link.title }}</a>
+            {% for link in linklists.main-menu.links %}
+              <li>
+                <a href="{{ link.url }}">{{ link.title }}</a>
+              </li>
             {% endfor %}
           </ul>
         </nav>
@@ -27,13 +29,6 @@
   {
     "name": "Header",
     "tag": "header",
-    "class": "header-wrapper",
-    "settings": [
-      {
-        "type": "link_list",
-        "id": "menu",
-        "label": "Menu"
-      }
-    ]
+    "class": "header-wrapper"
   }
 {% endschema %}
