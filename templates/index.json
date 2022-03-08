@@ -1,5 +1,99 @@
 {
   "layout": "home",
-  "sections": {},
-  "order": []
+  "sections": {
+    "164673611361842ddc": {
+      "type": "number-list",
+      "blocks": {
+        "734d9c31-9eda-44c9-b714-9d419145df2b": {
+          "type": "list_item",
+          "settings": {
+            "title": "Wij kiezen elke week de mooiste bloemen uit",
+            "body": "<p>Sluit een abonnement af en ontvang elke week een selectie kleurrijke bloemen.<\/p>"
+          }
+        },
+        "db3dfaf6-bca8-46d7-8b80-79a807d93779": {
+          "type": "list_item",
+          "settings": {
+            "title": "Wekelijks bezorgen we de bloemen",
+            "body": "<p>Elke week komen we de bloemen bezorgen aan jou deur.<\/p>"
+          }
+        },
+        "eba2193a-c9b9-472a-80a1-7cfcc4770ef6": {
+          "type": "list_item",
+          "settings": {
+            "title": "Stel een prachtig boeket samen",
+            "body": "<p>Volg de instructies of freestyle om een prachtig boeket samen te stellen.<\/p>"
+          }
+        },
+        "fb94ad53-fada-490a-8841-01b3f0831d8f": {
+          "type": "list_item",
+          "settings": {
+            "title": "Pauzeer of zeg op wanneer jij wilt",
+            "body": "<p>Een week op vakantie? Geen probleem! Je kan het abonnement op elke moment pauzeren of opzeggen.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "734d9c31-9eda-44c9-b714-9d419145df2b",
+        "db3dfaf6-bca8-46d7-8b80-79a807d93779",
+        "eba2193a-c9b9-472a-80a1-7cfcc4770ef6",
+        "fb94ad53-fada-490a-8841-01b3f0831d8f"
+      ],
+      "settings": {
+        "title": "Hoe werkt ons bloemen-abonnement?",
+        "subtitle": "",
+        "cta": "<p>Overtuigd? <a href=\"\/collections\/all\" title=\"All products\">Start mijn abonnement nu!<\/a><\/p>"
+      }
+    },
+    "1646736168a20f75d2": {
+      "type": "slideshow",
+      "blocks": {
+        "25d8af81-bb53-441b-bfb3-1ccd76c64a9f": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fuzzy-bright-purple-flowers-and-green-leaves.jpg"
+          }
+        },
+        "a19fb643-47f9-4857-8cf6-b6b13b24460b": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/green-foliage-with-pink-and-white-flowers.jpg"
+          }
+        },
+        "93c45436-0a06-4ff2-b454-00d17aec3d39": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/light-pink-and-delicate-flowers.jpg"
+          }
+        },
+        "adbd7b25-860d-45bc-b652-ad1950c1108d": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/light-pink-blooming-flowers.jpg"
+          }
+        },
+        "c1887d7d-a8f6-4d4a-9775-e95b6ba195df": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/red-and-marbled-orange-flower-petals.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "25d8af81-bb53-441b-bfb3-1ccd76c64a9f",
+        "a19fb643-47f9-4857-8cf6-b6b13b24460b",
+        "93c45436-0a06-4ff2-b454-00d17aec3d39",
+        "adbd7b25-860d-45bc-b652-ad1950c1108d",
+        "c1887d7d-a8f6-4d4a-9775-e95b6ba195df"
+      ],
+      "settings": {
+        "theme": "default",
+        "title": ""
+      }
+    }
+  },
+  "order": [
+    "164673611361842ddc",
+    "1646736168a20f75d2"
+  ]
 }
