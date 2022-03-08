@@ -1,0 +1,100 @@
+<div class="wrapper focus-wrapper {{ section.settings.theme }}">
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-lg-6">
+      <div class="content">
+        <h2>{{ section.settings.title }}</h2>
+        <div class="body">{{ section.settings.body }}</div>
+        <a href="{{ section.settings.button_link }}" class="btn">{{ section.settings.button_text }}</a>
+        {% if section.blocks != empty %}
+          <ul class="usp">
+            {% for item in section.blocks %}
+              <li>{{ item.settings.usp }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+    </div>
+    <div class="col-12 col-lg-6 col-xl-5 offset-xl-1">
+      <div class="image-container">
+        <img src="{{ section.settings.image | image_url }}" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+{% schema %}
+  {
+    "name": "Focus",
+    "tag": "section",
+    "presets": [
+      {
+        "name": "Focus"
+      }
+    ],
+    "settings": [
+      {
+        "type": "select",
+        "label": "Thema",
+        "id": "theme",
+        "options": [
+          {
+            "label": "Default",
+            "value": "default"
+          },
+          {
+            "label": "Oranje",
+            "value": "orange"
+          },
+          {
+            "label": "Rood",
+            "value": "red"
+          },
+          {
+            "label": "Groen",
+            "value": "green"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "label": "Titel",
+        "id": "title"
+      },
+      {
+        "type": "richtext",
+        "label": "Body",
+        "id": "body"
+      },
+      {
+        "type": "text",
+        "label": "Knop tekst",
+        "id": "button_text"
+      },
+      {
+        "type": "url",
+        "label": "Knop link",
+        "id": "button_link"
+      },
+      {
+        "type": "image_picker",
+        "label": "Afbeelding",
+        "id": "image"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "usp",
+        "name": "USP",
+        "settings": [
+          {
+            "type": "text",
+            "label": "USP",
+            "id": "usp"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

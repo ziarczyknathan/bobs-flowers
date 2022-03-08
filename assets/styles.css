@@ -50,6 +50,13 @@
   font-display: swap;
   font-style: normal; }
 
+@font-face {
+  font-family: "Raleway";
+  src: url("https://cdn.shopify.com/s/files/1/0632/1160/2145/files/Raleway-VariableFont_wght.woff2?v=1646744938") format("woff2"), url("https://cdn.shopify.com/s/files/1/0632/1160/2145/files/Raleway-VariableFont_wght.ttf?v=1646744958") format("truetype");
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal; }
+
 .visually-hidden {
   position: absolute !important;
   overflow: hidden;
@@ -148,7 +155,7 @@ h6 {
 
 body,
 html {
-  font-family: "Poppins", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 16px;
   color: black; }
 
@@ -328,3 +335,47 @@ button,
   justify-content: space-between; }
   .products-wrapper .product .add-to-cart .price {
     font-weight: 800; }
+
+.focus-wrapper {
+  padding: 0 !important;
+  overflow: hidden; }
+  .focus-wrapper .content {
+    padding: 6rem 0; }
+  .focus-wrapper h2 {
+    margin-bottom: 1rem; }
+  .focus-wrapper .body {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem; }
+  .focus-wrapper ul.usp {
+    margin: 0;
+    margin-top: 1.5rem;
+    padding: 0;
+    font-weight: 600;
+    list-style: none;
+    display: grid;
+    gap: 1rem; }
+    .focus-wrapper ul.usp li {
+      display: grid;
+      grid-template-columns: 0 1fr;
+      gap: 1.75em;
+      align-items: start; }
+      .focus-wrapper ul.usp li::before {
+        content: url("data:image/svg+xml,%3Csvg width='20' height='21' viewBox='0 0 20 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10 20.5C15.5228 20.5 20 16.0228 20 10.5C20 4.97715 15.5228 0.5 10 0.5C4.47715 0.5 0 4.97715 0 10.5C0 16.0228 4.47715 20.5 10 20.5ZM14.7071 9.20711C15.0976 8.81658 15.0976 8.18342 14.7071 7.79289C14.3166 7.40237 13.6834 7.40237 13.2929 7.79289L9 12.0858L6.70711 9.79289C6.31658 9.40237 5.68342 9.40237 5.29289 9.79289C4.90237 10.1834 4.90237 10.8166 5.29289 11.2071L8.29289 14.2071C8.68342 14.5976 9.31658 14.5976 9.70711 14.2071L14.7071 9.20711Z' fill='%23111111'/%3E%3C/svg%3E%0A"); }
+  .focus-wrapper .image-container {
+    filter: drop-shadow(0px 4px 44px rgba(0, 0, 0, 0.1));
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    width: 160%;
+    margin-top: auto; }
+    .focus-wrapper .image-container img {
+      object-fit: cover;
+      width: 100%;
+      max-height: 35rem; }
+  @media screen and (max-width: 991px) {
+    .focus-wrapper .content {
+      padding-bottom: 3rem; }
+    .focus-wrapper .image-container {
+      width: 100%; }
+      .focus-wrapper .image-container img {
+        max-height: 18rem; } }
