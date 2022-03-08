@@ -1,0 +1,18 @@
+.slideshow-wrapper {
+  h2 {
+    margin-bottom: 1.5rem;
+  }
+
+  .swiper-wrapper {
+    transition-timing-function: linear;
+    transition-duration: 20s;
+  }
+  .swiper-slide {
+    img {
+      width: 100%;
+      height: 25rem;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}

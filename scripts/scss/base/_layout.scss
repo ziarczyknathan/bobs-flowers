@@ -1,5 +1,24 @@
 .wrapper {
-  padding: 6rem 0;
+  margin: 6rem 0;
+
+  &.orange,
+  &.green,
+  &.red {
+    margin: 0;
+    padding: 6rem 0;
+  }
+
+  &.orange {
+    background-color: $base-orange;
+  }
+
+  &.red {
+    background-color: $base-red;
+  }
+
+  &.green {
+    background-color: $base-green;
+  }
 }
 
 .container {

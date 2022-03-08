@@ -1,0 +1,75 @@
+<div class="wrapper slideshow-wrapper {{section.settings.theme}}">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>{{ section.settings.title }}</h2>
+      </div>
+    </div>
+  </div>
+  <div class="slideshow">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        {% for image in section.blocks %}
+          <div class="swiper-slide">
+            <img src="{{ image.settings.image | image_url: width: 800 }}" loading="lazy" alt="">
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Slideshow",
+    "tag": "section",
+    "presets": [
+      {
+        "name": "Slideshow"
+      }
+    ],
+    "settings": [
+      {
+        "type": "select",
+        "label": "Thema",
+        "id": "theme",
+        "options": [
+          {
+            "label": "Default",
+            "value": "default"
+          },
+          {
+            "label": "Oranje",
+            "value": "orange"
+          },
+          {
+            "label": "Rood",
+            "value": "red"
+          },
+          {
+            "label": "Groen",
+            "value": "green"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "label": "Titel",
+        "id": "title"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "image",
+        "name": "Image",
+        "settings": [
+          {
+            "type": "image_picker",
+            "label": "Afbeelding",
+            "id": "image"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
