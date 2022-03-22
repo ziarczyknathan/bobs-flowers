@@ -261,6 +261,9 @@ button,
     align-items: center;
     justify-content: center;
     position: relative; }
+    .header-wrapper .header-container svg {
+      width: 1.5rem;
+      height: 1.5rem; }
     .header-wrapper .header-container h3 {
       position: absolute;
       left: 0; }
@@ -280,7 +283,6 @@ button,
       right: 0;
       display: flex; }
       .header-wrapper .header-container .right a {
-        font-weight: 600;
         color: white;
         margin-left: 1rem; }
 
