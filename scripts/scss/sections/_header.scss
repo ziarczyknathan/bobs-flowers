@@ -1,10 +1,30 @@
+body.home {
+  .header-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+  }
+}
+body:not(.home) {
+  .header-wrapper {
+    background-color: $gray100;
+    font-size: 72px;
+    color: $text-black;
+    .logo {
+      background: linear-gradient(to right, $base-red, $base-orange);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    svg {
+      color: $text-black;
+    }
+  }
+}
 .header-wrapper {
   padding: 1.25rem 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 3;
   color: $text-white;
 
   .header-container {
@@ -26,6 +46,7 @@
     nav {
       padding: 1rem 2rem;
       ul {
+        list-style: none;
         display: flex;
         justify-content: center;
         gap: 0.75rem;
