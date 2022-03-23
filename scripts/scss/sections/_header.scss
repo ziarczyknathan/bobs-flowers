@@ -14,8 +14,8 @@
     position: relative;
 
     svg {
-      width: 1.5rem;
-      height: 1.5rem;
+      width: 1.75rem;
+      height: auto;
     }
 
     h3 {
@@ -24,6 +24,7 @@
     }
 
     nav {
+      padding: 1rem 2rem;
       ul {
         display: flex;
         justify-content: center;
@@ -37,6 +38,9 @@
         a {
           color: $text-black;
         }
+        @include break-max(md) {
+          display: none;
+        }
       }
     }
 
@@ -49,5 +53,29 @@
         margin-left: 1rem;
       }
     }
+  }
+}
+
+.mobile-nav {
+  position: fixed;
+  bottom: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 0.75rem;
+  padding: 0;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  font-size: 0.875rem;
+  background-color: $gray200;
+  z-index: 3;
+
+  @include break-min(md) {
+    display: none;
   }
 }
