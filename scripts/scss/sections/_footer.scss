@@ -1,6 +1,7 @@
 footer.footer-wrapper {
   padding: 6rem 0;
   color: $gray900;
+  background-color: $gray100;
 
   @include break-max(lg) {
     padding: 3rem 0;
