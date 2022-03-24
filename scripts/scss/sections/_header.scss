@@ -58,6 +58,11 @@ body:not(.home) {
 
         a {
           color: $text-black;
+
+          &.active {
+            font-weight: 500;
+            text-decoration: underline;
+          }
         }
         @include break-max(md) {
           display: none;
