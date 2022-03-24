@@ -1,8 +1,73 @@
 {
   "sections": {
     "faqs": {
-      "type": "faq"
+      "type": "faq",
+      "blocks": {
+        "515968fd-c552-4807-98fc-a52721b92893": {
+          "type": "faq",
+          "settings": {
+            "question": "<p>Half café luwak robust variety?<\/p>",
+            "answer": "<p>Qui caffeine single aged robusta variety café trifecta au ut caramelization sugar cortado viennese to.<br\/><br\/>Aged frappuccino crema id froth milk latte mountain to galão chicory froth.<\/p>"
+          }
+        },
+        "30ec80a9-a5ba-4950-941e-2c7be9e5beb6": {
+          "type": "faq",
+          "settings": {
+            "question": "<p>Half café luwak robust variety?<\/p>",
+            "answer": "<p>Qui caffeine single aged robusta variety café trifecta au ut caramelization sugar cortado viennese to.<br\/><br\/>Aged frappuccino crema id froth milk latte mountain to galão chicory froth.<\/p>"
+          }
+        },
+        "20c7c7c0-2ed7-41e8-aa4a-e79d287de672": {
+          "type": "faq",
+          "settings": {
+            "question": "<p>Half café luwak robust variety?<\/p>",
+            "answer": "<p>Qui caffeine single aged robusta variety café trifecta au ut caramelization sugar cortado viennese to.<br\/><br\/>Aged frappuccino crema id froth milk latte mountain to galão chicory froth.<\/p>"
+          }
+        },
+        "3349bf61-db50-4bb3-8c2d-abdc396e1fb8": {
+          "type": "faq",
+          "settings": {
+            "question": "<p>Half café luwak robust variety?<\/p>",
+            "answer": "<p>Qui caffeine single aged robusta variety café trifecta au ut caramelization sugar cortado viennese to.<br\/><br\/>Aged frappuccino crema id froth milk latte mountain to galão chicory froth.<\/p>"
+          }
+        },
+        "5407c72f-bcc6-4d9b-877e-3e6152a2275b": {
+          "type": "faq",
+          "settings": {
+            "question": "<p>Half café luwak robust variety?<\/p>",
+            "answer": "<p>Qui caffeine single aged robusta variety café trifecta au ut caramelization sugar cortado viennese to.<br\/><br\/>Aged frappuccino crema id froth milk latte mountain to galão chicory froth.<\/p>"
+          }
+        },
+        "52f0860f-cdfb-44d8-8235-7a4e95640796": {
+          "type": "faq",
+          "settings": {
+            "question": "<p>Half café luwak robust variety?<\/p>",
+            "answer": "<p>Qui caffeine single aged robusta variety café trifecta au ut caramelization sugar cortado viennese to.<br\/><br\/>Aged frappuccino crema id froth milk latte mountain to galão chicory froth.<\/p>"
+          }
+        },
+        "9ecb5eab-79b2-48c3-b3c6-fecc077a9eeb": {
+          "type": "faq",
+          "settings": {
+            "question": "<p>Half café luwak robust variety?<\/p>",
+            "answer": "<p>Qui caffeine single aged robusta variety café trifecta au ut caramelization sugar cortado viennese to.<br\/><br\/>Aged frappuccino crema id froth milk latte mountain to galão chicory froth.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "515968fd-c552-4807-98fc-a52721b92893",
+        "30ec80a9-a5ba-4950-941e-2c7be9e5beb6",
+        "20c7c7c0-2ed7-41e8-aa4a-e79d287de672",
+        "3349bf61-db50-4bb3-8c2d-abdc396e1fb8",
+        "5407c72f-bcc6-4d9b-877e-3e6152a2275b",
+        "52f0860f-cdfb-44d8-8235-7a4e95640796",
+        "9ecb5eab-79b2-48c3-b3c6-fecc077a9eeb"
+      ],
+      "settings": {
+        "title": "Veelgestelde vragen"
+      }
     }
   },
-  "order": ["faqs"]
+  "order": [
+    "faqs"
+  ]
 }
