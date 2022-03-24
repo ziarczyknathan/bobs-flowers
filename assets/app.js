@@ -1,4 +1,5 @@
 (function () {
+  // Slider
   new Swiper(".swiper", {
     loop: true,
     slidesPerView: 1,
@@ -24,4 +25,14 @@
       },
     },
   });
+
+  // FAQ
+  const faqItems = document.querySelectorAll(".faq-wrapper .items .item");
+  if (faqItems) {
+    faqItems.forEach((item) => {
+      item.addEventListener("click", () => {
+        item.classList.toggle("collapsed");
+      });
+    });
+  }
 })();

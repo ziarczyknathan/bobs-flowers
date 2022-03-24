@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="row">
+    <div class="col-8 offset-2">
+      <h1>{{ section.settings.title }}</h1>
+
+      <div class="items">
+        {% for block in section.blocks %}
+          <div class="item collapsed">
+            <h3>
+              {{ block.settings.question }}
+            </h3>
+            <div class="answer">
+              {{ block.settings.answer }}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "FAQ",
+    "class": "faq-wrapper wrapper",
+    "tag": "section",
+    "settings": [
+      {
+        "label": "Titel",
+        "id": "title",
+        "type": "text"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "faq",
+        "name": "FAQ",
+        "settings": [
+          {
+            "label": "Vraag",
+            "id": "question",
+            "type": "richtext"
+          },
+          {
+            "label": "Antwoord",
+            "id": "answer",
+            "type": "richtext"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,32 @@
+.faq-wrapper {
+  .items {
+    margin-top: 2rem;
+
+    .item {
+      padding: 1rem 0.5rem;
+      cursor: pointer;
+      &:nth-of-type(odd) {
+        background-color: $gray100;
+      }
+
+      &.collapsed {
+        .answer {
+          display: none;
+        }
+      }
+
+      h3 {
+        position: relative;
+        padding-right: 2.5rem;
+        &:after {
+          content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' aria-hidden='true' role='img' class='iconify iconify--fe' width='32' height='32' preserveAspectRatio='xMidYMid meet' viewBox='0 0 24 24'%3E%3Cpath fill='currentColor' fill-rule='evenodd' d='m6 7l6 6l6-6l2 2l-8 8l-8-8z'%3E%3C/path%3E%3C/svg%3E");
+          line-height: 0;
+          position: absolute;
+          right: 0.5rem;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+}
