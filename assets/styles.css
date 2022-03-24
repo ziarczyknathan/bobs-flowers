@@ -142,12 +142,18 @@ h6 {
   .wrapper.orange, .wrapper.green, .wrapper.red {
     margin: 0;
     padding: 6rem 0; }
+    @media screen and (max-width: 767px) {
+      .wrapper.orange, .wrapper.green, .wrapper.red {
+        padding: 4rem 0; } }
   .wrapper.orange {
     background-color: #f9975d; }
   .wrapper.red {
     background-color: #c85c5c; }
   .wrapper.green {
     background-color: #b2ea70; }
+  @media screen and (max-width: 767px) {
+    .wrapper {
+      margin: 4rem 0; } }
 
 @media screen and (min-width: 992px) {
   .container {
@@ -175,21 +181,39 @@ h6 {
 
 h1 {
   font-size: 3.05rem; }
+  @media screen and (max-width: 767px) {
+    h1 {
+      font-size: 2.44rem; } }
 
 h2 {
   font-size: 2.44rem; }
+  @media screen and (max-width: 767px) {
+    h2 {
+      font-size: 1.95rem; } }
 
 h3 {
   font-size: 1.95rem; }
+  @media screen and (max-width: 767px) {
+    h3 {
+      font-size: 1.56rem; } }
 
 h4 {
   font-size: 1.56rem; }
+  @media screen and (max-width: 767px) {
+    h4 {
+      font-size: 1.25rem; } }
 
 h5 {
   font-size: 1.25rem; }
+  @media screen and (max-width: 767px) {
+    h5 {
+      font-size: 1rem; } }
 
 h6 {
   font-size: 1.25rem; }
+  @media screen and (max-width: 767px) {
+    h6 {
+      font-size: 1rem; } }
 
 button,
 .btn,
@@ -247,14 +271,32 @@ button,
     height: 100%;
     background-color: rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(0.95rem); }
+  @media screen and (max-width: 767px) {
+    .hero-wrapper {
+      padding: calc(4rem + 72px) 0 4rem; }
+      .hero-wrapper h1 {
+        font-size: 3.2rem; } }
 
-.header-wrapper {
-  padding: 1.25rem 0;
+body.home .header-wrapper {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 3;
+  z-index: 3; }
+
+body:not(.home) .header-wrapper {
+  background-color: #f7f7f7;
+  font-size: 72px;
+  color: black; }
+  body:not(.home) .header-wrapper .logo {
+    background: linear-gradient(to right, #c85c5c, #f9975d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  body:not(.home) .header-wrapper svg {
+    color: black; }
+
+.header-wrapper {
+  padding: 1.25rem 0;
   color: white; }
   .header-wrapper .header-container {
     display: flex;
@@ -270,6 +312,7 @@ button,
     .header-wrapper .header-container nav {
       padding: 1rem 2rem; }
       .header-wrapper .header-container nav ul {
+        list-style: none;
         display: flex;
         justify-content: center;
         gap: 0.75rem;
@@ -417,6 +460,9 @@ button,
       width: 100%; }
       .focus-wrapper .image-container img {
         max-height: 18rem; } }
+  @media screen and (max-width: 767px) {
+    .focus-wrapper .content {
+      padding-top: 4rem; } }
 
 footer.footer-wrapper {
   padding: 6rem 0;
@@ -436,3 +482,23 @@ footer.footer-wrapper {
     color: #f9975d;
     text-decoration: underline;
     font-weight: 500; }
+
+.faq-wrapper .items {
+  margin-top: 2rem; }
+  .faq-wrapper .items .item {
+    padding: 1rem 0.5rem;
+    cursor: pointer; }
+    .faq-wrapper .items .item:nth-of-type(odd) {
+      background-color: #f7f7f7; }
+    .faq-wrapper .items .item.collapsed .answer {
+      display: none; }
+    .faq-wrapper .items .item h3 {
+      position: relative;
+      padding-right: 2.5rem; }
+      .faq-wrapper .items .item h3:after {
+        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' aria-hidden='true' role='img' class='iconify iconify--fe' width='32' height='32' preserveAspectRatio='xMidYMid meet' viewBox='0 0 24 24'%3E%3Cpath fill='currentColor' fill-rule='evenodd' d='m6 7l6 6l6-6l2 2l-8 8l-8-8z'%3E%3C/path%3E%3C/svg%3E");
+        line-height: 0;
+        position: absolute;
+        right: 0.5rem;
+        top: 50%;
+        transform: translateY(-50%); }
