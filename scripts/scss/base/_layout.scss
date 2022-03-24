@@ -6,6 +6,10 @@
   &.red {
     margin: 0;
     padding: 6rem 0;
+
+    @include break-max(md) {
+      padding: 4rem 0;
+    }
   }
 
   &.orange {
@@ -18,6 +22,10 @@
 
   &.green {
     background-color: $base-green;
+  }
+
+  @include break-max(md) {
+    margin: 4rem 0;
   }
 }
 

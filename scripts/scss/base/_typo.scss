@@ -23,21 +23,39 @@ h6 {
 
 h1 {
   font-size: $heading-1;
+  @include break-max(md) {
+    font-size: $heading-1_sm;
+  }
 }
 h2 {
   font-size: $heading-2;
+  @include break-max(md) {
+    font-size: $heading-2_sm;
+  }
 }
 h3 {
   font-size: $heading-3;
+  @include break-max(md) {
+    font-size: $heading-3_sm;
+  }
 }
 h4 {
   font-size: $heading-4;
+  @include break-max(md) {
+    font-size: $heading-4_sm;
+  }
 }
 h5 {
   font-size: $heading-5;
+  @include break-max(md) {
+    font-size: $heading-5_sm;
+  }
 }
 h6 {
   font-size: $heading-5;
+  @include break-max(md) {
+    font-size: $heading-5_sm;
+  }
 }
 
 button,

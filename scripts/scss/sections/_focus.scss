@@ -56,4 +56,9 @@
       }
     }
   }
+  @include break-max(md) {
+    .content {
+      padding-top: 4rem;
+    }
+  }
 }

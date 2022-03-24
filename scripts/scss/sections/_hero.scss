@@ -37,4 +37,12 @@
     background-color: rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(0.95rem);
   }
+
+  @include break-max(md) {
+    padding: calc(4rem + 72px) 0 4rem;
+
+    h1 {
+      font-size: 3.2rem;
+    }
+  }
 }
