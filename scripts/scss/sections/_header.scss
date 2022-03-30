@@ -27,6 +27,10 @@ body:not(.home) {
   padding: 1.25rem 0;
   color: $text-white;
 
+  a {
+    color: $text-white;
+  }
+
   .header-container {
     display: flex;
     align-items: center;

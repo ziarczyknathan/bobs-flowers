@@ -159,6 +159,9 @@ h6 {
   .container {
     max-width: 1358px; } }
 
+.hidden {
+  display: none; }
+
 body,
 html {
   font-family: "Raleway", sans-serif;
@@ -298,6 +301,8 @@ body:not(.home) .header-wrapper {
 .header-wrapper {
   padding: 1.25rem 0;
   color: white; }
+  .header-wrapper a {
+    color: white; }
   .header-wrapper .header-container {
     display: flex;
     align-items: center;
