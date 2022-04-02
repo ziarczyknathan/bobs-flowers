@@ -243,6 +243,13 @@ button,
   .number-list-wrapper .cta a:hover {
     background-color: #ffd97d; }
 
+form label {
+  display: block;
+  margin-bottom: 0.5rem; }
+  form label input, form label textarea {
+    display: block;
+    width: 100%; }
+
 .hero-wrapper {
   position: relative;
   color: white;
