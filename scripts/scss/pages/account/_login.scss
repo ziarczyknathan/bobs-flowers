@@ -1,0 +1,20 @@
+.login-wrapper,
+.register-wrapper {
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  form {
+    .cta-container {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+  }
+
+  .recover-form-container {
+    margin-top: 0.5rem;
+  }
+}
