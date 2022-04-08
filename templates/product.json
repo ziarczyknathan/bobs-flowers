@@ -4,9 +4,32 @@
       "type": "main-product",
       "settings": {
       }
+    },
+    "16494251189147888d": {
+      "type": "apps",
+      "blocks": {
+        "15787211-563f-4b58-b3e5-6a461a0923f5": {
+          "type": "shopify:\/\/apps\/bold-subscriptions\/blocks\/bsub-widget-block\/9ceb49f0-5fe5-4b5e-943d-f8af8985167d",
+          "settings": {
+            "primary_color": "#3B63FF",
+            "secondary_color": "#7DBA63",
+            "header_text": "Purchase Options",
+            "one_time_text": "One-time Purchase",
+            "recurring_text": "Subscribe and Save",
+            "frequency_header": "Delivery Frequency",
+            "frequency_text": "delivery"
+          }
+        }
+      },
+      "block_order": [
+        "15787211-563f-4b58-b3e5-6a461a0923f5"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "16494251189147888d"
   ]
 }
