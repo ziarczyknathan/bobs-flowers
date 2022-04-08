@@ -1,0 +1,23 @@
+<div class="container">
+  <h1>Cart</h1>
+  {% for item in cart.items %}
+    {{ item.product.title }}
+    {% unless item.properties == empty %}
+      {% for property in item.properties %}
+        {{ property.first }}:
+  
+        {% if property.last contains '/uploads/' %}
+          <a href="{{ property.last }}">{{ property.last | split: '/' | last }}</a>
+        {% else %}
+          {{ property.last }}
+        {% endif %}
+      {% endfor %}
+    {% endunless %}
+  {% endfor %}
+</div>
+
+{% schema %}
+  {
+    "name": "Cart"
+  }
+{% endschema %}
