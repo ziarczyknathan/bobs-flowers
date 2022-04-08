@@ -1,8 +1,6 @@
 <div class="container">
   <div class="row">
     <div class="col-8 offset-2">
-      <h1>{{ section.settings.title }}</h1>
-
       <div class="items">
         {% for block in section.blocks %}
           <div class="item collapsed">
@@ -24,13 +22,6 @@
     "name": "FAQ",
     "class": "faq-wrapper wrapper",
     "tag": "section",
-    "settings": [
-      {
-        "label": "Titel",
-        "id": "title",
-        "type": "text"
-      }
-    ],
     "blocks": [
       {
         "type": "faq",
