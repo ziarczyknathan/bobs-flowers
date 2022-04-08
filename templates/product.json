@@ -12,7 +12,7 @@
           "type": "shopify:\/\/apps\/bold-subscriptions\/blocks\/bsub-widget-block\/9ceb49f0-5fe5-4b5e-943d-f8af8985167d",
           "settings": {
             "primary_color": "#ffffff",
-            "secondary_color": "#fff251",
+            "secondary_color": "#fad048",
             "header_text": "Purchase Options",
             "one_time_text": "One-time Purchase",
             "recurring_text": "Abonnement",
