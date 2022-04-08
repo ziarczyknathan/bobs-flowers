@@ -148,7 +148,8 @@ h6 {
   .wrapper.orange {
     background-color: #f9975d; }
   .wrapper.red {
-    background-color: #c85c5c; }
+    background-color: #c85c5c;
+    color: white; }
   .wrapper.green {
     background-color: #b2ea70; }
   @media screen and (max-width: 767px) {
@@ -503,8 +504,8 @@ footer.footer-wrapper {
     text-decoration: underline;
     font-weight: 500; }
 
-.faq-wrapper .items {
-  margin-top: 2rem; }
+.faq-wrapper {
+  margin: 3rem 0; }
   .faq-wrapper .items .item {
     padding: 1rem 0.5rem;
     cursor: pointer; }
@@ -522,6 +523,15 @@ footer.footer-wrapper {
         right: 0.5rem;
         top: 50%;
         transform: translateY(-50%); }
+
+.bsub-widget__wrapper {
+  margin: 1rem 0; }
+
+.bsub-widget > legend {
+  display: none; }
+
+.bsub-widget__extra-actions {
+  display: none; }
 
 .login-wrapper h1,
 .register-wrapper h1 {
