@@ -1,29 +1,9 @@
 {
   "sections": {
     "main": {
-      "type": "main-page",
-      "settings": {
-      }
-    },
-    "16486586463bf13d0e": {
-      "type": "apps",
-      "blocks": {
-        "fe8d6f14-8e9c-480a-9e04-44d9c2386cab": {
-          "type": "shopify:\/\/apps\/recurring-billing-by-recharge\/blocks\/subscription-widget\/371eed76-0b44-4869-9813-730372ea378e",
-          "settings": {
-            "product": "{{product}}"
-          }
-        }
-      },
-      "block_order": [
-        "fe8d6f14-8e9c-480a-9e04-44d9c2386cab"
-      ],
-      "settings": {
-      }
+      "type": "main-product",
+      "settings": {}
     }
   },
-  "order": [
-    "main",
-    "16486586463bf13d0e"
-  ]
+  "order": ["main"]
 }
