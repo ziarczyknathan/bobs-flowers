@@ -1,0 +1,13 @@
+// Widget
+.bsub-widget {
+  &__wrapper {
+    margin: 1rem 0;
+  }
+  & > legend {
+    display: none;
+  }
+
+  &__extra-actions {
+    display: none;
+  }
+}
