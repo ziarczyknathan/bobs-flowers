@@ -15,9 +15,9 @@
             "secondary_color": "#7DBA63",
             "header_text": "Purchase Options",
             "one_time_text": "One-time Purchase",
-            "recurring_text": "Subscribe and Save",
-            "frequency_header": "Delivery Frequency",
-            "frequency_text": "delivery"
+            "recurring_text": "Abonnement",
+            "frequency_header": "Levertermijn",
+            "frequency_text": "levering"
           }
         }
       },
