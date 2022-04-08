@@ -10,24 +10,37 @@
         <div>{{ product.description }}</div>
         <p class="product-price">{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</p>
         {%- form 'product', product, id: product.id, class: 'installment caption-large' -%}
-            {% if product.options.size > 0 %}
-              {% for product_option in product.options_with_values %}
-                <label>
-                  {{ product_option.name }}
-                  <select class="product-option-selector">
-                    {% for value in product_option.values %}
-                      <option {% if product_option.selected_value == value %}selected{% endif %}>
-                        {{ value }}
-                      </option>
-                    {% endfor %}
-                  </select>
-                </label>
-              {% endfor %}
-            {% endif %}
-            <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+          {% if product.has_only_default_variant == false %}
+            {% for product_option in product.options_with_values %}
+              <label>
+                {{ product_option.name }}
+                <select class="product-option-selector">
+                  {% for value in product_option.values %}
+                    <option {% if product_option.selected_value == value %}selected{% endif %}>
+                      {{ value }}
+                    </option>
+                  {% endfor %}
+                </select>
+              </label>
+            {% endfor %}
+          {% endif %}
+          <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+          {% if section.settings.qty-field %}
             <input type="number" name="quantity" min="1" value="1">
+          {% else %}
+            <input type="hidden" name="quantity" value="1">
+          {% endif %}
+          {%- for block in section.blocks -%}
+            {% if block.type == '@app' %}
+              {% render block %}
+            {% endif %}
+          {% endfor %}
+          {% if section.settings.add-to-cart-label != empty %}
+            <button type="submit" name="Add to cart">{{ section.settings.add-to-cart-label }}</button>
+            {% else %}
             <button type="submit" name="Add to cart">{{ 'products.product.add_to_cart' | t }}</button>
-          {%- endform -%}
+          {% endif %}
+        {%- endform -%}
       </div>
       <div class="col-5 offset-1">
         <img src="{{ product.featured_image | image_url }}" loading="lazy" width="" height="" alt="">
@@ -35,3 +48,30 @@
     </div>
   </div>
 </div>
+
+
+{% schema %}
+{
+  "name": "Product informatie",
+  "class": "product-info",
+  "settings": [
+    {
+      "id": "qty-field",
+      "label": "Toon hoeveelheid veld",
+      "type": "checkbox",
+      "default": true
+    },
+    {
+      "id": "add-to-cart-label",
+      "label": "Label: Add to cart",
+      "type": "text"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "@app"
+    }
+  ],
+  "max_blocks": 1
+}
+{% endschema %}
