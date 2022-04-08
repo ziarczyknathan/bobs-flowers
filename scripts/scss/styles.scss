@@ -1,10 +1,11 @@
 @import "./abstracts/variables", "./abstracts/functions", "./abstracts/mixins";
 
 @import "./base/fonts", "./base/general-classes", "./base/reset",
-  "./base/layout", "./base/typo" , "./base/forms";
+  "./base/layout", "./base/typo", "./base/forms";
 
 @import "./sections/hero", "./sections/header", "./sections/number-list",
   "./sections/slideshow", "./sections/products", "./sections/focus",
-  "./sections/footer", "./sections/faq";
+  "./sections/footer", "./sections/faq", "./sections/bsub",
+  "./sections/page-header";
 
 @import "./pages/account/login";

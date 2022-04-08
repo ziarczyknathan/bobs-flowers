@@ -1,0 +1,58 @@
+<div class="page-header-wrapper wrapper red">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <h1>{{ section.settings.title }}</h1>
+      </div>
+      <div class="col-12 col-md-5 offset-md-1">
+        {{ section.settings.description }}
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Paginahoofd",
+    "tag": "section",
+    "presets": [
+      {
+        "name": "Paginahoofd"
+      }
+    ],
+    "settings": [
+      {
+        "id": "title",
+        "label": "Titel",
+        "type": "text"
+      },
+      {
+        "id": "description",
+        "label": "Beschrijving",
+        "type": "richtext"
+      },
+      {
+        "type": "select",
+        "label": "Thema",
+        "id": "theme",
+        "options": [
+          {
+            "label": "Default",
+            "value": "default"
+          },
+          {
+            "label": "Oranje",
+            "value": "orange"
+          },
+          {
+            "label": "Rood",
+            "value": "red"
+          },
+          {
+            "label": "Groen",
+            "value": "green"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
