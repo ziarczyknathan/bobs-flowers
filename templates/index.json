@@ -51,31 +51,43 @@
         "25d8af81-bb53-441b-bfb3-1ccd76c64a9f": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/fuzzy-bright-purple-flowers-and-green-leaves.jpg"
+            "image": "shopify:\/\/shop_images\/2022_03_03_Boutique_Botanique-36-1_Groot_337814fe-7fcb-4dcb-8e8b-38a9a5a10f71.jpg"
           }
         },
         "a19fb643-47f9-4857-8cf6-b6b13b24460b": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/green-foliage-with-pink-and-white-flowers.jpg"
+            "image": "shopify:\/\/shop_images\/2022_03_03_Boutique_Botanique-255-22_Groot.jpg"
           }
         },
         "93c45436-0a06-4ff2-b454-00d17aec3d39": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/light-pink-and-delicate-flowers.jpg"
+            "image": "shopify:\/\/shop_images\/2022_03_03_Boutique_Botanique-207-20_Groot_625126a0-8ed4-49f1-8150-6408dfe18cc3.jpg"
           }
         },
         "adbd7b25-860d-45bc-b652-ad1950c1108d": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/light-pink-blooming-flowers.jpg"
+            "image": "shopify:\/\/shop_images\/2022_03_03_Boutique_Botanique-163-13_Groot.jpg"
           }
         },
         "c1887d7d-a8f6-4d4a-9775-e95b6ba195df": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/red-and-marbled-orange-flower-petals.jpg"
+            "image": "shopify:\/\/shop_images\/2022_03_03_Boutique_Botanique-102-8_Groot_a753ffeb-9bcf-41c6-b77c-eb05918ad206.jpg"
+          }
+        },
+        "d86d23e5-dd44-493e-b69c-a8729d6d2b43": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2022_03_03_Boutique_Botanique-285-24_Groot.jpg"
+          }
+        },
+        "da2ed4c0-36d9-424c-a05a-f11266d0314e": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2022_03_03_Boutique_Botanique-164-14.jpg"
           }
         }
       },
@@ -84,7 +96,9 @@
         "a19fb643-47f9-4857-8cf6-b6b13b24460b",
         "93c45436-0a06-4ff2-b454-00d17aec3d39",
         "adbd7b25-860d-45bc-b652-ad1950c1108d",
-        "c1887d7d-a8f6-4d4a-9775-e95b6ba195df"
+        "c1887d7d-a8f6-4d4a-9775-e95b6ba195df",
+        "d86d23e5-dd44-493e-b69c-a8729d6d2b43",
+        "da2ed4c0-36d9-424c-a05a-f11266d0314e"
       ],
       "settings": {
         "theme": "orange",
