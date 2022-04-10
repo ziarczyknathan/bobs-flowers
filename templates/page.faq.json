@@ -1,5 +1,13 @@
 {
   "sections": {
+    "1649606122e32509c6": {
+      "type": "page-header",
+      "settings": {
+        "title": "Veelgestelde vragen",
+        "description": "",
+        "theme": "red"
+      }
+    },
     "faqs": {
       "type": "faq",
       "blocks": {
@@ -63,11 +71,11 @@
         "9ecb5eab-79b2-48c3-b3c6-fecc077a9eeb"
       ],
       "settings": {
-        "title": "Veelgestelde vragen"
       }
     }
   },
   "order": [
+    "1649606122e32509c6",
     "faqs"
   ]
 }
