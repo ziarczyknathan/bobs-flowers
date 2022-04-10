@@ -1,9 +1,13 @@
 {
   "sections": {
     "main": {
-      "type": "main-product-subscription",
-      "settings": {}
+      "type": "main-product",
+      "settings": {
+        "qty-field": false
+      }
     }
   },
-  "order": ["main"]
+  "order": [
+    "main"
+  ]
 }
