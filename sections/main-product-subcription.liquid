@@ -25,8 +25,21 @@
             {% endfor %}
           {% endif %}
           <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-          <input type="number" name="quantity" min="1" value="1">
-          <button type="submit" name="Add to cart">{{ 'products.product.add_to_cart' | t }}</button>
+          {% if section.settings.qty-field %}
+            <input type="number" name="quantity" min="1" value="1">
+          {% else %}
+            <input type="hidden" name="quantity" value="1">
+          {% endif %}
+          {%- for block in section.blocks -%}
+            {% if block.type == '@app' %}
+              {% render block %}
+            {% endif %}
+          {% endfor %}
+          {% if section.settings.add-to-cart-label != empty %}
+            <button type="submit" name="Add to cart">{{ section.settings.add-to-cart-label }}</button>
+            {% else %}
+            <button type="submit" name="Add to cart">{{ 'products.product.add_to_cart' | t }}</button>
+          {% endif %}
         {%- endform -%}
       </div>
       <div class="col-5 offset-1">
@@ -47,6 +60,16 @@
       "label": "Toon hoeveelheid veld",
       "type": "checkbox",
       "default": true
+    },
+    {
+      "id": "add-to-cart-label",
+      "label": "Label: Add to cart",
+      "type": "text"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "@app"
     }
   ],
   "max_blocks": 1
