@@ -5,7 +5,7 @@
 <div class="wrapper product-wrapper">
   <div class="container">
     <div class="row">
-      <div class="col-6">
+      <div class="col-12 col-lg-6 order-2 order-lg-1">
         <h1>{{ product.title }}</h1>
         <p class="product-price">{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</p>
         <div>{{ product.description }}</div>
@@ -31,7 +31,7 @@
           </div>
         {%- endform -%}
       </div>
-      <div class="col-5 offset-1">
+      <div class="col-12 col-lg-5 offset-lg-1 order-1 order-lg-2">
         {{ product.featured_image | image_url: width: 800 | image_tag: srcset: nil, class: "product-image" }}
       </div>
     </div>
