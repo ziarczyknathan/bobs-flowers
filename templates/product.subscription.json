@@ -2,10 +2,30 @@
   "sections": {
     "main": {
       "type": "main-product-subscription",
+      "blocks": {
+        "e64c6bd7-3cb4-4315-a099-8d6c0112f25d": {
+          "type": "shopify:\/\/apps\/bold-subscriptions\/blocks\/bsub-widget-block\/9ceb49f0-5fe5-4b5e-943d-f8af8985167d",
+          "settings": {
+            "primary_color": "#3B63FF",
+            "secondary_color": "#7DBA63",
+            "header_text": "",
+            "one_time_text": "",
+            "recurring_text": "",
+            "frequency_header": "",
+            "frequency_text": "levering"
+          }
+        }
+      },
+      "block_order": [
+        "e64c6bd7-3cb4-4315-a099-8d6c0112f25d"
+      ],
       "settings": {
-        "qty-field": false
+        "qty-field": false,
+        "add-to-cart-label": ""
       }
     }
   },
-  "order": ["main"]
+  "order": [
+    "main"
+  ]
 }
