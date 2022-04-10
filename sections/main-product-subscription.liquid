@@ -5,14 +5,14 @@
 <div class="wrapper product-wrapper">
   <div class="container">
     <div class="row">
-      <div class="col-6">
+      <div class="col-12 col-lg-6 order-2 order-lg-1">
         <h1>{{ product.title }}</h1>
-        <div>{{ product.description }}</div>
         <p class="product-price">{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</p>
+        <div>{{ product.description }}</div>
         {%- form 'product', product, id: product.id, class: 'installment caption-large' -%}
           {% if product.has_only_default_variant == false %}
             {% for product_option in product.options_with_values %}
-              <label>
+              <label class="options">
                 {{ product_option.name }}
                 <select class="product-option-selector">
                   {% for value in product_option.values %}
@@ -25,25 +25,27 @@
             {% endfor %}
           {% endif %}
           <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-          {% if section.settings.qty-field %}
-            <input type="number" name="quantity" min="1" value="1">
-          {% else %}
-            <input type="hidden" name="quantity" value="1">
-          {% endif %}
           {%- for block in section.blocks -%}
             {% if block.type == '@app' %}
               {% render block %}
             {% endif %}
           {% endfor %}
-          {% if section.settings.add-to-cart-label != empty %}
-            <button type="submit" name="Add to cart">{{ section.settings.add-to-cart-label }}</button>
+          <div class="add-to-cart">
+            {% if section.settings.qty-field %}
+              <input type="number" name="quantity" min="1" value="1">
             {% else %}
-            <button type="submit" name="Add to cart">{{ 'products.product.add_to_cart' | t }}</button>
-          {% endif %}
+              <input type="hidden" name="quantity" value="1">
+            {% endif %}
+            {% if section.settings.add-to-cart-label != empty %}
+              <button type="submit" name="Add to cart">{{ section.settings.add-to-cart-label }}</button>
+              {% else %}
+              <button type="submit" name="Add to cart">{{ 'products.product.add_to_cart' | t }}</button>
+            {% endif %}
+          </div>
         {%- endform -%}
       </div>
-      <div class="col-5 offset-1">
-        <img src="{{ product.featured_image | image_url }}" loading="lazy" width="" height="" alt="">
+      <div class="col-12 col-lg-5 offset-lg-1 order-1 order-lg-2">
+        {{ product.featured_image | image_url: width: 800 | image_tag: srcset: nil, class: "product-image" }}
       </div>
     </div>
   </div>

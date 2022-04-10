@@ -1,0 +1,42 @@
+.product-wrapper {
+  img.product-image {
+    height: auto;
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  h1 {
+    margin-bottom: 1rem;
+  }
+
+  .product-price {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: $base-red;
+  }
+
+  label.options {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    select {
+      border: 1px solid $gray800;
+      padding: 0.5rem;
+      display: block;
+      font-size: 1rem;
+    }
+  }
+
+  input[type="number"] {
+    border: 1px solid $gray800;
+    padding: 0.5rem;
+    display: block;
+    font-size: 1rem;
+    width: 3rem;
+  }
+
+  .add-to-cart {
+    display: flex;
+    gap: 1rem;
+  }
+}

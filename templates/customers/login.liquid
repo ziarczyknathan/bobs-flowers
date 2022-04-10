@@ -1,3 +1,4 @@
+{% render 'static-page-header' title: "Inloggen", theme: "red", class: "login-page-header" %}
 <div class="wrapper login-wrapper">
   <div class="container">
     <div class="row">
@@ -5,9 +6,6 @@
         <div class="customer login">
 
           <div class="form__recover">
-            <h1 id="recover" tabindex="-1">
-              {{ 'customer.recover_password.title' | t }}
-            </h1>
             <p>
               {{ 'customer.recover_password.subtext' | t }}
             </p>
@@ -57,9 +55,6 @@
           </div>
 
           <div class="form__login">
-            <h1 id="login" tabindex="-1">
-              {{ 'customer.login_page.title' | t }}
-            </h1>
             <div>
               {%- if recover_success == true -%}
                 <h3 class="form__message" tabindex="-1" autofocus>

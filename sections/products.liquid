@@ -10,7 +10,7 @@
         <div class="product">
           <img src="{{ product.settings.product.featured_image | image_url }}" loading="lazy" width height alt="">
           <h4>{{product.settings.product.title}}</h4>
-          <p>{{ product.settings.product.description }}</p>
+          <p class="description">{{ product.settings.product.description }}</p>
           <div class="add-to-cart">
             {% render 'price' product: product.settings.product %}
 

@@ -1,19 +1,59 @@
-<div class="container">
-  <h1>Cart</h1>
-  {% for item in cart.items %}
-    {{ item.product.title }}
-    {% unless item.properties == empty %}
-      {% for property in item.properties %}
-        {{ property.first }}:
-  
-        {% if property.last contains '/uploads/' %}
-          <a href="{{ property.last }}">{{ property.last | split: '/' | last }}</a>
+<div class="cart-wrapper wrapper wrapper--sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        {% assign cartItemsSize = cart.items | size %}
+        {% if cartItemsSize > 0 %}
+          <form action="{{ routes.cart_url }}" method="post">
+            <table class="cart-items">
+              <tbody>
+                <tr>
+                  <th></th>
+                  <th>{{ "sections.cart.headings.product" | t }}</th>
+                  <th>{{ "sections.cart.headings.price" | t  }}</th>
+                  <th>{{ "sections.cart.headings.total" | t  }}</th>
+                  <th></th>
+                </tr>
+                {% for item in cart.items %}
+                  <tr>
+                    <td>
+                      {{ item.image | image_url: width: 100, height: 100 | image_tag: srcset: nil }}
+                    </td>
+                    <td>
+                      <h3>{{ item.product.title }}</h3>
+                      {% if item.selling_plan_allocation %}
+                        <p>
+                          Abonnement: {{ item.selling_plan_allocation.selling_plan.name }}
+                        </p>
+                      {% endif %}
+                    </td>
+                    <td>
+                      <p>
+                        {{ item.quantity }} x {{ item.price | money_without_trailing_zeros}}
+                      </p>
+                    </td>
+                    <td>
+                      <p>
+                        {{ item.final_line_price | money_without_trailing_zeros }}
+                      </p>
+                    </td>
+                    <td class="item--remove">
+                      <a class="btn" href="{{ item.url_to_remove }}">Verwijderen</a>
+                    </td>
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+            <input class="btn" type="submit" name="checkout" value="Checkout">
+          </form>
         {% else %}
-          {{ property.last }}
+          <div class="cart--empty wrapper">
+            <h2>{{ "sections.cart.empty" | t }}</h2>
+          </div>
         {% endif %}
-      {% endfor %}
-    {% endunless %}
-  {% endfor %}
+      </div>
+    </div>
+  </div>
 </div>
 
 {% schema %}
