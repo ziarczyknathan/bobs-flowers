@@ -13,22 +13,22 @@ form {
     }
   }
 
-  h2.form__message {
+  .form__message {
+    font-weight: 600;
     font-size: 1.45rem;
     display: flex;
 
     svg {
       width: 1rem;
+      height: 1rem;
       margin-right: 0.5rem;
     }
   }
 
-  .errors {
-    ul {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-      margin-bottom: 1.5rem;
-    }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1.5rem;
   }
 }
