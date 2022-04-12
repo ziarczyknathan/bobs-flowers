@@ -263,6 +263,19 @@ form label {
     padding: 0.25rem 1rem;
     font-size: 1rem; }
 
+form h2.form__message {
+  font-size: 1.45rem;
+  display: flex; }
+  form h2.form__message svg {
+    width: 1rem;
+    margin-right: 0.5rem; }
+
+form .errors ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1.5rem; }
+
 .hero-wrapper {
   position: relative;
   color: white;
