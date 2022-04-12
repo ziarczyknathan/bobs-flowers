@@ -272,6 +272,10 @@ form .form__message {
     height: 1rem;
     margin-right: 0.5rem; }
 
+form label .form__message {
+  font-size: 1rem;
+  margin: 0; }
+
 form ul {
   list-style-type: none;
   padding: 0;
