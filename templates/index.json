@@ -117,13 +117,13 @@
         "88e2ef70-e5fb-477e-bf65-9b533db207f7": {
           "type": "product",
           "settings": {
-            "product": "vaas"
+            "product": "snoeischaartje"
           }
         },
         "39f0837c-51bb-4d2f-a94c-466b45ea0f99": {
           "type": "product",
           "settings": {
-            "product": "vaas"
+            "product": "voeding"
           }
         }
       },
@@ -168,8 +168,7 @@
         "title": "Start uw abonnement vandaag nog af en geniet van gratis verzending",
         "body": "<p>Breng meer kleur en groen in je leven met onze wekelijkse levering bloemen. Geniet van gratis verzending als je nu een abonnement opstart.<\/p>",
         "button_text": "Ik wil een abonnement!",
-        "button_link": "shopify:\/\/products\/flowers-subscription",
-        "image": "shopify:\/\/shop_images\/light-pink-and-delicate-flowers.jpg"
+        "button_link": "shopify:\/\/products\/flowers-subscription"
       }
     }
   },
