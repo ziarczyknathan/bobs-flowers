@@ -7,16 +7,7 @@
   <div class="row">
     {% for product in section.blocks %}
       <div class="col-12 col-lg-4">
-        <div class="product">
-          <img src="{{ product.settings.product.featured_image | image_url }}" loading="lazy" width height alt="">
-          <h4>{{product.settings.product.title}}</h4>
-          <p class="description">{{ product.settings.product.description }}</p>
-          <div class="add-to-cart">
-            {% render 'price' product: product.settings.product %}
-
-            <a class="btn" href="/cart/add?id={{product.settings.product.selected_or_first_available_variant.id}}">{{ "products.product.add_to_cart" | t }}</a>
-          </div>
-        </div>
+        {% render 'product-card' product: product.settings.product %}
       </div>
     {% endfor %}
   </div>

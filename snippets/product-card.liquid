@@ -1,0 +1,10 @@
+<div class="product-card">
+  <img src="{{ product.featured_image | image_url }}" loading="lazy" width height alt="">
+  <h4>{{product.title}}</h4>
+  <p class="description">{{ product.description }}</p>
+  <div class="add-to-cart">
+    {% render 'price' product: product %}
+
+    <a class="btn" href="/cart/add?id={{product.selected_or_first_available_variant.id}}">{{ "products.product.add_to_cart" | t }}</a>
+  </div>
+</div>

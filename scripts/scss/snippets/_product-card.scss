@@ -1,0 +1,29 @@
+.product-card {
+  h4,
+  p,
+  img {
+    margin: 1rem 0;
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  p.description {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  .add-to-cart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .price {
+      font-weight: 800;
+    }
+  }
+}

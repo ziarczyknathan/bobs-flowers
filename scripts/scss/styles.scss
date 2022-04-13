@@ -3,6 +3,8 @@
 @import "./base/fonts", "./base/general-classes", "./base/reset",
   "./base/layout", "./base/typo", "./base/forms";
 
+@import "./snippets/product-card";
+
 @import "./sections/hero", "./sections/header", "./sections/number-list",
   "./sections/slideshow", "./sections/products", "./sections/focus",
   "./sections/footer", "./sections/faq", "./sections/bsub",
