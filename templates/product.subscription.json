@@ -6,8 +6,8 @@
         "e64c6bd7-3cb4-4315-a099-8d6c0112f25d": {
           "type": "shopify:\/\/apps\/bold-subscriptions\/blocks\/bsub-widget-block\/9ceb49f0-5fe5-4b5e-943d-f8af8985167d",
           "settings": {
-            "primary_color": "#3B63FF",
-            "secondary_color": "#7DBA63",
+            "primary_color": "#3b63ff",
+            "secondary_color": "#7dba63",
             "header_text": "",
             "one_time_text": "",
             "recurring_text": "",
@@ -23,9 +23,49 @@
         "qty-field": false,
         "add-to-cart-label": ""
       }
+    },
+    "164986084360de6405": {
+      "type": "product-recommendations",
+      "blocks": {
+        "cab22166-2563-4048-9f6a-6635d1d47638": {
+          "type": "product",
+          "settings": {
+            "product": "snoeischaartje"
+          }
+        },
+        "ec488811-8506-4169-b7d7-375ebbda32f1": {
+          "type": "product",
+          "settings": {
+            "product": "vaas"
+          }
+        },
+        "92b67db5-0f61-4753-8c2e-99fe2975d0c1": {
+          "type": "product",
+          "settings": {
+            "product": "voeding"
+          }
+        },
+        "8e2f2170-9560-4f93-8650-cb2c2c0d7295": {
+          "type": "product",
+          "settings": {
+            "product": "vaas"
+          }
+        }
+      },
+      "block_order": [
+        "cab22166-2563-4048-9f6a-6635d1d47638",
+        "ec488811-8506-4169-b7d7-375ebbda32f1",
+        "92b67db5-0f61-4753-8c2e-99fe2975d0c1",
+        "8e2f2170-9560-4f93-8650-cb2c2c0d7295"
+      ],
+      "settings": {
+        "theme": "green",
+        "title": "Deze producten passen bij jouw abonnement"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "164986084360de6405"
   ]
 }
