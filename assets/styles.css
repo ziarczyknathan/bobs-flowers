@@ -610,7 +610,10 @@ footer.footer-wrapper {
 .product-wrapper img.product-image {
   height: auto;
   width: 100%;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+  max-height: 600px;
+  object-fit: cover;
+  object-position: bottom; }
 
 .product-wrapper h1 {
   margin-bottom: 1rem; }
