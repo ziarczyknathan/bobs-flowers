@@ -1,33 +1,76 @@
-<div class="container">
-  <div class="row">
-    <div class="col-12">
-      <h2>{{ section.settings.title }}</h2>
+<div class="wrapper products-wrapper {{ section.settings.theme }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>{{ section.settings.title }}</h2>
+      </div>
+    </div>
+    {% case section.settings.per_row %}
+      {% when 1 %}
+        {% assign cols = 12 %}
+      {% when 2 %}
+        {% assign cols = 6 %}
+      {% when 3 %}
+        {% assign cols = 4 %}
+      {% when 4 %}
+        {% assign cols = 3 %}
+      {% else %}
+        {% assign cols = 3 %}
+    {% endcase %}
+    <div class="row">
+      {% for product in section.blocks %}
+        <div class="col-12 col-sm-6 col-lg-{{cols}} mt-3 mt-lg-0">
+          {% render 'product-card' product: product.settings.product %}
+        </div>
+      {% endfor %}
     </div>
   </div>
-  <div class="row">
-    {% for product in section.blocks %}
-      <div class="col-12 col-lg-4">
-        {% render 'product-card' product: product.settings.product %}
-      </div>
-    {% endfor %}
-  </div>
 </div>
-
 {% schema %}
   {
-    "name": "Products",
+    "name": "Producten",
     "tag": "section",
-    "class": "wrapper products-wrapper",
     "presets": [
       {
-        "name": "Products"
+        "name": "Producten"
       }
     ],
     "settings": [
       {
+        "type": "select",
+        "label": "Thema",
+        "id": "theme",
+        "options": [
+          {
+            "label": "Default",
+            "value": "default"
+          },
+          {
+            "label": "Oranje",
+            "value": "orange"
+          },
+          {
+            "label": "Rood",
+            "value": "red"
+          },
+          {
+            "label": "Groen",
+            "value": "green"
+          }
+        ]
+      },
+      {
         "type": "text",
         "label": "Titel",
         "id": "title"
+      },
+      {
+        "type": "range",
+        "min": 1,
+        "max": 4,
+        "label": "Producten per rij",
+        "id": "per_row",
+        "default": 4
       }
     ],
     "blocks": [
