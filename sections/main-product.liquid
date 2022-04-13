@@ -32,7 +32,7 @@
         {%- endform -%}
       </div>
       <div class="col-12 col-lg-5 offset-lg-1 order-1 order-lg-2">
-        {{ product.featured_image | image_url: width: 800 | image_tag: srcset: nil, class: "product-image" }}
+        <img class="product-image" src="{{ product.featured_image | img_url: "1200x" }}" width="" height="" loading="lazy" alt="">
       </div>
     </div>
   </div>

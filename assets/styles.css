@@ -289,7 +289,12 @@ form ul {
 
 .product-card img {
   width: 100%;
-  object-fit: cover; }
+  object-fit: cover;
+  height: 400px;
+  object-position: bottom; }
+  @media screen and (max-width: 575px) {
+    .product-card img {
+      height: 500px; } }
 
 .product-card p.description {
   overflow: hidden;
@@ -301,6 +306,10 @@ form ul {
   display: flex;
   align-items: center;
   justify-content: space-between; }
+  .product-card .add-to-cart.column {
+    flex-direction: column;
+    align-items: unset;
+    gap: 0.5rem; }
   .product-card .add-to-cart .price {
     font-weight: 800; }
 
@@ -611,6 +620,9 @@ footer.footer-wrapper {
   font-size: 1.5rem;
   margin: 1rem 0;
   color: #c85c5c; }
+
+.product-wrapper form {
+  margin-top: 2rem; }
 
 .product-wrapper label.options {
   margin-top: 1rem;
