@@ -24,48 +24,49 @@
         "add-to-cart-label": ""
       }
     },
-    "164986084360de6405": {
-      "type": "product-recommendations",
+    "165013979274a50cfb": {
+      "type": "products",
       "blocks": {
-        "cab22166-2563-4048-9f6a-6635d1d47638": {
+        "e39cc615-2807-4f25-bff1-8bd09fa2608a": {
           "type": "product",
           "settings": {
             "product": "snoeischaartje"
           }
         },
-        "ec488811-8506-4169-b7d7-375ebbda32f1": {
+        "748bc772-4a34-4dba-9f3e-ce6cbab2bcd2": {
           "type": "product",
           "settings": {
             "product": "vaas"
           }
         },
-        "92b67db5-0f61-4753-8c2e-99fe2975d0c1": {
+        "f65fa5df-2cbf-4e6a-b6b2-adb9645b266a": {
           "type": "product",
           "settings": {
             "product": "voeding"
           }
         },
-        "8e2f2170-9560-4f93-8650-cb2c2c0d7295": {
+        "60e60f0e-ba8b-4de6-8ada-f2833536b44b": {
           "type": "product",
           "settings": {
-            "product": "vaas"
+            "product": "snoeischaartje"
           }
         }
       },
       "block_order": [
-        "cab22166-2563-4048-9f6a-6635d1d47638",
-        "ec488811-8506-4169-b7d7-375ebbda32f1",
-        "92b67db5-0f61-4753-8c2e-99fe2975d0c1",
-        "8e2f2170-9560-4f93-8650-cb2c2c0d7295"
+        "e39cc615-2807-4f25-bff1-8bd09fa2608a",
+        "748bc772-4a34-4dba-9f3e-ce6cbab2bcd2",
+        "f65fa5df-2cbf-4e6a-b6b2-adb9645b266a",
+        "60e60f0e-ba8b-4de6-8ada-f2833536b44b"
       ],
       "settings": {
         "theme": "green",
-        "title": "Deze producten passen bij jouw abonnement"
+        "title": "Deze producten passen bij uw abonnement",
+        "per_row": 4
       }
     }
   },
   "order": [
     "main",
-    "164986084360de6405"
+    "165013979274a50cfb"
   ]
 }
