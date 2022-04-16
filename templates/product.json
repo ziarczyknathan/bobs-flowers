@@ -3,10 +3,52 @@
     "main": {
       "type": "main-product",
       "settings": {
+        "qty-field": true
+      }
+    },
+    "1650139551456b38bc": {
+      "type": "products",
+      "blocks": {
+        "0cd3c0e0-74e4-432b-8254-4d574299e205": {
+          "type": "product",
+          "settings": {
+            "product": "vaas"
+          }
+        },
+        "9fe083e7-f159-46cd-80fa-a89114ce7f66": {
+          "type": "product",
+          "settings": {
+            "product": "snoeischaartje"
+          }
+        },
+        "fc158092-d472-4394-a61e-88faa5d7c50e": {
+          "type": "product",
+          "settings": {
+            "product": "voeding"
+          }
+        },
+        "f8bb9839-8b0f-4a0a-9ddf-acc2967a86f9": {
+          "type": "product",
+          "settings": {
+            "product": "snoeischaartje"
+          }
+        }
+      },
+      "block_order": [
+        "0cd3c0e0-74e4-432b-8254-4d574299e205",
+        "9fe083e7-f159-46cd-80fa-a89114ce7f66",
+        "fc158092-d472-4394-a61e-88faa5d7c50e",
+        "f8bb9839-8b0f-4a0a-9ddf-acc2967a86f9"
+      ],
+      "settings": {
+        "theme": "green",
+        "title": "",
+        "per_row": 4
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1650139551456b38bc"
   ]
 }
