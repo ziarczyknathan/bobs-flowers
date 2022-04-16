@@ -1,8 +1,21 @@
 {
   "sections": {
+    "1650139525fd0b0e36": {
+      "type": "page-header",
+      "settings": {
+        "title": "Winkelmandje",
+        "description": "",
+        "theme": "green"
+      }
+    },
     "main": {
-      "type": "main-cart"
+      "type": "main-cart",
+      "settings": {
+      }
     }
   },
-  "order": ["main"]
+  "order": [
+    "1650139525fd0b0e36",
+    "main"
+  ]
 }
