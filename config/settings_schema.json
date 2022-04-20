@@ -75,5 +75,19 @@
         "default": true
       }
     ]
+  },
+  {
+    "name": "API Keys",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Deze instellingen zijn belangrijk voor de werking van de shop. De waarden niet veranderen aub."
+      },
+      {
+        "type": "text",
+        "id": "Bold API key",
+        "label": "Bold API key"
+      }
+    ]
   }
 ]
