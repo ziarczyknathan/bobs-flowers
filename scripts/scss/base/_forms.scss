@@ -28,6 +28,11 @@ form {
     label {
       width: 100%;
     }
+
+    @include break-max(sm) {
+      flex-direction: column;
+      gap: 0;
+    }
   }
 
   .form__message {

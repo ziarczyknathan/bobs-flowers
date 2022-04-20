@@ -276,6 +276,10 @@ form .form-row {
   justify-content: fill; }
   form .form-row label {
     width: 100%; }
+  @media screen and (max-width: 575px) {
+    form .form-row {
+      flex-direction: column;
+      gap: 0; } }
 
 form .form__message {
   font-weight: 600;
@@ -669,3 +673,28 @@ footer.footer-wrapper {
   background-color: #ffd97d; }
   .account-wrapper .address-container .btn {
     margin-top: 1rem; }
+
+.addresses-wrapper ul {
+  list-style: none;
+  padding: 0; }
+  .addresses-wrapper ul li[data-address] {
+    margin-top: 1.5rem;
+    padding: 2rem 1rem; }
+    .addresses-wrapper ul li[data-address]:nth-child(even) {
+      background: #f7f7f7; }
+    .addresses-wrapper ul li[data-address] .address-header p.default-label {
+      background-color: #c85c5c;
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      border-radius: 1rem;
+      color: white;
+      font-weight: 600;
+      margin-bottom: 0.25rem; }
+
+.addresses-wrapper .buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.75rem; }
+
+.addresses-wrapper .form-container {
+  margin: 2rem 0; }
