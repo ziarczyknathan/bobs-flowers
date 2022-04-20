@@ -674,6 +674,16 @@ footer.footer-wrapper {
   .account-wrapper .address-container .btn {
     margin-top: 1rem; }
 
+.account-wrapper .table-container {
+  max-width: 100%;
+  overflow-x: scroll; }
+  .account-wrapper .table-container table {
+    width: 100%; }
+    .account-wrapper .table-container table th,
+    .account-wrapper .table-container table td {
+      padding: 0.75rem;
+      text-align: left; }
+
 .addresses-wrapper ul {
   list-style: none;
   padding: 0; }
