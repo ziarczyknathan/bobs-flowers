@@ -2,14 +2,14 @@
   window.product = {{ product | json }}
 </script>
 
-<div class="wrapper product-wrapper">
+<div class="wrapper product-wrapper product-no-sub">
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-6 order-2 order-lg-1">
         <h1>{{ product.title }}</h1>
         <p class="product-price">{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</p>
         <div>{{ product.description }}</div>
-        {%- form 'product', product, id: product.id, class: 'installment caption-large' -%}
+        {%- form 'product', product, id: product.id, class: 'add-to-cart d-none installment caption-large' -%}
           {% if product.has_only_default_variant == false %}
             {% for product_option in product.options_with_values %}
               <label class="options">

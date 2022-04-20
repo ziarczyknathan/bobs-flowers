@@ -1,4 +1,5 @@
 (function () {
+  checkIfProductCanBeBought();
   initSwiper();
   collapseFaqItems();
   showHideRecoverForm();
@@ -173,5 +174,46 @@
         form.classList.toggle("d-none");
       });
     });
+  }
+
+  async function checkIfCurrentUserIsSubscribed() {
+    if (!window.customerId) {
+      return false;
+    }
+    const target =
+      "https://bobs-functions.netlify.app/.netlify/functions/get-subscriptions";
+
+    const data = await fetch(target).then(async (res) => await res.json());
+
+    const { customers } = data;
+    const currentCustomer = customers.find(
+      (customer) => customer.platform_id === window.customerId
+    );
+
+    if (
+      currentCustomer &&
+      currentCustomer.subscriptions_summary.active_subscription_count > 0
+    ) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  async function checkIfProductCanBeBought() {
+    const productTemplate = document.querySelector(".product-no-sub");
+    const productAddToCart = document.querySelector(
+      ".product-no-sub form.add-to-cart"
+    );
+
+    if (!productTemplate || !productAddToCart) return;
+
+    const response = await checkIfCurrentUserIsSubscribed();
+
+    if (!response) {
+      productAddToCart.remove();
+    } else {
+      productAddToCart.classList.remove("d-none");
+    }
   }
 })();
