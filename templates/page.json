@@ -1,8 +1,21 @@
 {
   "sections": {
+    "1650448290ac26f17f": {
+      "type": "page-header",
+      "settings": {
+        "title": "Jouw abonnementen",
+        "description": "",
+        "theme": "green"
+      }
+    },
     "main": {
-      "type": "main-page"
+      "type": "main-page",
+      "settings": {
+      }
     }
   },
-  "order": ["main"]
+  "order": [
+    "1650448290ac26f17f",
+    "main"
+  ]
 }
