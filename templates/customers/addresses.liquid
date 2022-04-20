@@ -93,7 +93,7 @@
 
                 <div class="buttons">
                   <button>{{ 'customer.addresses.add' | t }}</button>
-                  <button type="reset" data-form="AddAddress">{{ 'customer.addresses.cancel' | t }}</button>
+                  <button type="reset" class="secondary" data-form="AddAddress">{{ 'customer.addresses.cancel' | t }}</button>
                 </div>
               {%- endform -%}
             </div>
@@ -121,7 +121,7 @@
                     </button>
                     <button
                       type="button"
-                      class="delete-address"
+                      class="delete-address secondary red"
                       aria-label="{{ 'customer.addresses.delete' | t }} {{ forloop.index }}"
                       data-target="{{ address.url }}"
                       data-confirmmessage="{{ 'customer.addresses.delete_confirm' | t }}"
@@ -131,7 +131,7 @@
                   </div>
                 </div>
                 <div id="EditAddress_{{ address.id }}" class="form-container d-none">
-                  <h2>{{ 'customer.addresses.edit_address' | t }}</h2>
+                  <h3>{{ 'customer.addresses.edit_address' | t }}</h3>
                   {%- form 'customer_address', address -%}
                     <div class="form-row">
                       <label for="AddressFirstName_{{ form.id }}">
@@ -208,7 +208,7 @@
                 
                     <div class="buttons">
                       <button>{{ 'customer.addresses.update' | t }}</button>
-                      <button type="reset" data-form="EditAddress_{{ address.id }}">{{ 'customer.addresses.cancel' | t }}</button>
+                      <button class="secondary" type="reset" data-form="EditAddress_{{ address.id }}">{{ 'customer.addresses.cancel' | t }}</button>
                     </div>
                   {%- endform -%}
                 </div>

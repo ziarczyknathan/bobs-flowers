@@ -58,14 +58,24 @@ h6 {
   }
 }
 
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+
+  .btn,
+  button {
+    &:not(:last-child) {
+      margin-right: 0.5rem;
+    }
+  }
+}
+
 button,
 .btn,
 %btn {
   display: block;
   text-decoration: none;
   text-align: center;
-  background-color: $base-yellow-bright;
-  color: $text-black;
   border: none;
   padding: 0.6rem 1.5rem;
   border-radius: 2.5rem;
@@ -79,7 +89,40 @@ button,
   font-size: 1rem;
   transition: background-color 300ms ease-in;
 
+  background-color: $base-yellow-bright;
+  color: $text-black;
+  border: 2px solid $base-yellow-bright;
+
   &:hover {
     background-color: $base-yellow-dimmed;
+  }
+
+  &.red {
+    background-color: $base-red;
+    color: $text-white;
+    border-color: $base-red;
+
+    &:hover {
+      background-color: rgba($base-red, 0.85);
+    }
+  }
+
+  &.secondary {
+    background-color: $text-white;
+    border-color: $base-yellow-dimmed;
+
+    &:hover {
+      background-color: rgba($base-yellow-dimmed, 0.25);
+    }
+
+    &.red {
+      background-color: $text-white;
+      color: $text-black;
+      border-color: $base-red;
+
+      &:hover {
+        background-color: rgba($base-red, 0.25);
+      }
+    }
   }
 }

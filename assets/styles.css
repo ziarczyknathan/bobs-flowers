@@ -227,14 +227,19 @@ h6 {
     h6 {
       font-size: 1rem; } }
 
+.buttons {
+  display: flex;
+  flex-wrap: wrap; }
+  .buttons .btn:not(:last-child),
+  .buttons button:not(:last-child) {
+    margin-right: 0.5rem; }
+
 button,
 .btn,
 .number-list-wrapper .cta a {
   display: block;
   text-decoration: none;
   text-align: center;
-  background-color: #fbd148;
-  color: black;
   border: none;
   padding: 0.6rem 1.5rem;
   border-radius: 2.5rem;
@@ -246,11 +251,43 @@ button,
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.15);
   font-size: 1rem;
-  transition: background-color 300ms ease-in; }
+  transition: background-color 300ms ease-in;
+  background-color: #fbd148;
+  color: black;
+  border: 2px solid #fbd148; }
   button:hover,
   .btn:hover,
   .number-list-wrapper .cta a:hover {
     background-color: #ffd97d; }
+  button.red,
+  .btn.red,
+  .number-list-wrapper .cta a.red {
+    background-color: #c85c5c;
+    color: white;
+    border-color: #c85c5c; }
+    button.red:hover,
+    .btn.red:hover,
+    .number-list-wrapper .cta a.red:hover {
+      background-color: rgba(200, 92, 92, 0.85); }
+  button.secondary,
+  .btn.secondary,
+  .number-list-wrapper .cta a.secondary {
+    background-color: white;
+    border-color: #ffd97d; }
+    button.secondary:hover,
+    .btn.secondary:hover,
+    .number-list-wrapper .cta a.secondary:hover {
+      background-color: rgba(255, 217, 125, 0.25); }
+    button.secondary.red,
+    .btn.secondary.red,
+    .number-list-wrapper .cta a.secondary.red {
+      background-color: white;
+      color: black;
+      border-color: #c85c5c; }
+      button.secondary.red:hover,
+      .btn.secondary.red:hover,
+      .number-list-wrapper .cta a.secondary.red:hover {
+        background-color: rgba(200, 92, 92, 0.25); }
 
 form label {
   display: block;
@@ -693,17 +730,14 @@ footer.footer-wrapper {
     .addresses-wrapper ul li[data-address]:nth-child(even) {
       background: #f7f7f7; }
     .addresses-wrapper ul li[data-address] .address-header p.default-label {
-      background-color: #c85c5c;
+      background-color: #b2ea70;
       display: inline-block;
       padding: 0.25rem 0.75rem;
       border-radius: 1rem;
-      color: white;
       font-weight: 600;
       margin-bottom: 0.25rem; }
 
 .addresses-wrapper .buttons {
-  display: flex;
-  gap: 0.5rem;
   margin-top: 0.75rem; }
 
 .addresses-wrapper .form-container {

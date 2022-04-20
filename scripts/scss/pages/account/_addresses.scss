@@ -13,11 +13,10 @@
 
       .address-header {
         p.default-label {
-          background-color: $base-red;
+          background-color: $base-green;
           display: inline-block;
           padding: 0.25rem 0.75rem;
           border-radius: 1rem;
-          color: $text-white;
           font-weight: 600;
           margin-bottom: 0.25rem;
         }
@@ -26,8 +25,6 @@
   }
 
   .buttons {
-    display: flex;
-    gap: 0.5rem;
     margin-top: 0.75rem;
   }
 
