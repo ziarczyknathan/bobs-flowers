@@ -1,34 +1,45 @@
 (function () {
+  initSwiper();
+  collapseFaqItems();
+  showHideRecoverForm();
+  addToCartWithVariants();
+  editAccountAddresses();
+
+  // ----------Functions----------
+
   // Slider
-  new Swiper(".swiper", {
-    loop: true,
-    slidesPerView: 1,
-    spaceBetween: 0,
-    freeMode: true,
-    speed: 15000,
-    autoplay: {
-      delay: 1,
-      disableOnInteraction: false,
-    },
-    breakpoints: {
-      576: {
-        slidesPerView: 2,
-        spaceBetween: 10,
+  function initSwiper() {
+    new Swiper(".swiper", {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 0,
+      freeMode: true,
+      speed: 15000,
+      autoplay: {
+        delay: 1,
+        disableOnInteraction: false,
       },
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 10,
+      breakpoints: {
+        576: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        992: {
+          slidesPerView: 4,
+          spaceBetween: 24,
+        },
       },
-      992: {
-        slidesPerView: 4,
-        spaceBetween: 24,
-      },
-    },
-  });
+    });
+  }
 
   // FAQ
-  const faqItems = document.querySelectorAll(".faq-wrapper .items .item");
-  if (faqItems) {
+  function collapseFaqItems() {
+    const faqItems = document.querySelectorAll(".faq-wrapper .items .item");
+    if (!faqItems) return;
     faqItems.forEach((item) => {
       item.addEventListener("click", () => {
         item.classList.toggle("collapsed");
@@ -37,21 +48,23 @@
   }
 
   // Login
-  const loginForm = document.querySelector(".form__login");
-  const recoverForm = document.querySelector(".form__recover");
+  function showHideRecoverForm() {
+    const loginForm = document.querySelector(".form__login");
+    const recoverForm = document.querySelector(".form__recover");
 
-  const handleUrlChanged = () => {
-    const anchor = document.URL.split("#")[1];
-    if (!anchor || anchor === "login") {
-      recoverForm.classList.add("hidden");
-      loginForm.classList.remove("hidden");
-    } else if (anchor === "recover") {
-      recoverForm.classList.remove("hidden");
-      loginForm.classList.add("hidden");
-    }
-  };
+    if (!recoverForm || !loginForm) return;
 
-  if (recoverForm && loginForm) {
+    const handleUrlChanged = () => {
+      const anchor = document.URL.split("#")[1];
+      if (!anchor || anchor === "login") {
+        recoverForm.classList.add("hidden");
+        loginForm.classList.remove("hidden");
+      } else if (anchor === "recover") {
+        recoverForm.classList.remove("hidden");
+        loginForm.classList.add("hidden");
+      }
+    };
+
     handleUrlChanged();
 
     window.addEventListener("hashchange", function () {
@@ -60,30 +73,32 @@
   }
 
   // Add to cart
-  const $productOptionSelectors = document.querySelectorAll(
-    ".product-option-selector"
-  );
-  const $selectedIdField = document.querySelector("input[name=id]");
-  const $submitButton = document.querySelector("button[type=submit]");
+  function addToCartWithVariants() {
+    const $productOptionSelectors = document.querySelectorAll(
+      ".product-option-selector"
+    );
+    const $selectedIdField = document.querySelector("input[name=id]");
+    const $submitButton = document.querySelector("button[type=submit]");
 
-  const disableAddToCart = () => {
-    $submitButton.disabled = true;
-    $submitButton.classList.add("disabled");
-    $selectedIdField.value = "";
-  };
+    if (!window.product || !$productOptionSelectors) return;
 
-  const equals = (a, b) =>
-    a.length === b.length && a.every((v, i) => v === b[i]);
+    const disableAddToCart = () => {
+      $submitButton.disabled = true;
+      $submitButton.classList.add("disabled");
+      $selectedIdField.value = "";
+    };
 
-  const getAllOptionValues = () => {
-    const values = [];
-    $productOptionSelectors.forEach((selector) => {
-      values.push(selector.value);
-    });
-    return values;
-  };
+    const equals = (a, b) =>
+      a.length === b.length && a.every((v, i) => v === b[i]);
 
-  if (window.product && $productOptionSelectors) {
+    const getAllOptionValues = () => {
+      const values = [];
+      $productOptionSelectors.forEach((selector) => {
+        values.push(selector.value);
+      });
+      return values;
+    };
+
     const variants = window.product.variants;
 
     $productOptionSelectors.forEach((selector) => {
@@ -106,6 +121,19 @@
           disableAddToCart();
         }
       });
+    });
+  }
+
+  // Account addresses
+  function editAccountAddresses() {
+    const $accountTemplate = document.querySelector(".addresses-wrapper");
+    const $addAddressForm = document.querySelector("#AddAddress");
+    const $addAddressToggle = document.querySelector("#AddAddressToggle");
+
+    if (!$accountTemplate || !$addAddressForm || !$addAddressToggle) return;
+
+    $addAddressToggle.addEventListener("click", () => {
+      $addAddressForm.classList.toggle("d-none");
     });
   }
 })();

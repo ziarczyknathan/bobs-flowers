@@ -1,9 +1,7 @@
 {% assign title = 'customer.addresses.title' | t %}
 {% render 'static-page-header' title: title, theme: "orange"  %}
-{% comment %} <a href="{{ routes.account_url }}">
-  {{ 'customer.account.return' | t }}
-</a> {% endcomment %}
-<div class="wrapper">
+
+<div class="wrapper--sm addresses-wrapper">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -13,11 +11,12 @@
               type="button"
               aria-expanded="false"
               aria-controls="AddAddress"
+              id="AddAddressToggle"
             >
               {{ 'customer.addresses.add_new' | t }}
             </button>
-            <div id="AddAddress" class="d-none">
-              <h2 id="AddressNewHeading">{{ 'customer.addresses.add_new' | t }}</h2>
+            <div id="AddAddress" class="form-container d-none">
+              <h3 id="AddressNewHeading">{{ 'customer.addresses.add_new' | t }}</h3>
               {%- form 'customer_address', customer.new_address, aria-labelledBy: 'AddressNewHeading' -%}
               <div class="form-row">
                 <label for="AddressFirstNameNew">
@@ -92,7 +91,7 @@
                     {{ 'customer.addresses.set_default' | t }}
                   </label>
 
-                <div>
+                <div class="buttons">
                   <button>{{ 'customer.addresses.add' | t }}</button>
                   <button type="reset">{{ 'customer.addresses.cancel' | t }}</button>
                 </div>
@@ -103,29 +102,34 @@
           <ul role="list">
             {%- for address in customer.addresses -%}
               <li data-address>
-                {%- if address == customer.default_address -%}
-                  <h2>{{ 'customer.addresses.default' | t }}</h2>
-                {%- endif -%}
-                {{ address | format_address }}
-                <button
-                  type="button"
-                  id="EditFormButton_{{ address.id }}"
-                  aria-label="{{ 'customer.addresses.edit_address' | t }} {{ forloop.index }}"
-                  aria-controls="EditAddress_{{ address.id }}"
-                  aria-expanded="false"
-                  data-address-id="{{ address.id }}"
-                >
-                  {{ 'customer.addresses.edit' | t }}
-                </button>
-                <button
-                  type="button"
-                  aria-label="{{ 'customer.addresses.delete' | t }} {{ forloop.index }}"
-                  data-target="{{ address.url }}"
-                  data-confirm-message="{{ 'customer.addresses.delete_confirm' | t }}"
-                >
-                  {{ 'customer.addresses.delete' | t }}
-                </button>
-                <div id="EditAddress_{{ address.id }}">
+                <div class="address-header">
+                  {%- if address == customer.default_address -%}
+                    <p class="default-label">{{ 'customer.addresses.default' | t }}</p>
+                  {%- endif -%}
+                  {{ address | format_address }}
+                  <div class="buttons">
+                    <button
+                      type="button"
+                      id="EditFormButton_{{ address.id }}"
+                      aria-label="{{ 'customer.addresses.edit_address' | t }} {{ forloop.index }}"
+                      aria-controls="EditAddress_{{ address.id }}"
+                      aria-expanded="false"
+                      data-address-id="{{ address.id }}"
+                      class="EditFormButton"
+                    >
+                      {{ 'customer.addresses.edit' | t }}
+                    </button>
+                    <button
+                      type="button"
+                      aria-label="{{ 'customer.addresses.delete' | t }} {{ forloop.index }}"
+                      data-target="{{ address.url }}"
+                      data-confirm-message="{{ 'customer.addresses.delete_confirm' | t }}"
+                    >
+                      {{ 'customer.addresses.delete' | t }}
+                    </button>
+                  </div>
+                </div>
+                <div id="EditAddress_{{ address.id }}" class="form-container d-none">
                   <h2>{{ 'customer.addresses.edit_address' | t }}</h2>
                   {%- form 'customer_address', address -%}
                     <div class="form-row">

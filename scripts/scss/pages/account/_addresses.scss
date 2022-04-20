@@ -1,0 +1,37 @@
+.addresses-wrapper {
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li[data-address] {
+      margin-top: 1.5rem;
+      padding: 2rem 1rem;
+
+      &:nth-child(even) {
+        background: $gray100;
+      }
+
+      .address-header {
+        p.default-label {
+          background-color: $base-red;
+          display: inline-block;
+          padding: 0.25rem 0.75rem;
+          border-radius: 1rem;
+          color: $text-white;
+          font-weight: 600;
+          margin-bottom: 0.25rem;
+        }
+      }
+    }
+  }
+
+  .buttons {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+  }
+
+  .form-container {
+    margin: 2rem 0;
+  }
+}
