@@ -125,15 +125,24 @@
           "settings": {
             "product": "voeding"
           }
+        },
+        "a28a7937-16b5-4849-b8ed-6576876ef656": {
+          "type": "product",
+          "settings": {
+            "product": "vaas"
+          }
         }
       },
       "block_order": [
         "7d2ab516-4684-4faa-8908-3f777130282a",
         "88e2ef70-e5fb-477e-bf65-9b533db207f7",
-        "39f0837c-51bb-4d2f-a94c-466b45ea0f99"
+        "39f0837c-51bb-4d2f-a94c-466b45ea0f99",
+        "a28a7937-16b5-4849-b8ed-6576876ef656"
       ],
       "settings": {
-        "title": "Voeg deze extra’s toe aan je abonnement"
+        "theme": "default",
+        "title": "Voeg deze extra’s toe aan je abonnement",
+        "per_row": 4
       }
     },
     "16467504037529f275": {
