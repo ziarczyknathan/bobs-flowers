@@ -19,7 +19,25 @@
         {{section.settings.contact_us_body}}
       </div>
     </div>
-    <div class="col-12 col-lg-3 order-3 order-lg-4"></div>
+    <div class="col-12 col-lg-3 order-3 order-lg-4">
+      <div class="social-icons">
+        {% if settings.social_twitter_link != empty %}
+          <a href="{{settings.social_twitter_link }}" target="_blank">
+            <img src="https://cdn.shopify.com/s/files/1/0632/1160/2145/files/twt.svg?v=1651413103" width="" height="" loading="lazy" alt="">
+          </a>
+        {% endif %}
+        {% if settings.social_facebook_link != empty %}
+          <a href="{{settings.social_facebook_link }}" target="_blank">
+            <img src="https://cdn.shopify.com/s/files/1/0632/1160/2145/files/ig.svg?v=1651413104" width="" height="" loading="lazy" alt="">
+          </a>
+        {% endif %}
+        {% if settings.social_instagram_link != empty %}
+          <a href="{{settings.social_instagram_link }}" target="_blank">
+            <img src="https://cdn.shopify.com/s/files/1/0632/1160/2145/files/fb.svg?v=1651413103" width="" height="" loading="lazy" alt="">
+          </a>
+        {% endif %}
+      </div>
+    </div>
   </div>
 </div>
 

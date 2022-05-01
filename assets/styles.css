@@ -600,6 +600,10 @@ footer.footer-wrapper {
     color: #f9975d;
     text-decoration: underline;
     font-weight: 500; }
+  footer.footer-wrapper .social-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.75rem; }
 
 .faq-wrapper {
   margin: 3rem 0; }
