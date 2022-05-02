@@ -1,5 +1,9 @@
 .cart-wrapper {
+  .table-wrapper {
+    overflow-x: auto;
+  }
   table.cart-items {
+    min-width: 50rem;
     width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
@@ -39,6 +43,207 @@
       textarea {
         max-width: 100%;
         min-width: 100%;
+      }
+    }
+  }
+}
+
+/* Global "table" column settings */
+.product-image {
+  float: left;
+  width: 20%;
+}
+.product-details {
+  float: left;
+  width: 37%;
+}
+.product-price {
+  float: left;
+  width: 12%;
+  text-align: right;
+}
+.product-quantity {
+  float: left;
+  width: 10%;
+  text-align: right;
+}
+.product-removal {
+  float: left;
+  width: 9%;
+  text-align: right;
+}
+.product-line-price {
+  float: left;
+  width: 12%;
+  text-align: right;
+}
+
+/* This is used as the traditional .clearfix class */
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  zoom: 1;
+}
+
+/* Apply clearfix in a few places */
+.shopping-cart,
+.column-labels,
+.product,
+.totals-item {
+  @extend .group;
+}
+
+.btn-remove {
+  padding: 0.25rem 0.75rem;
+  font-size: 0.95rem;
+  margin-top: 1rem;
+}
+
+/* Body/Header stuff */
+
+/* Column headers */
+.column-labels {
+  label {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid $gray200;
+  }
+
+  .product-image,
+  .product-details,
+  .product-removal {
+    text-indent: -9999px;
+  }
+}
+
+/* Product entries */
+.product {
+  margin-bottom: 1.25rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid $gray200;
+
+  .product-image {
+    text-align: center;
+    img {
+      width: 6.25rem;
+    }
+  }
+
+  .product-details {
+    .product-title {
+      font-size: 1.25rem;
+      margin-right: 20px;
+    }
+    .product-description {
+      margin: 0.25rem 1.25rem 0.25rem 0;
+      line-height: 1.4em;
+    }
+  }
+}
+
+/* Totals section */
+.totals {
+  max-width: 25rem;
+  margin-left: auto;
+
+  .totals-item {
+    float: right;
+    clear: both;
+    width: 100%;
+    margin-bottom: 0.75rem;
+
+    label {
+      float: left;
+      clear: both;
+      width: 79%;
+      text-align: right;
+    }
+
+    .totals-value {
+      float: right;
+      width: 21%;
+      text-align: right;
+    }
+  }
+}
+
+.checkout {
+  float: right;
+  margin-top: 1.25rem;
+}
+
+/* Make adjustments for tablet */
+@include break-max(md) {
+  .column-labels {
+    display: none;
+  }
+
+  .product-image {
+    float: right;
+    width: auto;
+    img {
+      margin: 0 0 0.5rem 0.5rem;
+    }
+  }
+
+  .product-details {
+    float: none;
+    margin-bottom: 0.5rem;
+    width: auto;
+  }
+
+  .product-price {
+    clear: both;
+    width: max-content;
+  }
+
+  .product-quantity {
+    width: max-content;
+    margin: 0 1rem 0 0.5rem;
+  }
+
+  .product-quantity:before {
+    content: "x";
+  }
+
+  .product-removal {
+    width: auto;
+  }
+
+  .product-line-price {
+    float: right;
+    width: max-content;
+    font-weight: 600;
+  }
+}
+
+/* Make more adjustments for phone */
+@media screen and (max-width: 350px) {
+  .product-removal {
+    float: right;
+  }
+
+  .product-line-price {
+    float: right;
+    clear: left;
+    width: auto;
+    margin-top: 0.5rem;
+  }
+
+  .totals {
+    .totals-item {
+      label {
+        width: 60%;
+      }
+
+      .totals-value {
+        width: 40%;
       }
     }
   }

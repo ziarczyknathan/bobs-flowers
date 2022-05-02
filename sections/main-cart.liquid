@@ -5,47 +5,52 @@
         {% assign cartItemsSize = cart.items | size %}
         {% if cartItemsSize > 0 %}
           <form action="{{ routes.cart_url }}" method="post">
-            <table class="cart-items">
-              <tbody>
-                <tr>
-                  <th></th>
-                  <th>{{ "sections.cart.headings.product" | t }}</th>
-                  <th>{{ "sections.cart.headings.price" | t  }}</th>
-                  <th>{{ "sections.cart.headings.total" | t  }}</th>
-                  <th></th>
-                </tr>
-                {% for item in cart.items %}
-                  <tr>
-                    <td>
-                      {{ item.image | image_url: width: 100, height: 100 | image_tag: srcset: nil }}
-                    </td>
-                    <td>
-                      <h3>{{ item.product.title }}</h3>
-                      {% if item.selling_plan_allocation %}
-                        <p>
-                          Abonnement: {{ item.selling_plan_allocation.selling_plan.name }}
-                        </p>
-                      {% endif %}
-                    </td>
-                    <td>
+            <div class="shopping-cart">
+              <div class="column-labels">
+                <label class="product-image">&nbsp;</label>
+                <label class="product-details">&nbsp;</label>
+                <label class="product-removal">&nbsp;</label>
+                <label class="product-price">{{ "sections.cart.headings.price" | t  }}</label>
+                <label class="product-quantity">{{"sections.cart.headings.quantity" | t}}</label>
+                <label class="product-line-price">{{"sections.cart.headings.total" | t}}</label>
+              </div>
+    
+              {% for item in cart.items %}
+                <div class="product">
+                  <div class="product-image">
+                    {{ item.image | image_url: width: 100, height: 100 | image_tag: srcset: nil }}
+                  </div>
+                  <div class="product-details">
+                    <h3 class="product-title">{{ item.product.title }}</h3>
+                    {% if item.selling_plan_allocation %}
                       <p>
-                        {{ item.quantity }} x {{ item.price | money_without_trailing_zeros}}
+                        Abonnement: {{ item.selling_plan_allocation.selling_plan.name }}
                       </p>
-                    </td>
-                    <td>
-                      <p>
-                        {{ item.final_line_price | money_without_trailing_zeros }}
-                      </p>
-                    </td>
-                    <td class="item--remove">
-                      <a class="btn" href="{{ item.url_to_remove }}">Verwijderen</a>
-                    </td>
-                  </tr>
-                {% endfor %}
-              </tbody>
-            </table>
-            <div class="form-footer">
-              <label>
+                    {% endif %}
+                    <p class="product-description">{{ product.description }}</p>
+                    <a href="#" class="btn red btn-remove">Remove</a>
+                  </div>
+                  <div class="product-removal">
+                    &nbsp;
+                  </div>
+                  <div class="product-price">{{ item.price | money_without_trailing_zeros}}</div>
+                  <div class="product-quantity">
+                    {{ item.quantity }}
+                  </div>
+                  <div class="product-line-price">{{ item.final_line_price | money_without_trailing_zeros }}</div>
+                </div>
+              {% endfor %}
+    
+              <div class="totals">
+                <div class="totals-item">
+                  <label>{{"customer.order.shipping" | t}}</label>
+                  <div class="totals-value" id="cart-shipping">{{cart.shipping}}</div>
+                </div>
+                <div class="totals-item totals-item-total">
+                  <label>{{"sections.cart.headings.total" | t}}</label>
+                  <div class="totals-value" id="cart-total">{{cart.total_price | money_without_trailing_zeros}}</div>
+                </div>
+                <label>
                 Alternatieve leveringslocatie
                 <select required class="required" id="alternatieve-leveringslocatie" name="attributes[Alternatieve leveringslocatie]">
                   <option value="Geen"{% if cart.attributes["Alternatieve leveringslocatie"] == "Geen" %} selected{% endif %}>Geen</option>
@@ -57,7 +62,8 @@
                 Extra opmerkingen
                 <textarea id="extra-opmerkingen" name="attributes[Extra opmerkingen]">{{ cart.attributes["Extra opmerkingen"] }}</textarea>
               </label>
-              <input class="btn" type="submit" name="checkout" value="Checkout">
+              <button type="submit" class="checkout">Checkout</button>
+              </div>
             </div>
           </form>
         {% else %}
