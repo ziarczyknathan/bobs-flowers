@@ -1,0 +1,11 @@
+.story-wrapper {
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  @include break-max(md) {
+    img {
+      margin-bottom: 1rem;
+    }
+  }
+}

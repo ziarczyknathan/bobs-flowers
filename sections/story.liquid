@@ -1,17 +1,19 @@
 {% if section.settings.layout == "text-image" %}
-  {% assign imageOrder = "order-2" %}
-  {% assign textOrder = "order-1" %}
+  {% assign imageOrder = "order-md-2" %}
+  {% assign textOrder = "order-md-1" %}
 {% endif %}
 
-<div class="container">
-  <div class="row">
-    <div class="col-7 {{imageOrder}}">
-      <img src="{{ section.settings.image | image_url }}" alt="">
-    </div>
-    <div class="col-5 {{textOrder}}">
-      <h2>{{ section.settings.title }}</h2>
-      <div class="body">
-        {{ section.settings.text }}
+<div class="story-wrapper wrapper {{section.settings.theme}}">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-7 order-1 {{imageOrder}}">
+        <img src="{{ section.settings.image | image_url }}" loading="lazy" width="" height="" alt="">
+      </div>
+      <div class="col-12 col-md-5 order-2 {{textOrder}}">
+        <h2>{{ section.settings.title }}</h2>
+        <div class="body">
+          {{ section.settings.text }}
+        </div>
       </div>
     </div>
   </div>
@@ -21,13 +23,35 @@
   {
     "name": "Story",
     "tag": "section",
-    "class": "story-wrapper wrapper",
     "presets": [
       {
         "name": "Story"
       }
     ],
     "settings": [
+      {
+        "type": "select",
+        "label": "Thema",
+        "id": "theme",
+        "options": [
+          {
+            "label": "Default",
+            "value": "default"
+          },
+          {
+            "label": "Oranje",
+            "value": "orange"
+          },
+          {
+            "label": "Rood",
+            "value": "red"
+          },
+          {
+            "label": "Groen",
+            "value": "green"
+          }
+        ]
+      },
       {
         "type": "select",
         "label": "Layout",

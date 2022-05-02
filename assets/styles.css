@@ -634,6 +634,13 @@ footer.footer-wrapper {
 .bsub-widget__extra-actions {
   display: none; }
 
+.story-wrapper h2 {
+  margin-bottom: 1rem; }
+
+@media screen and (max-width: 767px) {
+  .story-wrapper img {
+    margin-bottom: 1rem; } }
+
 .login-wrapper,
 .register-wrapper {
   margin: 3rem 0; }
