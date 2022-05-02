@@ -673,6 +673,15 @@ footer.footer-wrapper {
   .cart-wrapper table.cart-items tbody tr td.item--remove a.btn {
     margin-left: auto; }
 
+.cart-wrapper form .form-footer {
+  margin-top: 2rem;
+  max-width: 20rem; }
+  .cart-wrapper form .form-footer select {
+    width: max-content; }
+  .cart-wrapper form .form-footer textarea {
+    max-width: 100%;
+    min-width: 100%; }
+
 .product-wrapper img.product-image {
   height: auto;
   width: 100%;

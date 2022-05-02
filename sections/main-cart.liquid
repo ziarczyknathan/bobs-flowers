@@ -44,7 +44,21 @@
                 {% endfor %}
               </tbody>
             </table>
-            <input class="btn" type="submit" name="checkout" value="Checkout">
+            <div class="form-footer">
+              <label>
+                Alternatieve leveringslocatie
+                <select required class="required" id="alternatieve-leveringslocatie" name="attributes[Alternatieve leveringslocatie]">
+                  <option value="Geen"{% if cart.attributes["Alternatieve leveringslocatie"] == "Geen" %} selected{% endif %}>Geen</option>
+                  <option value="Bij een buur"{% if cart.attributes["Alternatieve leveringslocatie"] == "Bij een buur" %} selected{% endif %}>Bij een buur</option>
+                  <option value="Op een veilige plaats"{% if cart.attributes["Alternatieve leveringslocatie"] == "Op een veilige plaats" %} selected{% endif %}>Op een veilige plaats</option>
+                </select>
+              </label>
+              <label for="extra-opmerkingen">
+                Extra opmerkingen
+                <textarea id="extra-opmerkingen" name="attributes[Extra opmerkingen]">{{ cart.attributes["Extra opmerkingen"] }}</textarea>
+              </label>
+              <input class="btn" type="submit" name="checkout" value="Checkout">
+            </div>
           </form>
         {% else %}
           <div class="cart--empty wrapper">

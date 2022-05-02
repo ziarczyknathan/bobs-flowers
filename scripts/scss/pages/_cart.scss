@@ -26,4 +26,20 @@
       }
     }
   }
+
+  form {
+    .form-footer {
+      margin-top: 2rem;
+      max-width: 20rem;
+
+      select {
+        width: max-content;
+      }
+
+      textarea {
+        max-width: 100%;
+        min-width: 100%;
+      }
+    }
+  }
 }
