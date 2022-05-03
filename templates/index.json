@@ -105,46 +105,6 @@
         "title": "Dit kan je verwachten van onze boeketten"
       }
     },
-    "16467503783e349df2": {
-      "type": "products",
-      "blocks": {
-        "7d2ab516-4684-4faa-8908-3f777130282a": {
-          "type": "product",
-          "settings": {
-            "product": "vaas"
-          }
-        },
-        "88e2ef70-e5fb-477e-bf65-9b533db207f7": {
-          "type": "product",
-          "settings": {
-            "product": "snoeischaartje"
-          }
-        },
-        "39f0837c-51bb-4d2f-a94c-466b45ea0f99": {
-          "type": "product",
-          "settings": {
-            "product": "voeding"
-          }
-        },
-        "a28a7937-16b5-4849-b8ed-6576876ef656": {
-          "type": "product",
-          "settings": {
-            "product": "vaas"
-          }
-        }
-      },
-      "block_order": [
-        "7d2ab516-4684-4faa-8908-3f777130282a",
-        "88e2ef70-e5fb-477e-bf65-9b533db207f7",
-        "39f0837c-51bb-4d2f-a94c-466b45ea0f99",
-        "a28a7937-16b5-4849-b8ed-6576876ef656"
-      ],
-      "settings": {
-        "theme": "default",
-        "title": "Voeg deze extra’s toe aan je abonnement",
-        "per_row": 4
-      }
-    },
     "16467504037529f275": {
       "type": "focus",
       "blocks": {
@@ -180,12 +140,22 @@
         "button_link": "shopify:\/\/products\/abonnement-boeketten",
         "image": "shopify:\/\/shop_images\/2022_03_03_Boutique_Botanique-311-25_Groot.jpg"
       }
+    },
+    "1651591410f051604b": {
+      "type": "story",
+      "settings": {
+        "theme": "default",
+        "layout": "image-text",
+        "image": "shopify:\/\/shop_images\/2022_03_03_Boutique_Botanique-311-25_Groot.jpg",
+        "title": "Wie zijn wij?",
+        "text": "<p>Lorem ipsum dolor sit amet laoreet eiusmod ullamcorper vulputate donec posuere urna pulvinar interdum. Nisi eiusmod tortor ac dolore faucibus est suspendisse consectetur senectus dictumst eros ultrices. Elementum vitae at condimentum convallis malesuada luctus magna rhoncus praesent nisl erat scelerisque quisque. Odio viverra aliqua augue convallis condimentum quisque in facilisi platea eiusmod pellentesque congue. Arcu ullamcorper sapien fusce aliqua enim curabitur nullam dictumst.<\/p><p>Lorem ipsum dolor sit amet donec libero etiam scelerisque est ultricies facilisi faucibus hac quam.<\/p>"
+      }
     }
   },
   "order": [
     "164673611361842ddc",
     "1646736168a20f75d2",
-    "16467503783e349df2",
-    "16467504037529f275"
+    "16467504037529f275",
+    "1651591410f051604b"
   ]
 }
