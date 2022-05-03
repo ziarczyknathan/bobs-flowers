@@ -612,18 +612,26 @@ footer.footer-wrapper {
     cursor: pointer; }
     .faq-wrapper .items .item:nth-of-type(odd) {
       background-color: #f7f7f7; }
+    .faq-wrapper .items .item.collapsed h3:after {
+      transform: translateY(-50%); }
     .faq-wrapper .items .item.collapsed .answer {
-      display: none; }
+      max-height: 0;
+      margin-top: 0; }
+    .faq-wrapper .items .item .answer {
+      overflow: hidden;
+      transition: max-height 0.5s ease-out;
+      margin-top: 0.5rem; }
     .faq-wrapper .items .item h3 {
       position: relative;
-      padding-right: 2.5rem; }
+      padding-right: 2.5rem;
+      font-size: 1.25rem; }
       .faq-wrapper .items .item h3:after {
         content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' aria-hidden='true' role='img' class='iconify iconify--fe' width='32' height='32' preserveAspectRatio='xMidYMid meet' viewBox='0 0 24 24'%3E%3Cpath fill='currentColor' fill-rule='evenodd' d='m6 7l6 6l6-6l2 2l-8 8l-8-8z'%3E%3C/path%3E%3C/svg%3E");
         line-height: 0;
         position: absolute;
         right: 0.5rem;
         top: 50%;
-        transform: translateY(-50%); }
+        transform: translateY(-50%) rotate(180deg); }
 
 .bsub-widget__wrapper {
   margin: 1rem 0; }
