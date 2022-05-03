@@ -42,13 +42,9 @@
               {% endfor %}
     
               <div class="totals">
-                <div class="totals-item">
-                  <label>{{"customer.order.shipping" | t}}</label>
-                  <div class="totals-value" id="cart-shipping">{{cart.shipping}}</div>
-                </div>
                 <div class="totals-item totals-item-total">
                   <label>{{"sections.cart.headings.total" | t}}</label>
-                  <div class="totals-value" id="cart-total">{{cart.total_price | money_without_trailing_zeros}}</div>
+                  <div class="totals-value" id="cart-total">{{ cart.total_price | money_without_trailing_zeros }}</div>
                 </div>
                 <label>
                 Alternatieve leveringslocatie
@@ -56,14 +52,13 @@
                   <option value="Geen"{% if cart.attributes["Alternatieve leveringslocatie"] == "Geen" %} selected{% endif %}>Geen</option>
                   <option value="Bij een buur"{% if cart.attributes["Alternatieve leveringslocatie"] == "Bij een buur" %} selected{% endif %}>Bij een buur</option>
                   <option value="Op een veilige plaats"{% if cart.attributes["Alternatieve leveringslocatie"] == "Op een veilige plaats" %} selected{% endif %}>Op een veilige plaats</option>
+                  <option value="Andere"{% if cart.attributes["Alternatieve leveringslocatie"] == "Andere" %} selected{% endif %}>Andere</option>
                 </select>
               </label>
               <label for="extra-opmerkingen">
-                Extra opmerkingen
-                <textarea id="extra-opmerkingen" name="attributes[Extra opmerkingen]">{{ cart.attributes["Extra opmerkingen"] }}</textarea>
+                <textarea id="extra-opmerkingen" name="attributes[Extra opmerkingen]" placeholder="Alternatieve leveringsmethode">{{ cart.attributes["Extra opmerkingen"] }}</textarea>
               </label>
-              <button type="submit" class="checkout">Checkout</button>
-              </div>
+              <button class="btn checkout" type="submit" name="checkout">Checkout</button>
             </div>
           </form>
         {% else %}
