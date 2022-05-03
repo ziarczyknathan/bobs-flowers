@@ -105,6 +105,16 @@
         "title": "Dit kan je verwachten van onze boeketten"
       }
     },
+    "1651591410f051604b": {
+      "type": "story",
+      "settings": {
+        "theme": "default",
+        "layout": "image-text",
+        "image": "shopify:\/\/shop_images\/2022_03_03_Boutique_Botanique-311-25_Groot.jpg",
+        "title": "Wie zijn wij?",
+        "text": "<p>Lorem ipsum dolor sit amet laoreet eiusmod ullamcorper vulputate donec posuere urna pulvinar interdum. Nisi eiusmod tortor ac dolore faucibus est suspendisse consectetur senectus dictumst eros ultrices. Elementum vitae at condimentum convallis malesuada luctus magna rhoncus praesent nisl erat scelerisque quisque. Odio viverra aliqua augue convallis condimentum quisque in facilisi platea eiusmod pellentesque congue. Arcu ullamcorper sapien fusce aliqua enim curabitur nullam dictumst.<\/p><p>Lorem ipsum dolor sit amet donec libero etiam scelerisque est ultricies facilisi faucibus hac quam.<\/p>"
+      }
+    },
     "16467504037529f275": {
       "type": "focus",
       "blocks": {
@@ -140,22 +150,12 @@
         "button_link": "shopify:\/\/products\/abonnement-boeketten",
         "image": "shopify:\/\/shop_images\/2022_03_03_Boutique_Botanique-311-25_Groot.jpg"
       }
-    },
-    "1651591410f051604b": {
-      "type": "story",
-      "settings": {
-        "theme": "default",
-        "layout": "image-text",
-        "image": "shopify:\/\/shop_images\/2022_03_03_Boutique_Botanique-311-25_Groot.jpg",
-        "title": "Wie zijn wij?",
-        "text": "<p>Lorem ipsum dolor sit amet laoreet eiusmod ullamcorper vulputate donec posuere urna pulvinar interdum. Nisi eiusmod tortor ac dolore faucibus est suspendisse consectetur senectus dictumst eros ultrices. Elementum vitae at condimentum convallis malesuada luctus magna rhoncus praesent nisl erat scelerisque quisque. Odio viverra aliqua augue convallis condimentum quisque in facilisi platea eiusmod pellentesque congue. Arcu ullamcorper sapien fusce aliqua enim curabitur nullam dictumst.<\/p><p>Lorem ipsum dolor sit amet donec libero etiam scelerisque est ultricies facilisi faucibus hac quam.<\/p>"
-      }
     }
   },
   "order": [
     "164673611361842ddc",
     "1646736168a20f75d2",
-    "16467504037529f275",
-    "1651591410f051604b"
+    "1651591410f051604b",
+    "16467504037529f275"
   ]
 }
