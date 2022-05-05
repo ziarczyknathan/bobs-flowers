@@ -387,6 +387,8 @@ form ul {
     text-shadow: 2px 3px black; }
   .hero-wrapper p {
     text-align: center; }
+    .hero-wrapper p:not(:empty) {
+      margin: 1rem 0 1.5rem; }
   .hero-wrapper .btn {
     margin: 0 auto;
     margin-top: 1rem; }
