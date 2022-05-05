@@ -1,5 +1,5 @@
 (function () {
-  checkIfProductCanBeBought();
+  // checkIfProductCanBeBought();
   initSwiper();
   collapseFaqItems();
   showHideRecoverForm();
@@ -180,6 +180,19 @@
     if (!window.customerId) {
       return false;
     }
+
+    if (window.cart) {
+      const cartItems = window.cart.items;
+
+      const cartContainsSubscription = cartItems.some(
+        (item) => item.selling_plan_allocation
+      );
+
+      if (cartContainsSubscription) {
+        return true;
+      }
+    }
+
     const target =
       "https://bobs-functions.netlify.app/.netlify/functions/get-subscriptions";
 
@@ -206,7 +219,7 @@
       ".product-no-sub form.add-to-cart"
     );
 
-    if (!productTemplate || !productAddToCart) return;
+    if (!productTemplate || !productAddToCart || !window.cart) return;
 
     const response = await checkIfCurrentUserIsSubscribed();
 
