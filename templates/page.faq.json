@@ -11,64 +11,128 @@
     "faqs": {
       "type": "faq",
       "blocks": {
-        "515968fd-c552-4807-98fc-a52721b92893": {
-          "type": "faq",
-          "settings": {
-            "question": "<p>Half café luwak robust variety?<\/p>",
-            "answer": "<p>Qui caffeine single aged robusta variety café trifecta au ut caramelization sugar cortado viennese to.<br\/><br\/>Aged frappuccino crema id froth milk latte mountain to galão chicory froth.<\/p>"
-          }
-        },
         "30ec80a9-a5ba-4950-941e-2c7be9e5beb6": {
           "type": "faq",
           "settings": {
-            "question": "<p>Half café luwak robust variety?<\/p>",
-            "answer": "<p>Qui caffeine single aged robusta variety café trifecta au ut caramelization sugar cortado viennese to.<br\/><br\/>Aged frappuccino crema id froth milk latte mountain to galão chicory froth.<\/p>"
+            "question": "<p>Hoe is Bob’s Flowers begonnen?<\/p>",
+            "answer": "<p>Door de vraag naar frequente leveringen in onze fysieke winkel Boutique Botanique, hebben we besloten om Bob’s Flowers op te richten.<\/p>"
+          }
+        },
+        "515968fd-c552-4807-98fc-a52721b92893": {
+          "type": "faq",
+          "settings": {
+            "question": "<p>Waar is de naam Bob’s Flowers van afkomstig?<\/p>",
+            "answer": "<p>‘Bob’ is afkomstig van een anagram van onze winkel fysieke winkel in Lokeren: ‘<strong>Bo<\/strong>utique <strong>B<\/strong>otanique’. <\/p>"
           }
         },
         "20c7c7c0-2ed7-41e8-aa4a-e79d287de672": {
           "type": "faq",
           "settings": {
-            "question": "<p>Half café luwak robust variety?<\/p>",
-            "answer": "<p>Qui caffeine single aged robusta variety café trifecta au ut caramelization sugar cortado viennese to.<br\/><br\/>Aged frappuccino crema id froth milk latte mountain to galão chicory froth.<\/p>"
+            "question": "<p>Kan ik op ieder moment mijn bloemen leveringen uitzetten?<\/p>",
+            "answer": "<p>Jazeker! Via jouw accountpagina kan je jouw bloemenlevering terugvinden. Hier kan je de leveringen pauzeren, een specifieke levering skippen, of jouw subscriptie annuleren.<\/p>"
           }
         },
         "3349bf61-db50-4bb3-8c2d-abdc396e1fb8": {
           "type": "faq",
           "settings": {
-            "question": "<p>Half café luwak robust variety?<\/p>",
-            "answer": "<p>Qui caffeine single aged robusta variety café trifecta au ut caramelization sugar cortado viennese to.<br\/><br\/>Aged frappuccino crema id froth milk latte mountain to galão chicory froth.<\/p>"
+            "question": "<p>Wat als ik niet thuis ben wanneer de bloemen geleverd worden?<\/p>",
+            "answer": "<p>Bij het bestellen van je abonnement, kan je een alternatieve leveringslocatie meegeven. Indien je niet thuisbent, laten wij de bloemen achter op deze locatie.<\/p>"
           }
         },
         "5407c72f-bcc6-4d9b-877e-3e6152a2275b": {
           "type": "faq",
           "settings": {
-            "question": "<p>Half café luwak robust variety?<\/p>",
-            "answer": "<p>Qui caffeine single aged robusta variety café trifecta au ut caramelization sugar cortado viennese to.<br\/><br\/>Aged frappuccino crema id froth milk latte mountain to galão chicory froth.<\/p>"
+            "question": "<p>Op welke dag worden de bloemen geleverd?<\/p>",
+            "answer": "<p>Wij leveren altijd op vrijdag, zodat je het weekend goed kan starten met verse bloemen :) <\/p>"
           }
         },
         "52f0860f-cdfb-44d8-8235-7a4e95640796": {
           "type": "faq",
           "settings": {
-            "question": "<p>Half café luwak robust variety?<\/p>",
-            "answer": "<p>Qui caffeine single aged robusta variety café trifecta au ut caramelization sugar cortado viennese to.<br\/><br\/>Aged frappuccino crema id froth milk latte mountain to galão chicory froth.<\/p>"
+            "question": "<p>Kan ik de frequentie van de leveringen aanpassen?<\/p>",
+            "answer": "<p>Jazeker! Via jouw accountpagina kan je jouw subscriptie terugvinden. Hier kan je de leveringsfrequentie gemakkelijk aanpassen.<\/p>"
           }
         },
         "9ecb5eab-79b2-48c3-b3c6-fecc077a9eeb": {
           "type": "faq",
           "settings": {
-            "question": "<p>Half café luwak robust variety?<\/p>",
-            "answer": "<p>Qui caffeine single aged robusta variety café trifecta au ut caramelization sugar cortado viennese to.<br\/><br\/>Aged frappuccino crema id froth milk latte mountain to galão chicory froth.<\/p>"
+            "question": "<p>Tot wanneer kan ik bestellen<\/p>",
+            "answer": "<p>Je kan via onze website tot dinsdag 12u bestellen voor een levering op de vrijdag die volgt.<br\/><br\/>Aangezien wij op tijd ons aantal bloemen moeten doorgeven aan de kwekers, moeten de levering tijdig afgesloten worden.<\/p>"
+          }
+        },
+        "2048aaf2-d819-4860-a6d3-4b141ac6e357": {
+          "type": "faq",
+          "settings": {
+            "question": "<p>Kan ik zelf mijn bloemen kiezen?<\/p>",
+            "answer": "<p>Wij selecteren wekelijks de mooiste bloemen voor jou.<\/p>"
+          }
+        },
+        "f424854c-7990-4c97-95a2-ec0e89b92ce3": {
+          "type": "faq",
+          "settings": {
+            "question": "<p>Hoeveel kost de levering?<\/p>",
+            "answer": "<p>De levering zit helemaal mee opgenomen in de prijs van het boeket. Er komt dus geen extra kost voor de levering.<\/p>"
+          }
+        },
+        "b086401d-5c2e-4fe1-97a1-d3c1e7075423": {
+          "type": "faq",
+          "settings": {
+            "question": "<p>Zijn er vacaturen bij Bob’s Flowers?<\/p>",
+            "answer": "<p>Wil je graag bij Bob’s Flowers werken, stuur dan een email met jouw cv en ambities naar hello@bobsflowers.be.<\/p>"
+          }
+        },
+        "8aee2d22-d99d-4e61-a33b-170fa26ad854": {
+          "type": "faq",
+          "settings": {
+            "question": "<p>Kan ik een bloemenabonnement als cadeau naar een vriend\/vriendin sturen?<\/p>",
+            "answer": "<p>Dit kan zeker! Je kan meerdere abonnementen afsluiten, en op verschillende adressen laten leveren. Na het gewenste aantal leveringen, kan je het abonnement stopzetten indien gewenst.<\/p>"
+          }
+        },
+        "8ae8fddc-6dda-4acb-887b-c76cd13859f9": {
+          "type": "faq",
+          "settings": {
+            "question": "<p>Ik ga op reis. Hoe kan ik mijn vakantie inplannen?<\/p>",
+            "answer": "<p>Via de accountpagina kan je jouw bloemenlevering terugvinden. Hier kan je een specifieke levering skippen, waardoor er geen bloemen geleverd worden wanneer jij op reis bent.<\/p>"
+          }
+        },
+        "7f6556db-a4f6-4144-a030-4e7456835c30": {
+          "type": "faq",
+          "settings": {
+            "question": "<p>Hoe laat worden mijn bloemen bezorgd?<\/p>",
+            "answer": "<p>Leveringen kunnen plaatsvinden tussen 8 uur ‘s morgens en 22 uur ‘s avonds. We kunnen geen exacte bezorgtijden garanderen omdat we van vele factoren afhankelijk zijn. Wanneer je niet thuis bent, dan laten we de bloemen achter op de door jou aangegeven veilige plaats.<\/p>"
+          }
+        },
+        "793f38f4-dd83-41d1-9a60-5398cf2c03b4": {
+          "type": "faq",
+          "settings": {
+            "question": "<p>Hoe worden de bloemen geleverd?<\/p>",
+            "answer": "<p>Alle bloemen worden verpakt in een kartonnen doos. Er wordt zoveel als mogelijk plastiek vermeden. De<\/p>"
+          }
+        },
+        "d02a8cea-70d4-444a-a3e3-e7da307ba12f": {
+          "type": "faq",
+          "settings": {
+            "question": "<p>Welke vaas is geschikt voor de bloemen?<\/p>",
+            "answer": "<p>Tijdens het uitchecken kan je enkele extra's selecteren. Onze Bob's Vaas is ideaal voor het boeket in te schikken. Deze is 22,50 cm hoog met een opening van 15 cm.<\/p>"
           }
         }
       },
       "block_order": [
-        "515968fd-c552-4807-98fc-a52721b92893",
         "30ec80a9-a5ba-4950-941e-2c7be9e5beb6",
+        "515968fd-c552-4807-98fc-a52721b92893",
         "20c7c7c0-2ed7-41e8-aa4a-e79d287de672",
         "3349bf61-db50-4bb3-8c2d-abdc396e1fb8",
         "5407c72f-bcc6-4d9b-877e-3e6152a2275b",
         "52f0860f-cdfb-44d8-8235-7a4e95640796",
-        "9ecb5eab-79b2-48c3-b3c6-fecc077a9eeb"
+        "9ecb5eab-79b2-48c3-b3c6-fecc077a9eeb",
+        "2048aaf2-d819-4860-a6d3-4b141ac6e357",
+        "f424854c-7990-4c97-95a2-ec0e89b92ce3",
+        "b086401d-5c2e-4fe1-97a1-d3c1e7075423",
+        "8aee2d22-d99d-4e61-a33b-170fa26ad854",
+        "8ae8fddc-6dda-4acb-887b-c76cd13859f9",
+        "7f6556db-a4f6-4144-a030-4e7456835c30",
+        "793f38f4-dd83-41d1-9a60-5398cf2c03b4",
+        "d02a8cea-70d4-444a-a3e3-e7da307ba12f"
       ],
       "settings": {
       }
