@@ -402,7 +402,8 @@ form ul {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.15);
-    backdrop-filter: blur(0.95rem); }
+    backdrop-filter: blur(0.95rem);
+    -webkit-backdrop-filter: blur(0.95rem); }
   @media screen and (max-width: 767px) {
     .hero-wrapper {
       padding: calc(4rem + 72px) 0 4rem; }
@@ -611,11 +612,20 @@ footer.footer-wrapper {
 
 .faq-wrapper {
   margin: 3rem 0; }
+  .faq-wrapper form#search-faq {
+    margin-bottom: 2rem;
+    display: flex; }
+    .faq-wrapper form#search-faq input {
+      flex: 1;
+      margin-right: 1rem;
+      padding: 0.5rem 1.25rem; }
   .faq-wrapper .items .item {
     padding: 1rem 0.5rem;
-    cursor: pointer; }
-    .faq-wrapper .items .item:nth-of-type(odd) {
-      background-color: #f7f7f7; }
+    cursor: pointer;
+    background-color: #f7f7f7; }
+    .faq-wrapper .items .item--nothing-found button {
+      margin-top: 1rem;
+      margin-bottom: 2rem; }
     .faq-wrapper .items .item.collapsed h3:after {
       transform: translateY(-50%); }
     .faq-wrapper .items .item.collapsed .answer {
@@ -645,6 +655,9 @@ footer.footer-wrapper {
 
 .bsub-widget__extra-actions {
   display: none; }
+
+.page-header-wrapper {
+  margin: 3rem 0; }
 
 .story-wrapper h2 {
   margin-bottom: 1rem; }
