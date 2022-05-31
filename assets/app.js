@@ -248,12 +248,15 @@
 
       const matchingQuestions = [...allQuestions].filter((question) => {
         const questionText = question.querySelector("h3").innerText;
-        if (questionText.toLowerCase().includes(query.toLowerCase())) {
+        const answerText = question.querySelector(".answer").innerText;
+        const toMatch = `${questionText} ${answerText}`;
+
+        if (toMatch.toLowerCase().includes(query.toLowerCase())) {
           question.classList.remove("d-none");
         } else {
           question.classList.add("d-none");
         }
-        return questionText.toLowerCase().includes(query.toLowerCase());
+        return toMatch.toLowerCase().includes(query.toLowerCase());
       });
 
       if (matchingQuestions.length === 0) {
