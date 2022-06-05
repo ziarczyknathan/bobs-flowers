@@ -42,7 +42,7 @@
     window.BOLD.subscriptions.config.lineItemNameSelectors = window.BOLD.subscriptions.config.lineItemNameSelectors || [];
     window.BOLD.subscriptions.config.checkoutButtonSelectors = window.BOLD.subscriptions.config.checkoutButtonSelectors || [];
 
-    window.BOLD.subscriptions.config.featureFlags = window.BOLD.subscriptions.config.featureFlags || ["BS2-4177-enable-historical-report-datepicker","bs2-1804-cancellation-management-page","BS2-3660-delete-line-items-command","BS2-4377-filter-list-sub-orders-endpoint","SUB-431-validate-update-line-items-endpoint","SUB-741-allow-last-dates-nulls-update-sub"];
+    window.BOLD.subscriptions.config.featureFlags = window.BOLD.subscriptions.config.featureFlags || ["BS2-4177-enable-historical-report-datepicker","bs2-1804-cancellation-management-page","BS2-3660-delete-line-items-command","BS2-4377-filter-list-sub-orders-endpoint","SUB-431-validate-update-line-items-endpoint","SUB-741-allow-last-dates-nulls-update-sub","bs2-4756-staples-add-remove-products","SUB-864-customer-admin-url","SUB-570-group-discount-on-add-line-item","SUB-918_Customer_Subscription_Limit_Increase"];
     window.BOLD.subscriptions.config.subscriptionProcessingFrequency = '60';
     window.BOLD.subscriptions.config.requireMSPInitialLoadingMessage = true;
     window.BOLD.subscriptions.data = window.BOLD.subscriptions.data || {};
@@ -76,7 +76,7 @@
     if (localStorage && localStorage.getItem('boldSubscriptionsSubscriptionGroups')) {
         window.BOLD.subscriptions.data.subscriptionGroups = JSON.parse(localStorage.getItem('boldSubscriptionsSubscriptionGroups'));
     } else {
-        window.BOLD.subscriptions.data.subscriptionGroups = [{"id":27216,"billing_rules":[{"id":58890,"subscription_group_id":27216,"interval_name":"Wekelijks","billing_rule":"FREQ=WEEKLY;BYDAY=TH","custom_billing_rule":""},{"id":58891,"subscription_group_id":27216,"interval_name":"Maandelijks","billing_rule":"FREQ=WEEKLY;INTERVAL=4;BYDAY=TH","custom_billing_rule":""},{"id":61982,"subscription_group_id":27216,"interval_name":"2 wekelijks","billing_rule":"FREQ=WEEKLY;INTERVAL=2","custom_billing_rule":""}],"is_subscription_only":false,"allow_prepaid":false,"is_prepaid_only":false,"should_continue_prepaid":true,"continue_prepaid_type":"as_prepaid","prepaid_durations":[{"id":27151,"subscription_group_id":27216,"total_duration":1,"discount_type":"percentage","discount_value":0}],"selection_options":[{"platform_entity_id":"7638390538465"}],"discount_type":"no_discount","percent_discount":0,"fixed_discount":0,"can_add_to_cart":true}];
+        window.BOLD.subscriptions.data.subscriptionGroups = [{"id":27216,"billing_rules":[{"id":58890,"subscription_group_id":27216,"interval_name":"Wekelijks","billing_rule":"FREQ=WEEKLY;BYDAY=TH","custom_billing_rule":""},{"id":61982,"subscription_group_id":27216,"interval_name":"2 wekelijks","billing_rule":"FREQ=WEEKLY;INTERVAL=2","custom_billing_rule":""},{"id":62675,"subscription_group_id":27216,"interval_name":"Maandelijks","billing_rule":"FREQ=WEEKLY","custom_billing_rule":""}],"is_subscription_only":false,"allow_prepaid":false,"is_prepaid_only":false,"should_continue_prepaid":true,"continue_prepaid_type":"as_prepaid","prepaid_durations":[{"id":27151,"subscription_group_id":27216,"total_duration":1,"discount_type":"percentage","discount_value":0}],"selection_options":[{"platform_entity_id":"7638390538465"}],"discount_type":"no_discount","percent_discount":0,"fixed_discount":0,"can_add_to_cart":true}];
     }
 
     window.BOLD.subscriptions.isFeatureFlagEnabled = function (featureFlag) {
