@@ -78,7 +78,7 @@ button,
   text-align: center;
   border: none;
   padding: 0.6rem 1.5rem;
-  border-radius: 2.5rem;
+  border-radius: 0.25rem;
   font-family: $heading-font;
   font-weight: 500;
   cursor: pointer;
@@ -89,12 +89,12 @@ button,
   font-size: 1rem;
   transition: background-color 300ms ease-in;
 
-  background-color: $base-yellow-bright;
+  background-color: $base-beige;
   color: $text-black;
-  border: 2px solid $base-yellow-bright;
+  border: 2px solid $base-beige;
 
   &:hover {
-    background-color: $base-yellow-dimmed;
+    background-color: $base-beige__light;
   }
 
   &.red {

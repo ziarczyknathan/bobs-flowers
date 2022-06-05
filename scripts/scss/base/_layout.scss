@@ -5,8 +5,8 @@
     margin: 3rem 0;
   }
 
-  &.orange,
-  &.green,
+  &.beige,
+  &.beige__light,
   &.red {
     margin: 0;
     padding: 6rem 0;
@@ -24,17 +24,16 @@
     }
   }
 
-  &.orange {
-    background-color: $base-orange;
-  }
-
   &.red {
     background-color: $base-red;
-    color: $text-white;
   }
 
-  &.green {
-    background-color: $base-green;
+  &.beige {
+    background-color: $base-beige;
+  }
+
+  &.beige__light {
+    background-color: $base-beige__light;
   }
 
   @include break-max(md) {

@@ -9,13 +9,11 @@ body.home {
 }
 body:not(.home) {
   .header-wrapper {
-    background-color: $gray100;
+    background-color: $base-red;
     font-size: 72px;
-    color: $text-black;
-    .logo {
-      background: linear-gradient(to right, $base-red, $base-orange);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+    .logo,
+    .logo * {
+      color: $text-black;
     }
 
     svg {

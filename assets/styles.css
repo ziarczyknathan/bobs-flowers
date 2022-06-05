@@ -141,23 +141,22 @@ h6 {
   margin: 6rem 0; }
   .wrapper--sm {
     margin: 3rem 0; }
-  .wrapper.orange, .wrapper.green, .wrapper.red {
+  .wrapper.beige, .wrapper.beige__light, .wrapper.red {
     margin: 0;
     padding: 6rem 0; }
-    .wrapper.orange--sm, .wrapper.green--sm, .wrapper.red--sm {
+    .wrapper.beige--sm, .wrapper.beige__light--sm, .wrapper.red--sm {
       padding: 3rem 0; }
     @media screen and (max-width: 767px) {
-      .wrapper.orange, .wrapper.green, .wrapper.red {
+      .wrapper.beige, .wrapper.beige__light, .wrapper.red {
         padding: 4rem 0; }
-        .wrapper.orange--sm, .wrapper.green--sm, .wrapper.red--sm {
+        .wrapper.beige--sm, .wrapper.beige__light--sm, .wrapper.red--sm {
           padding: 2rem 0; } }
-  .wrapper.orange {
-    background-color: #f9975d; }
   .wrapper.red {
-    background-color: #c85c5c;
-    color: white; }
-  .wrapper.green {
-    background-color: #b2ea70; }
+    background-color: #ffd8d6; }
+  .wrapper.beige {
+    background-color: #edcc93; }
+  .wrapper.beige__light {
+    background-color: #f5eac6; }
   @media screen and (max-width: 767px) {
     .wrapper {
       margin: 4rem 0; }
@@ -242,7 +241,7 @@ button,
   text-align: center;
   border: none;
   padding: 0.6rem 1.5rem;
-  border-radius: 2.5rem;
+  border-radius: 0.25rem;
   font-family: "Cabinet Grotesk", sans-serif;
   font-weight: 500;
   cursor: pointer;
@@ -252,23 +251,23 @@ button,
   box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.15);
   font-size: 1rem;
   transition: background-color 300ms ease-in;
-  background-color: #fbd148;
+  background-color: #edcc93;
   color: black;
-  border: 2px solid #fbd148; }
+  border: 2px solid #edcc93; }
   button:hover,
   .btn:hover,
   .number-list-wrapper .cta a:hover {
-    background-color: #ffd97d; }
+    background-color: #f5eac6; }
   button.red,
   .btn.red,
   .number-list-wrapper .cta a.red {
-    background-color: #c85c5c;
+    background-color: #ffd8d6;
     color: white;
-    border-color: #c85c5c; }
+    border-color: #ffd8d6; }
     button.red:hover,
     .btn.red:hover,
     .number-list-wrapper .cta a.red:hover {
-      background-color: rgba(200, 92, 92, 0.85); }
+      background-color: rgba(255, 216, 214, 0.85); }
   button.secondary,
   .btn.secondary,
   .number-list-wrapper .cta a.secondary {
@@ -283,11 +282,11 @@ button,
     .number-list-wrapper .cta a.secondary.red {
       background-color: white;
       color: black;
-      border-color: #c85c5c; }
+      border-color: #ffd8d6; }
       button.secondary.red:hover,
       .btn.secondary.red:hover,
       .number-list-wrapper .cta a.secondary.red:hover {
-        background-color: rgba(200, 92, 92, 0.25); }
+        background-color: rgba(255, 216, 214, 0.25); }
 
 form label {
   display: block;
@@ -371,7 +370,7 @@ form ul {
 .hero-wrapper {
   position: relative;
   color: white;
-  background-color: #f9975d;
+  background-color: #ffd8d6;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -418,13 +417,11 @@ body.home .header-wrapper {
   z-index: 3; }
 
 body:not(.home) .header-wrapper {
-  background-color: #f7f7f7;
-  font-size: 72px;
-  color: black; }
-  body:not(.home) .header-wrapper .logo {
-    background: linear-gradient(to right, #c85c5c, #f9975d);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; }
+  background-color: #ffd8d6;
+  font-size: 72px; }
+  body:not(.home) .header-wrapper .logo,
+  body:not(.home) .header-wrapper .logo * {
+    color: black; }
   body:not(.home) .header-wrapper svg {
     color: black; }
 
@@ -589,7 +586,7 @@ body:not(.home) .header-wrapper {
 footer.footer-wrapper {
   padding: 6rem 0;
   color: #111111;
-  background-color: #f7f7f7; }
+  background-color: #edcc93; }
   @media screen and (max-width: 991px) {
     footer.footer-wrapper {
       padding: 3rem 0; } }
@@ -602,7 +599,6 @@ footer.footer-wrapper {
     padding: 0;
     margin: 0; }
   footer.footer-wrapper .body a {
-    color: #f9975d;
     text-decoration: underline;
     font-weight: 500; }
   footer.footer-wrapper .social-icons {
@@ -863,7 +859,7 @@ footer.footer-wrapper {
   font-weight: 700;
   font-size: 1.5rem;
   margin: 1rem 0;
-  color: #c85c5c; }
+  color: #ffd8d6; }
 
 .product-wrapper form {
   margin-top: 2rem; }
@@ -916,7 +912,7 @@ footer.footer-wrapper {
     .addresses-wrapper ul li[data-address]:nth-child(even) {
       background: #f7f7f7; }
     .addresses-wrapper ul li[data-address] .address-header p.default-label {
-      background-color: #b2ea70;
+      background-color: #edcc93;
       display: inline-block;
       padding: 0.25rem 0.75rem;
       border-radius: 1rem;

@@ -28,9 +28,10 @@ $container-max-widths: (
 /**
 * Colours
 **/
-$base-red: rgba(200, 92, 92, 1);
-$base-orange: rgba(249, 151, 93, 1);
-$base-green: rgba(178, 234, 112, 1);
+$base-red: #ffd8d6;
+$base-beige: #edcc93;
+$base-beige__light: #f5eac6;
+
 $base-yellow-bright: rgba(251, 209, 72, 1);
 $base-yellow-dimmed: rgba(255, 217, 125, 1);
 $text-black: rgba(0, 0, 0, 1);
