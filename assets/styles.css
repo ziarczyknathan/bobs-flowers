@@ -137,6 +137,11 @@ h6 {
 #__next {
   isolation: isolate; }
 
+body {
+  min-height: 100vh;
+  height: max-content;
+  position: relative; }
+
 .wrapper {
   margin: 6rem 0; }
   .wrapper--sm {
@@ -586,7 +591,12 @@ body:not(.home) .header-wrapper {
 footer.footer-wrapper {
   padding: 6rem 0;
   color: #111111;
-  background-color: #edcc93; }
+  background-color: #edcc93;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%; }
   @media screen and (max-width: 991px) {
     footer.footer-wrapper {
       padding: 3rem 0; } }

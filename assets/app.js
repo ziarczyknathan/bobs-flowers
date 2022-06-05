@@ -6,8 +6,17 @@
   addToCartWithVariants();
   editAccountAddresses();
   handleSearchFAQ();
+  adjustBodyFooterPadding();
 
   // ----------Functions----------
+
+  function adjustBodyFooterPadding() {
+    const footer = document.querySelector("footer");
+    const footerHeight = footer.offsetHeight;
+
+    const body = document.querySelector("body");
+    body.style.paddingBottom = footerHeight + "px";
+  }
 
   // Slider
   function initSwiper() {
@@ -241,6 +250,8 @@
     const resetSearchButton = document.querySelector(
       ".faq-wrapper .item--nothing-found button"
     );
+
+    if (!searchInput || !allQuestions || !nothingFoundItem) return;
 
     function findQuestions() {
       const query = searchInput.value;
