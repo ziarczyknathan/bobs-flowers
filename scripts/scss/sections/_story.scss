@@ -3,6 +3,10 @@
     margin-bottom: 1rem;
   }
 
+  p:not(:last-child) {
+    margin-bottom: 0.75rem;
+  }
+
   @include break-max(md) {
     img {
       margin-bottom: 1rem;

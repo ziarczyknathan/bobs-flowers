@@ -658,6 +658,9 @@ footer.footer-wrapper {
 .story-wrapper h2 {
   margin-bottom: 1rem; }
 
+.story-wrapper p:not(:last-child) {
+  margin-bottom: 0.75rem; }
+
 @media screen and (max-width: 767px) {
   .story-wrapper img {
     margin-bottom: 1rem; } }
