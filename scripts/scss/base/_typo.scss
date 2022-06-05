@@ -108,10 +108,10 @@ button,
 
   &.secondary {
     background-color: $text-white;
-    border-color: $base-yellow-dimmed;
+    border-color: $base-beige__light;
 
     &:hover {
-      background-color: rgba($base-yellow-dimmed, 0.25);
+      background-color: rgba($base-beige__light, 0.25);
     }
 
     &.red {
