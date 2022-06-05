@@ -442,9 +442,12 @@ body:not(.home) .header-wrapper {
     .header-wrapper .header-container svg {
       width: 1.75rem;
       height: auto; }
-    .header-wrapper .header-container h3 {
+    .header-wrapper .header-container .logo {
       position: absolute;
       left: 0; }
+      .header-wrapper .header-container .logo svg {
+        width: 7.5rem;
+        height: auto; }
     .header-wrapper .header-container nav {
       padding: 1rem 2rem; }
       .header-wrapper .header-container nav ul {
@@ -454,7 +457,7 @@ body:not(.home) .header-wrapper {
         gap: 0.75rem;
         padding: 0;
         padding: 1rem 2rem;
-        border-radius: 3rem;
+        border-radius: 0.25rem;
         font-size: 0.875rem;
         background-color: white; }
         .header-wrapper .header-container nav ul a {
