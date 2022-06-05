@@ -101,18 +101,8 @@
         "da2ed4c0-36d9-424c-a05a-f11266d0314e"
       ],
       "settings": {
-        "theme": "red",
-        "title": "Dit kan je verwachten van onze boeketten"
-      }
-    },
-    "1651591410f051604b": {
-      "type": "story",
-      "settings": {
         "theme": "default",
-        "layout": "image-text",
-        "image": "shopify:\/\/shop_images\/2022_03_03_Boutique_Botanique-311-25_Groot.jpg",
-        "title": "Wie zijn wij?",
-        "text": "<p>Enkele jaren geleden werd ‘Boutique Botanique’ opgestart. Een jonge frisse bloemenwinkel in Lokeren. Hier deden wij onze eerste bloemenkennis en ervaring op. Een jaar later kwam daar een bloemenautomaat bij en onze eerst shop in shop bij Deba Meubelen. <br\/>Sinds 2021 zijn wij ook vaste bloemenleverancier van Foodbag.<\/p><p>We merkten in onze winkel dat er een stijgende vraag was naar verse duurzame bloemenleveringen aan huis. Febe en Wim zaten niet stil en bundelden hun IT- en bloemenkennis en Bobs Flowers werd opgericht. <\/p><p>De naam Bob’s Flowers verwijst naar een anagram van onze fysieke winkel <strong>Bo<\/strong>utique <strong>B<\/strong>otanique.<\/p><p><\/p><p>Het werkt heel simpel. Wij selecteren wekelijks de mooiste bloemen. Nadat je deze thuis ontvangen hebt, ga je zelf aan de slag om deze te verwerken tot een prachtig Bob’s Flowers boeket. Geen groene vingers? Geen nood! We helpen je op weg aan de hand van handige instructies, meegeleverd bij ieder boeket.<\/p><p>Heb je een vraag, aarzel niet om ons te contacteren via <a href=\"mailto:hello@bobsflowers.be\" title=\"mailto:hello@bobsflowers.be\">hello@bobsflowers.be<\/a>.<\/p>"
+        "title": "Dit kan je verwachten van onze boeketten"
       }
     },
     "16467504037529f275": {
@@ -143,19 +133,29 @@
         "4e5cc991-6b8a-4060-b3b1-db2b6c4323a4"
       ],
       "settings": {
-        "theme": "green",
+        "theme": "red",
         "title": "Start uw abonnement vandaag nog af en geniet van gratis verzending",
         "body": "<p>Breng meer kleur en groen in je leven met onze wekelijkse levering bloemen. Geniet van gratis verzending als je nu een abonnement opstart.<\/p>",
         "button_text": "Ik wil een abonnement!",
         "button_link": "shopify:\/\/products\/abonnement-boeketten",
         "image": "shopify:\/\/shop_images\/2022_03_03_Boutique_Botanique-311-25_Groot.jpg"
       }
+    },
+    "1651591410f051604b": {
+      "type": "story",
+      "settings": {
+        "theme": "default",
+        "layout": "image-text",
+        "image": "shopify:\/\/shop_images\/2022_03_03_Boutique_Botanique-311-25_Groot.jpg",
+        "title": "Wie zijn wij?",
+        "text": "<p>Enkele jaren geleden werd ‘Boutique Botanique’ opgestart. Een jonge frisse bloemenwinkel in Lokeren. Hier deden wij onze eerste bloemenkennis en ervaring op. Een jaar later kwam daar een bloemenautomaat bij en onze eerst shop in shop bij Deba Meubelen. <br\/>Sinds 2021 zijn wij ook vaste bloemenleverancier van Foodbag.<\/p><p>We merkten in onze winkel dat er een stijgende vraag was naar verse duurzame bloemenleveringen aan huis. Febe en Wim zaten niet stil en bundelden hun IT- en bloemenkennis en Bobs Flowers werd opgericht. <\/p><p>De naam Bob’s Flowers verwijst naar een anagram van onze fysieke winkel <strong>Bo<\/strong>utique <strong>B<\/strong>otanique.<\/p><p><\/p><p>Het werkt heel simpel. Wij selecteren wekelijks de mooiste bloemen. Nadat je deze thuis ontvangen hebt, ga je zelf aan de slag om deze te verwerken tot een prachtig Bob’s Flowers boeket. Geen groene vingers? Geen nood! We helpen je op weg aan de hand van handige instructies, meegeleverd bij ieder boeket.<\/p><p>Heb je een vraag, aarzel niet om ons te contacteren via <a href=\"mailto:hello@bobsflowers.be\" title=\"mailto:hello@bobsflowers.be\">hello@bobsflowers.be<\/a>.<\/p>"
+      }
     }
   },
   "order": [
     "164673611361842ddc",
     "1646736168a20f75d2",
-    "1651591410f051604b",
-    "16467504037529f275"
+    "16467504037529f275",
+    "1651591410f051604b"
   ]
 }
