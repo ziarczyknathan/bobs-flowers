@@ -1,5 +1,13 @@
 {
   "sections": {
+    "16544616707629ec56": {
+      "type": "page-header",
+      "settings": {
+        "title": "Privacybeleid",
+        "description": "",
+        "theme": "default"
+      }
+    },
     "main": {
       "type": "main-page",
       "settings": {
@@ -7,6 +15,7 @@
     }
   },
   "order": [
+    "16544616707629ec56",
     "main"
   ]
 }
