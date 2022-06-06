@@ -3,7 +3,7 @@ import { initSwiper } from "./modules/swiper";
 import { collapseFaqItems, handleSearchFAQ } from "./modules/faq";
 import { editAccountAddresses } from "./modules/addresses";
 import { addToCartWithVariants } from "./modules/addToCart";
-import { showHideRecoverForm } from "./modules/loginRegister";
+import { showHideRecoverForm, toggleVatForm } from "./modules/loginRegister";
 import { adjustBodyFooterPadding } from "./modules/footer";
 
 // import styles
@@ -17,4 +17,5 @@ import "../scss/styles.scss";
   editAccountAddresses();
   handleSearchFAQ();
   adjustBodyFooterPadding();
+  toggleVatForm();
 })();

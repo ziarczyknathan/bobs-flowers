@@ -32,3 +32,20 @@ export const validateVat = () => {
     const { isValid } = checkVAT(e.target.value, [belgium]);
   });
 };
+
+export const toggleVatForm = () => {
+  const vatNumberDisplay = document.querySelector(".vat-number-display");
+  const vatNumberForm = document.querySelector(".vat-number-form");
+
+  if (!vatNumberDisplay || !vatNumberForm) return;
+
+  const vatEditButton = document.querySelector(
+    ".vat-number-display .vat-edit-button"
+  );
+
+  vatEditButton.addEventListener("click", (e) => {
+    console.log(e);
+    vatNumberDisplay.classList.add("d-none");
+    vatNumberForm.classList.remove("d-none");
+  });
+};

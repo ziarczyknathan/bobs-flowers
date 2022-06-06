@@ -115,6 +115,28 @@
             {{ 'customer.account.view_addresses' | t }}
           </a>
         </div>
+        <div class="vat-container">
+          <div class="vat-number-display">
+            {% if customer.metafields.vat_number %}
+              <p>
+                {{ "customer.account.vat_no" | t }}: {{ customer.metafields.sufio.vat_number }} 
+              </p>
+              <button class="vat-edit-button">Bewerken</button>
+            {% else %}
+              <button class="vat-edit-button">BTW nummer toevoegen</button>
+            {% endif %}
+          </div>
+          
+          <div class="vat-number-form d-none" >
+            <form>
+              <label for="vat_reg_no">
+                {{ "customer.account.vat_no" | t }}
+                <input type="text" id="vat_reg_no" name="customer[note][VAT Registration Number]" placeholder="{{ "customer.account.vat_no" | t }}" value="{{ customer.metafields.sufio.vat_number }}" />
+              </label>
+              <button type="submit" class="btn">Opslaan</button>
+            </form>
+          </div>
+        </div>
       </div>
 
     </div>
