@@ -7,7 +7,6 @@
   editAccountAddresses();
   handleSearchFAQ();
   adjustBodyFooterPadding();
-  adjustHeaderHeight();
 
   // ----------Functions----------
 
@@ -17,15 +16,6 @@
 
     const body = document.querySelector("body");
     body.style.paddingBottom = footerHeight + "px";
-  }
-
-  function adjustHeaderHeight() {
-    const header = document.querySelector(".header-container");
-    const logo = document.querySelector(".header-container .logo");
-
-    const logoHeight = logo.offsetHeight;
-    console.log(logoHeight);
-    header.style.height = logoHeight + "px";
   }
 
   // Slider

@@ -32,7 +32,7 @@ body:not(.home) {
   .header-container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     position: relative;
 
     svg {
@@ -41,9 +41,6 @@ body:not(.home) {
     }
 
     .logo {
-      position: absolute;
-      left: 0;
-
       svg {
         width: 7.5rem;
         height: auto;
@@ -78,8 +75,6 @@ body:not(.home) {
     }
 
     .right {
-      position: absolute;
-      right: 0;
       display: flex;
       a {
         color: $text-white;
