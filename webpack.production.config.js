@@ -4,8 +4,8 @@ const path = require("path");
 module.exports = {
   entry: "./js/app.js",
   output: {
-    filename: "app.js",
-    path: path.resolve(__dirname, "assets/dist"),
+    filename: "dist_app.js",
+    path: path.resolve(__dirname, "assets"),
   },
   module: {
     rules: [
@@ -26,7 +26,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "style.css",
+      filename: "dist_style.css",
     }),
   ],
 };
