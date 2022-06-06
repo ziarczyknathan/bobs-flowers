@@ -30,7 +30,7 @@ jobs:
           yarn build
 
       - name: switch from HTTP to SSH
-        run: git remote set-url origin https://nathanziarczyk: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@github.com/bobs-flowers.git
+        run: git remote set-url origin https://nathanziarczyk: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@https://github.com/ziarczyknathan/bobs-flowers
       - name: check for changes
         run: git status
       - name: stage changed files
