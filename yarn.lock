@@ -647,6 +647,11 @@ json-schema-traverse@^1.0.0:
   resolved "https://registry.yarnpkg.com/json-schema-traverse/-/json-schema-traverse-1.0.0.tgz#ae7bcb3656ab77a73ba5c49bf654f38e6b6860e2"
   integrity sha512-NM8/P9n3XjXhIZn1lLhkFaACTOURQXjWhV4BA/RnOv8xvgqtqpAX9IO4mRQxSx1Rlo4tqzeqb0sOlruaOy3dug==
 
+jsvat@^2.5.3:
+  version "2.5.3"
+  resolved "https://registry.yarnpkg.com/jsvat/-/jsvat-2.5.3.tgz#44d41d80b8d04a6b98cf721668a872ab35b6009e"
+  integrity sha512-jra/1qujP+vrrCgLcGRRHwLrKj69cLvWUMeFwhwoD/AeHSZ9BY9Bf59GNOtDdDmGhchNwasrWjnKBTbL19FHsg==
+
 kind-of@^6.0.2:
   version "6.0.3"
   resolved "https://registry.npmjs.org/kind-of/-/kind-of-6.0.3.tgz"

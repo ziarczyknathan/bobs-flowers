@@ -1,3 +1,4 @@
+import { checkVAT, belgium, austria } from "jsvat";
 export const showHideRecoverForm = () => {
   const loginForm = document.querySelector(".form__login");
   const recoverForm = document.querySelector(".form__recover");
@@ -19,5 +20,15 @@ export const showHideRecoverForm = () => {
 
   window.addEventListener("hashchange", function () {
     handleUrlChanged();
+  });
+};
+
+export const validateVat = () => {
+  const registerVatInput = document.querySelector("input[id=vat_reg_no]");
+
+  if (!registerVatInput) return;
+
+  registerVatInput.addEventListener("blur", (e) => {
+    const { isValid } = checkVAT(e.target.value, [belgium]);
   });
 };
