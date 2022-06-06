@@ -40,7 +40,7 @@ jobs:
       - name: add github author - name
         run: git config user.name "Github Actions"
       - name: commit changed files
-        run: git commit -m "Auto adding build files to the repo"
+        run: git commit -m "Auto adding build files to the repo [skip ci]"
       - name: fetch from master
         run: git fetch origin main
       - name: push code to master
