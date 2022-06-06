@@ -31,11 +31,11 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
+    <script type="module" src="{{ 'app.js' | asset_url }}"></script>
     <script defer src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script defer src="{{ 'app.js' | asset_url }}"></script>
 
     <link rel="stylesheet" href="{{ 'bootstrap-grid.min.css' | asset_url }}" />
-    <link rel="stylesheet" href="{{ 'styles.css' | asset_url }}" />
+    <link rel="stylesheet" href="{{ 'style.css' | asset_url }}" />
 
     {%- if settings.predictive_search_enabled -%}
       {% comment %} <link rel="stylesheet" href="{{ 'component-predictive-search.css' | asset_url }}" media="print" onload="this.media='all'"> {% endcomment %}

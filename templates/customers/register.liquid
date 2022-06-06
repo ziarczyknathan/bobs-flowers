@@ -89,6 +89,13 @@
             {%- endif -%}
             </label>
           </div>
+          <div class="field">
+            <!-- Shopify customer registration -- capture VAT numbers from customers. Used by Sufio for Shopify (www.sufio.com/shopify). -->
+            <label for="vat_reg_no">
+              {{ "customer.account.vat_no" | t }}
+              <input type="text" id="vat_reg_no" name="customer[note][VAT Registration Number]" placeholder="{{ "customer.account.vat_no" | t }}" />
+            </label>
+          </div>
           <div class="field">     
             <label for="RegisterForm-password">
               {{ 'customer.register.password' | t }}
@@ -111,7 +118,10 @@
                 {{ form.errors.translated_fields['password'] | capitalize }} {{ form.errors.messages['password'] }}.
               </span>
             {%- endif -%}
-            </label>
+          </label>
+          {% if cart.item_count > 0 %}
+            <input type="hidden" name="return_to" value="/cart" />
+          {% endif %}
           </div>
           <button>
             {{ 'customer.register.submit' | t }}
