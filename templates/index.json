@@ -42,7 +42,7 @@
       "settings": {
         "title": "Hoe werkt ons bloemen-abonnement?",
         "subtitle": "",
-        "cta": "<p>Overtuigd? <a href=\"\/products\/abonnement-boeketten\" title=\"Bloemenabonnement\">Start mijn abonnement nu!<\/a><\/p>"
+        "cta": "<p>Overtuigd? <a href=\"\/products\/abonnement-boeketten\" title=\"Bloemenabonnement\">Maak kennis met ons bloemenabonnement!<\/a><\/p>"
       }
     },
     "1646736168a20f75d2": {
@@ -111,7 +111,7 @@
         "098405c6-0d9a-450b-9922-b9e14f060ae7": {
           "type": "usp",
           "settings": {
-            "usp": "Pauzeer of annuleer wanneer je wilt"
+            "usp": "Pauzeer, sla over of annuleer wanneer je zelf wilt"
           }
         },
         "62301d6f-f6ac-4b65-8442-2a34310a5b75": {
@@ -123,7 +123,7 @@
         "4e5cc991-6b8a-4060-b3b1-db2b6c4323a4": {
           "type": "usp",
           "settings": {
-            "usp": "Recycleer de dozen door ze terug aan ons te geven"
+            "usp": "Leer zelf je boeket schikken"
           }
         }
       },
@@ -134,8 +134,8 @@
       ],
       "settings": {
         "theme": "red",
-        "title": "Start uw abonnement vandaag nog af en geniet van gratis verzending",
-        "body": "<p>Breng meer kleur en groen in je leven met onze wekelijkse levering bloemen. Geniet van gratis verzending als je nu een abonnement opstart.<\/p>",
+        "title": "Neem een bloemenabonnement en ontvang een vaas cadeau bij jouw eerste levering.",
+        "body": "<p>Beschikbaar op<br\/>wekelijkse, tweewekelijkse of maandelijkse basis. <\/p><p>Seizoenen veranderen,<br\/>maar dat geldt ook voor onze variëteiten. Met een abonnement verse bloemen ontdek<br\/>je bij iedere levering de mooiste bloemen van het moment.   <\/p>",
         "button_text": "Ik wil een abonnement!",
         "button_link": "shopify:\/\/products\/abonnement-boeketten",
         "image": "shopify:\/\/shop_images\/2022_03_03_Boutique_Botanique-311-25_Groot.jpg"
