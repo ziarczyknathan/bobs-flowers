@@ -8,3 +8,6 @@
 ehthumbs.db
 Thumbs.db
 node_modules
+
+assets/app.js
+assets/style.css
