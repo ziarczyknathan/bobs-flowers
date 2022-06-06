@@ -26,7 +26,8 @@ jobs:
         run: |
           yarn install
           yarn build
-
+      - name: check files
+        run: ls -la assets
       - name: switch from HTTP to SSH
         run: git remote set-url origin git@github.com:ziarczyknathan/bobs-flowers.git
       - name: check for changes
