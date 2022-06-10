@@ -8,28 +8,28 @@
           "type": "list_item",
           "settings": {
             "title": "Wij kiezen elke week de mooiste bloemen uit",
-            "body": "<p>Sluit een abonnement af en ontvang elke week een selectie kleurrijke bloemen.<\/p>"
+            "body": "<p>Je ontvangt elke week een fris gekozen selectie van kleurrijke bloemen.<\/p>"
           }
         },
         "db3dfaf6-bca8-46d7-8b80-79a807d93779": {
           "type": "list_item",
           "settings": {
-            "title": "Wekelijks bezorgen we de bloemen",
-            "body": "<p>Elke week komen we de bloemen bezorgen aan jou deur.<\/p>"
+            "title": "Wekelijkse bezorging aan je deur",
+            "body": "<p>Elke week leveren we de bloemen bij je thuis.<br\/><\/p>"
           }
         },
         "eba2193a-c9b9-472a-80a1-7cfcc4770ef6": {
           "type": "list_item",
           "settings": {
             "title": "Stel een prachtig boeket samen",
-            "body": "<p>Volg de instructies of freestyle om een prachtig boeket samen te stellen.<\/p>"
+            "body": "<p>Volg de bijgeleverde instructies of ga zelf aan de slag om het mooiste boeket te combineren.<\/p>"
           }
         },
         "fb94ad53-fada-490a-8841-01b3f0831d8f": {
           "type": "list_item",
           "settings": {
-            "title": "Pauzeer of zeg op wanneer jij wilt",
-            "body": "<p>Een week op vakantie? Geen probleem! Je kan het abonnement op elke moment pauzeren of opzeggen.<\/p>"
+            "title": "Pauzeer of zeg op wanneer je wilt",
+            "body": "<p>Ga je op vakantie en wil je een weekje geen bloemen ontvangen? Geen probleem! Je kunt je abonnement op elke moment pauzeren of opzeggen.<\/p>"
           }
         }
       },
@@ -102,7 +102,7 @@
       ],
       "settings": {
         "theme": "default",
-        "title": "Dit kan je verwachten van onze boeketten"
+        "title": "Wat je mag verwachten van onze boeketten"
       }
     },
     "16467504037529f275": {
@@ -111,19 +111,19 @@
         "098405c6-0d9a-450b-9922-b9e14f060ae7": {
           "type": "usp",
           "settings": {
-            "usp": "Pauzeer, sla over of annuleer wanneer je zelf wilt"
+            "usp": "Pauzeer, sla over of annuleer wanneer je maar wilt."
           }
         },
         "62301d6f-f6ac-4b65-8442-2a34310a5b75": {
           "type": "usp",
           "settings": {
-            "usp": "Wekelijks een nieuwe selectie bloemen"
+            "usp": "Wekelijks een nieuwe selectie bloemen."
           }
         },
         "4e5cc991-6b8a-4060-b3b1-db2b6c4323a4": {
           "type": "usp",
           "settings": {
-            "usp": "Leer zelf je boeket schikken"
+            "usp": "Leer zelf je boeket schikken met onze tips of ga zelf creatief aan de slag."
           }
         }
       },
@@ -134,8 +134,8 @@
       ],
       "settings": {
         "theme": "red",
-        "title": "Neem een bloemenabonnement en ontvang een vaas cadeau bij jouw eerste levering.",
-        "body": "<p>Beschikbaar op<br\/>wekelijkse, tweewekelijkse of maandelijkse basis. <\/p><p>Seizoenen veranderen,<br\/>maar dat geldt ook voor onze variëteiten. Met een abonnement verse bloemen ontdek<br\/>je bij iedere levering de mooiste bloemen van het moment.   <\/p>",
+        "title": "Neem een bloemenabonnement en ontvang een vaas cadeau bij je eerste levering.",
+        "body": "<p>Beschikbaar op wekelijkse, tweewekelijkse of maandelijkse basis.<br\/>Seizoenen veranderen - en dat geldt net zo goed voor onze variëteiten. Met ons abonnement op verse bloemen ontdek je elke week opnieuw de mooiste bloemen van het moment, zorgvuldig geselecteerd voor jou.<\/p>",
         "button_text": "Ik wil een abonnement!",
         "button_link": "shopify:\/\/products\/abonnement-boeketten",
         "image": "shopify:\/\/shop_images\/2022_03_03_Boutique_Botanique-311-25_Groot.jpg"
