@@ -37,7 +37,7 @@
           {%- endif -%}
           <div class="field">      
             <label for="RegisterForm-FirstName">
-              {{ 'customer.register.first_name' | t }}
+              {{ 'customer.register.first_name' | t }}*
               <input
                 type="text"
                 name="customer[first_name]"
@@ -50,7 +50,7 @@
           </div>
           <div class="field">
             <label for="RegisterForm-LastName">
-              {{ 'customer.register.last_name' | t }}
+              {{ 'customer.register.last_name' | t }}*
             <input
               type="text"
               name="customer[last_name]"
@@ -63,7 +63,7 @@
           </div>
           <div class="field">      
             <label for="RegisterForm-email">
-              {{ 'customer.register.email' | t }}
+              {{ 'customer.register.email' | t }}*
             <input
               type="email"
               name="customer[email]"
@@ -89,39 +89,63 @@
             {%- endif -%}
             </label>
           </div>
-          <div class="field">
-            <!-- Shopify customer registration -- capture VAT numbers from customers. Used by Sufio for Shopify (www.sufio.com/shopify). -->
-            <label for="vat_reg_no">
-              {{ "customer.account.vat_no" | t }}
-              <input type="text" id="vat_reg_no" name="customer[note][VAT Registration Number]" placeholder="{{ "customer.account.vat_no" | t }}" />
-            </label>
-          </div>
           <div class="field">     
             <label for="RegisterForm-password">
-              {{ 'customer.register.password' | t }}
-            <input
-              type="password"
-              name="customer[password]"
-              id="RegisterForm-password"
-              aria-required="true"
-              {% if form.errors contains 'password' %}
-                aria-invalid="true"
-                aria-describedby="RegisterForm-password-error"
-              {% endif %}
-              placeholder="{{ 'customer.register.password' | t }}"
-            >
-            {%- if form.errors contains 'password' -%}
-              <span id="RegisterForm-password-error" class="form__message">
-                <svg aria-hidden="true" focusable="false" role="presentation">
-                  <use href="#icon-error" />
-                </svg>
-                {{ form.errors.translated_fields['password'] | capitalize }} {{ form.errors.messages['password'] }}.
-              </span>
-            {%- endif -%}
-          </label>
-          {% if cart.item_count > 0 %}
-            <input type="hidden" name="return_to" value="/cart" />
-          {% endif %}
+              {{ 'customer.register.password' | t }}*
+              <input
+                type="password"
+                name="customer[password]"
+                id="RegisterForm-password"
+                aria-required="true"
+                {% if form.errors contains 'password' %}
+                  aria-invalid="true"
+                  aria-describedby="RegisterForm-password-error"
+                {% endif %}
+                placeholder="{{ 'customer.register.password' | t }}"
+              >
+              {%- if form.errors contains 'password' -%}
+                <span id="RegisterForm-password-error" class="form__message">
+                  <svg aria-hidden="true" focusable="false" role="presentation">
+                    <use href="#icon-error" />
+                  </svg>
+                  {{ form.errors.translated_fields['password'] | capitalize }} {{ form.errors.messages['password'] }}.
+                </span>
+              {%- endif -%}
+            </label>
+            {% if cart.item_count > 0 %}
+              <input type="hidden" name="return_to" value="/cart" />
+            {% endif %}
+            <div class="field">      
+              <label for="RegisterForm-email">
+                Alternatieve leveringsplaats*
+                <p class="subtitle">Selecteer een plaats waar de bloemen geleverd mogen worden als je niet thuis bent.</p>
+                <select required class="required" id="alternatieve-leveringslocatie" name="customer[note][Alternatieve leveringsplaats]">
+                  <option value="Geen">Geen</option>
+                  <option value="Bij een buur">Bij een buur</option>
+                  <option value="Op een veilige plaats">Op een veilige plaats</option>
+                  <option value="Andere">Andere</option>
+                </select>
+                <textarea id="extra-opmerkingen" name="customer[note][Extra opmerkingen]" placeholder="Extra opmerkingen"></textarea>
+              </label>
+            </div>
+            <div class="field-group collapsed collapsable">
+              <h3>Bedrijfsinformatie (optioneel)</h3>
+              <p class="subtitle">Geef hier de bedrijfsinformatie die op de factuur moet komen</p>
+              <div class="collapse-group">
+                <div class="field">
+                  <label for="vat_reg_no">
+                    {{ "customer.account.vat_no" | t }}
+                    <input type="text" id="vat_reg_no" name="customer[note][BTW nummer]" placeholder="{{ "customer.account.vat_no" | t }}" />
+                  </label>
+                </div>
+                <div class="field">
+                  <label for="comp_name">
+                    {{ "customer.account.comp_name" | t }}
+                    <input type="text" id="comp_name" name="customer[note][Bedrijfsnaam]" placeholder="{{ "customer.account.comp_name" | t }}" />
+                  </label>
+                </div>
+              </div>
+            </div>
           </div>
           <button>
             {{ 'customer.register.submit' | t }}
