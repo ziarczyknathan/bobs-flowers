@@ -116,14 +116,23 @@
           </a>
         </div>
         <div class="vat-container">
+          <h3>Bedrijfsgegevens</h3>
           <div class="vat-number-display">
-            {% if customer.metafields.vat_number %}
+            {% if customer.metafields.nathanz["BTW nummer"] %}
               <p>
-                {{ "customer.account.vat_no" | t }}: {{ customer.metafields.sufio.vat_number }} 
+                {{ "customer.account.vat_no" | t }}: {{ customer.metafields.nathanz["BTW nummer"] }} 
               </p>
+            {% endif %}
+            {% if customer.metafields.nathanz["Bedrijfsnaam"] %}
+              <p>
+                {{ "customer.account.comp_name" | t }}: {{ customer.metafields.nathanz["Bedrijfsnaam"] }} 
+              </p>
+            {% endif %}
+
+            {% if customer.metafields.nathanz["BTW nummer"] %}
               <button class="vat-edit-button">Bewerken</button>
             {% else %}
-              <button class="vat-edit-button">BTW nummer toevoegen</button>
+              <button class="vat-edit-button">Toevoegen</button>
             {% endif %}
           </div>
           
@@ -131,11 +140,23 @@
             <form>
               <label for="vat_reg_no">
                 {{ "customer.account.vat_no" | t }}
-                <input type="text" id="vat_reg_no" name="customer[note][VAT Registration Number]" placeholder="{{ "customer.account.vat_no" | t }}" value="{{ customer.metafields.sufio.vat_number }}" />
+                <input type="text" id="vat_reg_no" name="customer[note][BTW nummer]" placeholder="{{ "customer.account.vat_no" | t }}" value="{{ customer.metafields.nathanz["BTW nummer"] }}" />
+              </label>
+              <label for="comp_name">
+                {{ "customer.account.comp_name" | t }}
+                <input type="text" id="comp_name" name="customer[note][Bedrijfsnaam]" placeholder="{{ "customer.account.comp_name" | t }}" value="{{ customer.metafields.nathanz["Bedrijfsnaam"] }}" />
               </label>
               <button type="submit" class="btn">Opslaan</button>
             </form>
           </div>
+        </div>
+
+        <div class="delivery-container">
+          <h3>Alternatieve leveringsplaats</h3>
+          <p class="location">{{ customer.metafields.nathanz["Alternatieve leveringsplaats"] }}</p>
+          {% if customer.metafields.nathanz["Extra opmerkingen"] != "" %}
+            <p class="notes">Opmerkingen: {{ customer.metafields.nathanz["Extra opmerkingen"] }}</p>
+          {% endif%}
         </div>
       </div>
 
