@@ -10,6 +10,10 @@
     h3 {
       font-size: 1.5rem;
     }
+    p.subtitle {
+      margin-top: -1rem;
+      margin-bottom: 1rem;
+    }
 
     &:not(:first-of-type) {
       margin-top: 1rem;
@@ -20,17 +24,15 @@
     }
   }
 
-  .vat-container {
+  .vat-container,
+  .delivery-container {
     margin-top: 1rem;
     background-color: $base-beige__light;
 
-    button.vat-edit-button {
+    button.vat-edit-button,
+    button.delivery-edit-button {
       margin-top: 1rem;
     }
-  }
-
-  .delivery-container {
-    background-color: $base-beige__light;
   }
 
   .table-container {

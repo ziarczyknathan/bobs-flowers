@@ -6,6 +6,7 @@ import { addToCartWithVariants } from "./modules/addToCart";
 import {
   collapseCompanyInfo,
   showHideRecoverForm,
+  toggleDeliveryForm,
   toggleVatForm,
   validateVat,
 } from "./modules/loginRegister";
@@ -23,6 +24,7 @@ import "../scss/styles.scss";
   handleSearchFAQ();
   adjustBodyFooterPadding();
   toggleVatForm();
+  toggleDeliveryForm();
   collapseCompanyInfo();
   validateVat();
 })();

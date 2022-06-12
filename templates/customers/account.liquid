@@ -117,6 +117,7 @@
         </div>
         <div class="vat-container">
           <h3>Bedrijfsgegevens</h3>
+          <p class="subtitle">Deze instellingen worden toegepast op toekomstige bestellingen.</p>
           <div class="vat-number-display">
             {% if customer.metafields.nathanz["BTW nummer"] %}
               <p>
@@ -140,12 +141,13 @@
             <form>
               <label for="vat_reg_no">
                 {{ "customer.account.vat_no" | t }}
-                <input type="text" id="vat_reg_no" name="customer[note][BTW nummer]" placeholder="{{ "customer.account.vat_no" | t }}" value="{{ customer.metafields.nathanz["BTW nummer"] }}" />
+                <input type="text" id="vat_reg_no" name="BTW nummer" placeholder="{{ "customer.account.vat_no" | t }}" value="{{ customer.metafields.nathanz["BTW nummer"] }}" />
               </label>
               <label for="comp_name">
                 {{ "customer.account.comp_name" | t }}
-                <input type="text" id="comp_name" name="customer[note][Bedrijfsnaam]" placeholder="{{ "customer.account.comp_name" | t }}" value="{{ customer.metafields.nathanz["Bedrijfsnaam"] }}" />
+                <input type="text" id="comp_name" name="Bedrijfsnaam" placeholder="{{ "customer.account.comp_name" | t }}" value="{{ customer.metafields.nathanz["Bedrijfsnaam"] }}" />
               </label>
+              <input type="hidden" value="{{customer.id}}" id="customer_id">
               <button type="submit" class="btn">Opslaan</button>
             </form>
           </div>
@@ -153,10 +155,30 @@
 
         <div class="delivery-container">
           <h3>Alternatieve leveringsplaats</h3>
-          <p class="location">{{ customer.metafields.nathanz["Alternatieve leveringsplaats"] }}</p>
-          {% if customer.metafields.nathanz["Extra opmerkingen"] != "" %}
-            <p class="notes">Opmerkingen: {{ customer.metafields.nathanz["Extra opmerkingen"] }}</p>
-          {% endif%}
+          <p class="subtitle">Selecteer een plaats waar de bloemen geleverd mogen worden als je niet thuis bent. Deze instellingen worden toegepast op toekomstige bestellingen.</p>
+          <div class="delivery-display">
+            <p class="location">{{ customer.metafields.nathanz["Alternatieve leveringsplaats"] }}</p>
+            {% if customer.metafields.nathanz["Extra opmerkingen"] != "" %}
+              <p class="notes">Opmerkingen: {{ customer.metafields.nathanz["Extra opmerkingen"] }}</p>
+            {% endif%}
+            <button class="delivery-edit-button">Bewerken</button>
+          </div>
+          <div class="delivery-form d-none">
+            <form>
+              <label for="alternatieve-leveringslocatie">
+                <select required class="required" id="alternatieve-leveringslocatie" name="Alternatieve leveringsplaats">
+                  <option value="Geen"{% if customer.metafields.nathanz["Alternatieve leveringsplaats"] == "Geen" %} selected{% endif %}>Geen</option>
+                  <option value="Bij een buur"{% if customer.metafields.nathanz["Alternatieve leveringsplaats"] == "Bij een buur" %} selected{% endif %}>Bij een buur</option>
+                  <option value="Op een veilige plaats"{% if customer.metafields.nathanz["Alternatieve leveringsplaats"] == "Op een veilige plaats" %} selected{% endif %}>Op een veilige plaats</option>
+                  <option value="Andere"{% if customer.metafields.nathanz["Alternatieve leveringsplaats"] == "Andere" %} selected{% endif %}>Andere</option>
+                </select>
+              </label>
+              <label for="extra-opmerkingen">
+                <textarea id="extra-opmerkingen" name="Extra opmerkingen" placeholder="Extra opmerkingen">{{ customer.metafields.nathanz["Extra opmerkingen"] }}</textarea>
+              </label>
+              <input type="hidden" value="{{customer.id}}" id="customer_id">
+              <button type="submit" class="btn">Opslaan</button>
+            </form>
         </div>
       </div>
 

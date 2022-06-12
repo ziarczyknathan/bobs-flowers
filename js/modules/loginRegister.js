@@ -62,7 +62,9 @@ export const toggleVatForm = () => {
   const companyName = document.querySelector(
     ".vat-number-form input[id=comp_name]"
   );
-  const customerId = document.querySelector("input#customer_id")?.value;
+  const customerId = document.querySelector(
+    ".vat-number-form input#customer_id"
+  )?.value;
 
   const vatEditButton = document.querySelector(
     ".vat-number-display .vat-edit-button"
@@ -90,6 +92,60 @@ export const toggleVatForm = () => {
       customer_id: customerId,
     };
     disable_form(vatNumberForm);
+    fetch("/apps/customer_notes_to_metafields/update-preferences/", {
+      method: "POST",
+      body: JSON.stringify(body),
+      headers: {
+        "Cache-Control": "max-age=0",
+        "Content-Type": "application/json",
+      },
+    })
+      .then((res) => res.json())
+      .finally(() => window.location.reload());
+  });
+};
+
+export const toggleDeliveryForm = () => {
+  const deliveryDisplay = document.querySelector(".delivery-display");
+  const deliveryForm = document.querySelector(".delivery-form");
+  const deliveryInput = document.querySelector(
+    ".delivery-form select#alternatieve-leveringslocatie"
+  );
+  const remarksInput = document.querySelector(
+    ".delivery-form textarea#extra-opmerkingen"
+  );
+  const customerId = document.querySelector(
+    ".delivery-form input#customer_id"
+  )?.value;
+
+  const deliveryEditButton = document.querySelector(
+    ".delivery-display .delivery-edit-button"
+  );
+
+  console.log(deliveryInput, remarksInput);
+
+  if (!deliveryDisplay || !deliveryForm || !deliveryEditButton) return;
+
+  deliveryEditButton.addEventListener("click", (e) => {
+    deliveryDisplay.classList.add("d-none");
+    deliveryForm.classList.remove("d-none");
+  });
+
+  deliveryForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const delivery = deliveryInput.attributes.name.value;
+    const deliveryValue = deliveryInput.value;
+    const remarksKey = remarksInput.attributes.name.value;
+    const remarksValue = remarksInput.value;
+
+    const body = {
+      metafields: {
+        [delivery]: deliveryValue,
+        [remarksKey]: remarksValue,
+      },
+      customer_id: customerId,
+    };
+    disable_form(deliveryForm);
     fetch("/apps/customer_notes_to_metafields/update-preferences/", {
       method: "POST",
       body: JSON.stringify(body),
