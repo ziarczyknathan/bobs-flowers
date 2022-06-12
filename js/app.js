@@ -3,7 +3,12 @@ import { initSwiper } from "./modules/swiper";
 import { collapseFaqItems, handleSearchFAQ } from "./modules/faq";
 import { editAccountAddresses } from "./modules/addresses";
 import { addToCartWithVariants } from "./modules/addToCart";
-import { showHideRecoverForm, toggleVatForm } from "./modules/loginRegister";
+import {
+  collapseCompanyInfo,
+  showHideRecoverForm,
+  toggleVatForm,
+  validateVat,
+} from "./modules/loginRegister";
 import { adjustBodyFooterPadding } from "./modules/footer";
 
 // import styles
@@ -18,4 +23,6 @@ import "../scss/styles.scss";
   handleSearchFAQ();
   adjustBodyFooterPadding();
   toggleVatForm();
+  collapseCompanyInfo();
+  validateVat();
 })();
