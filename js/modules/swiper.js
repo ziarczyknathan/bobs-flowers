@@ -1,14 +1,16 @@
-import Swiper from "swiper";
+import Swiper, { Autoplay } from "swiper";
 
 export const initSwiper = () => {
+  Swiper.use(Autoplay);
   new Swiper(".swiper", {
+    effect: "flip",
     loop: true,
     slidesPerView: 1,
     spaceBetween: 0,
     freeMode: true,
     speed: 15000,
     autoplay: {
-      delay: 1,
+      delay: 0,
       disableOnInteraction: false,
     },
     breakpoints: {
