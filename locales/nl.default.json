@@ -295,7 +295,8 @@
       "details": "Accountgegevens",
       "view_addresses": "Adressen bekijken",
       "return": "Terug naar Accountgegevens",
-      "vat_no": "BTW-nummer"
+      "vat_no": "BTW-nummer",
+      "comp_name": "Bedrijfsnaam"
     },
     "account_fallback": "Account",
     "activate_account": {
