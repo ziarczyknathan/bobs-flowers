@@ -116,8 +116,8 @@
           </a>
         </div>
         <div class="vat-container">
-          <h3>Bedrijfsgegevens</h3>
-          <p class="subtitle">Deze instellingen worden toegepast op toekomstige bestellingen.</p>
+          <h3>{{ "customer.account.company_info_form_title" | t }}</h3>
+          <p class="subtitle">{{ "customer.account.company_info_form_subtitle" | t }}</p>
           <div class="vat-number-display">
             {% if customer.metafields.nathanz["BTW nummer"] %}
               <p>
@@ -132,10 +132,10 @@
 
             {% if customer.metafields.nathanz["BTW nummer"] or customer.metafields.nathanz["Bedrijfsnaam"] %}
               {% assign companyEndpoint = "/apps/customer_notes_to_metafields/update-preferences/" %}
-              <button class="vat-edit-button">Bewerken</button>
+              <button class="vat-edit-button">{{ "general.form.button_labels.edit" | t }}</button>
             {% else %}
               {% assign companyEndpoint = "/apps/customer_notes_to_metafields/add-preferences/" %}
-              <button class="vat-edit-button">Toevoegen</button>
+              <button class="vat-edit-button">{{ "general.form.button_labels.add" | t }}</button>
             {% endif %}
           </div>
           
@@ -150,14 +150,14 @@
                 <input type="text" required id="comp_name"  name="Bedrijfsnaam" placeholder="{{ "customer.account.comp_name" | t }}" value="{{ customer.metafields.nathanz["Bedrijfsnaam"] }}" />
               </label>
               <input type="hidden" value="{{customer.id}}" id="customer_id">
-              <button type="submit" class="btn">Opslaan</button>
+              <button type="submit" class="btn">{{ "general.form.button_labels.save" | t }}</button>
             </form>
           </div>
         </div>
 
         <div class="delivery-container">
-          <h3>Alternatieve leveringsplaats</h3>
-          <p class="subtitle">Selecteer een plaats waar de bloemen geleverd mogen worden als je niet thuis bent. Deze instellingen worden toegepast op toekomstige bestellingen.</p>
+          <h3>{{ "customer.account.delivery_form_title" | t }}</h3>
+          <p class="subtitle">{{ "customer.account.delivery_form_subtitle" | t }}</p>
           <div class="delivery-display">
             {{customer.metafields}}
             {% unless customer.metafields.nathanz["Alternatieve leveringsplaats"] == blank %}
@@ -168,10 +168,10 @@
             {% endunless%}
             {% if customer.metafields.nathanz["Alternatieve leveringsplaats"] == blank %}
               {% assign deliveryEndpoint = "/apps/customer_notes_to_metafields/add-preferences/" %}
-              <button class="delivery-edit-button">Toevoegen</button>
+              <button class="delivery-edit-button">{{ "general.form.button_labels.add" | t }}</button>
             {% else %}
               {% assign deliveryEndpoint = "/apps/customer_notes_to_metafields/update-preferences/" %}
-              <button class="delivery-edit-button">Bewerken</button>
+              <button class="delivery-edit-button">{{ "general.form.button_labels.edit" | t }}</button>
             {% endif%}
           </div>
           <div class="delivery-form d-none">
@@ -188,7 +188,7 @@
                 <textarea id="extra-opmerkingen" name="Extra opmerkingen" placeholder="Extra opmerkingen">{{ customer.metafields.nathanz["Extra opmerkingen"] }}</textarea>
               </label>
               <input type="hidden" value="{{customer.id}}" id="customer_id">
-              <button type="submit" class="btn">Opslaan</button>
+              <button type="submit" class="btn">{{ "general.form.button_labels.save" | t }}</button>
             </form>
         </div>
       </div>
