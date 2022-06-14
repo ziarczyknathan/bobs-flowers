@@ -83,6 +83,7 @@ export const toggleVatForm = () => {
     const vatNrValue = vatInput.value;
     const companyNameKey = companyName.attributes.name.value;
     const companyNameValue = companyName.value;
+    const endpoint = e.target.dataset.endpoint;
 
     const body = {
       metafields: {
@@ -92,7 +93,7 @@ export const toggleVatForm = () => {
       customer_id: customerId,
     };
     disable_form(vatNumberForm);
-    fetch("/apps/customer_notes_to_metafields/update-preferences/", {
+    fetch(endpoint ? endpoint : "/apps/customer_notes_to_metafields/add-preferences/", {
       method: "POST",
       body: JSON.stringify(body),
       headers: {
@@ -122,8 +123,6 @@ export const toggleDeliveryForm = () => {
     ".delivery-display .delivery-edit-button"
   );
 
-  console.log(deliveryInput, remarksInput);
-
   if (!deliveryDisplay || !deliveryForm || !deliveryEditButton) return;
 
   deliveryEditButton.addEventListener("click", (e) => {
@@ -137,6 +136,7 @@ export const toggleDeliveryForm = () => {
     const deliveryValue = deliveryInput.value;
     const remarksKey = remarksInput.attributes.name.value;
     const remarksValue = remarksInput.value;
+    const endpoint = e.target.dataset.endpoint;
 
     const body = {
       metafields: {
@@ -146,7 +146,7 @@ export const toggleDeliveryForm = () => {
       customer_id: customerId,
     };
     disable_form(deliveryForm);
-    fetch("/apps/customer_notes_to_metafields/update-preferences/", {
+    fetch(endpoint ? endpoint : "/apps/customer_notes_to_metafields/add-preferences/", {
       method: "POST",
       body: JSON.stringify(body),
       headers: {

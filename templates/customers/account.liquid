@@ -130,22 +130,24 @@
               </p>
             {% endif %}
 
-            {% if customer.metafields.nathanz["BTW nummer"] %}
+            {% if customer.metafields.nathanz["BTW nummer"] or customer.metafields.nathanz["Bedrijfsnaam"] %}
+              {% assign companyEndpoint = "/apps/customer_notes_to_metafields/update-preferences/" %}
               <button class="vat-edit-button">Bewerken</button>
             {% else %}
+              {% assign companyEndpoint = "/apps/customer_notes_to_metafields/add-preferences/" %}
               <button class="vat-edit-button">Toevoegen</button>
             {% endif %}
           </div>
           
           <div class="vat-number-form d-none" >
-            <form>
+            <form data-endpoint="{{companyEndpoint}}">
               <label for="vat_reg_no">
                 {{ "customer.account.vat_no" | t }}
-                <input type="text" id="vat_reg_no" name="BTW nummer" placeholder="{{ "customer.account.vat_no" | t }}" value="{{ customer.metafields.nathanz["BTW nummer"] }}" />
+                <input type="text" required id="vat_reg_no"  name="BTW nummer" placeholder="{{ "customer.account.vat_no" | t }}" value="{{ customer.metafields.nathanz["BTW nummer"] }}" />
               </label>
               <label for="comp_name">
                 {{ "customer.account.comp_name" | t }}
-                <input type="text" id="comp_name" name="Bedrijfsnaam" placeholder="{{ "customer.account.comp_name" | t }}" value="{{ customer.metafields.nathanz["Bedrijfsnaam"] }}" />
+                <input type="text" required id="comp_name"  name="Bedrijfsnaam" placeholder="{{ "customer.account.comp_name" | t }}" value="{{ customer.metafields.nathanz["Bedrijfsnaam"] }}" />
               </label>
               <input type="hidden" value="{{customer.id}}" id="customer_id">
               <button type="submit" class="btn">Opslaan</button>
@@ -157,14 +159,23 @@
           <h3>Alternatieve leveringsplaats</h3>
           <p class="subtitle">Selecteer een plaats waar de bloemen geleverd mogen worden als je niet thuis bent. Deze instellingen worden toegepast op toekomstige bestellingen.</p>
           <div class="delivery-display">
-            <p class="location">{{ customer.metafields.nathanz["Alternatieve leveringsplaats"] }}</p>
-            {% if customer.metafields.nathanz["Extra opmerkingen"] != "" %}
+            {{customer.metafields}}
+            {% unless customer.metafields.nathanz["Alternatieve leveringsplaats"] == blank %}
+              <p class="location">{{ customer.metafields.nathanz["Alternatieve leveringsplaats"] }}</p>
+            {% endunless%}
+            {% unless customer.metafields.nathanz["Extra opmerkingen"] == blank %}
               <p class="notes">Opmerkingen: {{ customer.metafields.nathanz["Extra opmerkingen"] }}</p>
+            {% endunless%}
+            {% if customer.metafields.nathanz["Alternatieve leveringsplaats"] == blank %}
+              {% assign deliveryEndpoint = "/apps/customer_notes_to_metafields/add-preferences/" %}
+              <button class="delivery-edit-button">Toevoegen</button>
+            {% else %}
+              {% assign deliveryEndpoint = "/apps/customer_notes_to_metafields/update-preferences/" %}
+              <button class="delivery-edit-button">Bewerken</button>
             {% endif%}
-            <button class="delivery-edit-button">Bewerken</button>
           </div>
           <div class="delivery-form d-none">
-            <form>
+            <form data-endpoint="{{ deliveryEndpoint }}">
               <label for="alternatieve-leveringslocatie">
                 <select required class="required" id="alternatieve-leveringslocatie" name="Alternatieve leveringsplaats">
                   <option value="Geen"{% if customer.metafields.nathanz["Alternatieve leveringsplaats"] == "Geen" %} selected{% endif %}>Geen</option>
