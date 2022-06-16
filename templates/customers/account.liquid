@@ -121,12 +121,12 @@
           <div class="vat-number-display">
             {% if customer.metafields.nathanz["BTW nummer"] %}
               <p>
-                {{ "customer.account.vat_no" | t }}: {{ customer.metafields.nathanz["BTW nummer"] }} 
+                <strong>{{ "customer.account.vat_no" | t }}:</strong> {{ customer.metafields.nathanz["BTW nummer"] }} 
               </p>
             {% endif %}
             {% if customer.metafields.nathanz["Bedrijfsnaam"] %}
               <p>
-                {{ "customer.account.comp_name" | t }}: {{ customer.metafields.nathanz["Bedrijfsnaam"] }} 
+                <strong>{{ "customer.account.comp_name" | t }}:</strong> {{ customer.metafields.nathanz["Bedrijfsnaam"] }} 
               </p>
             {% endif %}
 
@@ -161,10 +161,10 @@
           <div class="delivery-display">
             {{customer.metafields}}
             {% unless customer.metafields.nathanz["Alternatieve leveringsplaats"] == blank %}
-              <p class="location">{{ customer.metafields.nathanz["Alternatieve leveringsplaats"] }}</p>
+              <p class="location"><strong>Keuze:</strong> {{ customer.metafields.nathanz["Alternatieve leveringsplaats"] }}</p>
             {% endunless%}
             {% unless customer.metafields.nathanz["Extra opmerkingen"] == blank %}
-              <p class="notes">Opmerkingen: {{ customer.metafields.nathanz["Extra opmerkingen"] }}</p>
+              <p class="notes"><strong>Opmerkingen:</strong> {{ customer.metafields.nathanz["Extra opmerkingen"] }}</p>
             {% endunless%}
             {% if customer.metafields.nathanz["Alternatieve leveringsplaats"] == blank %}
               {% assign deliveryEndpoint = "/apps/customer_notes_to_metafields/add-preferences/" %}
