@@ -308,7 +308,8 @@
       "company_info_form_title": "Bedrijfsgegevens",
       "company_info_form_subtitle": "Deze gegevens worden getoond op de facturen. De instellingen worden toegepast op toekomstige bestellingen.",
       "delivery_form_title": "Alternatieve leveringsplaats",
-      "delivery_form_subtitle": "Selecteer een plaats waar de bloemen geleverd mogen worden als je niet thuis bent. De instellingen worden toegepast op toekomstige bestellingen."
+      "delivery_form_subtitle": "Selecteer een plaats waar de bloemen geleverd mogen worden als je niet thuis bent. De instellingen worden toegepast op toekomstige bestellingen.",
+      "subscription_delivery_disclaimer": "Onze bloemen worden altijd op vrijdag geleverd. De datum die weergegeven wordt in het portaal is de datum waarop de bestelling bij ons binnenkomt. Jouw boeket wordt op vrijdag van dezelfde week geleverd."
     },
     "account_fallback": "Account",
     "activate_account": {

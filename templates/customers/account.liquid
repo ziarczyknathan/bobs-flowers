@@ -1,5 +1,6 @@
 {% assign title = 'customer.account.title' | t %}
-{% render 'static-page-header' title: title, theme: "orange" %}
+{% assign description = 'customer.account.subscription_delivery_disclaimer' | t %}
+{% render 'static-page-header' title: title, description: description, theme: "orange" %}
 <div class="wrapper account-wrapper">
   <div class="container">
     <div class="row">
