@@ -3,15 +3,21 @@
     "main": {
       "type": "main-product-subscription",
       "blocks": {
-        "8d0ec770-8951-4c1a-8d8d-bd3604b38726": {
-          "type": "shopify:\/\/apps\/recharge-subscriptions\/blocks\/subscription-widget\/371eed76-0b44-4869-9813-730372ea378e",
+        "5a242e01-1a7a-48bf-95b6-2e26aee89c9a": {
+          "type": "shopify:\/\/apps\/bold-subscriptions\/blocks\/bsub-widget-block\/9ceb49f0-5fe5-4b5e-943d-f8af8985167d",
           "settings": {
-            "product": "{{product}}"
+            "primary_color": "#3B63FF",
+            "secondary_color": "#7DBA63",
+            "header_text": "Purchase Options",
+            "one_time_text": "One-time Purchase",
+            "recurring_text": "Subscribe and Save",
+            "frequency_header": "Delivery Frequency",
+            "frequency_text": "delivery"
           }
         }
       },
       "block_order": [
-        "8d0ec770-8951-4c1a-8d8d-bd3604b38726"
+        "5a242e01-1a7a-48bf-95b6-2e26aee89c9a"
       ],
       "settings": {
         "qty-field": false,
