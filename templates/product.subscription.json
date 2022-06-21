@@ -23,9 +23,26 @@
         "qty-field": false,
         "add-to-cart-label": ""
       }
+    },
+    "1655841606e2653385": {
+      "type": "apps",
+      "blocks": {
+        "e15683ce-bf8d-44a3-ab29-aa0cabd1c09a": {
+          "type": "shopify:\/\/apps\/recharge-subscriptions\/blocks\/subscription-widget\/371eed76-0b44-4869-9813-730372ea378e",
+          "settings": {
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "e15683ce-bf8d-44a3-ab29-aa0cabd1c09a"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1655841606e2653385"
   ]
 }
