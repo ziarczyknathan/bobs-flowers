@@ -3,21 +3,15 @@
     "main": {
       "type": "main-product-subscription",
       "blocks": {
-        "e64c6bd7-3cb4-4315-a099-8d6c0112f25d": {
-          "type": "shopify:\/\/apps\/bold-subscriptions\/blocks\/bsub-widget-block\/9ceb49f0-5fe5-4b5e-943d-f8af8985167d",
+        "8d0ec770-8951-4c1a-8d8d-bd3604b38726": {
+          "type": "shopify:\/\/apps\/recharge-subscriptions\/blocks\/subscription-widget\/371eed76-0b44-4869-9813-730372ea378e",
           "settings": {
-            "primary_color": "#3b63ff",
-            "secondary_color": "#7dba63",
-            "header_text": "",
-            "one_time_text": "",
-            "recurring_text": "",
-            "frequency_header": "",
-            "frequency_text": "levering"
+            "product": "{{product}}"
           }
         }
       },
       "block_order": [
-        "e64c6bd7-3cb4-4315-a099-8d6c0112f25d"
+        "8d0ec770-8951-4c1a-8d8d-bd3604b38726"
       ],
       "settings": {
         "qty-field": false,
@@ -26,17 +20,6 @@
     },
     "1655841606e2653385": {
       "type": "apps",
-      "blocks": {
-        "e15683ce-bf8d-44a3-ab29-aa0cabd1c09a": {
-          "type": "shopify:\/\/apps\/recharge-subscriptions\/blocks\/subscription-widget\/371eed76-0b44-4869-9813-730372ea378e",
-          "settings": {
-            "product": "{{product}}"
-          }
-        }
-      },
-      "block_order": [
-        "e15683ce-bf8d-44a3-ab29-aa0cabd1c09a"
-      ],
       "settings": {
       }
     }
