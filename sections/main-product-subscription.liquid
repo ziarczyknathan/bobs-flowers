@@ -45,7 +45,15 @@
         {%- endform -%}
       </div>
       <div class="col-12 col-lg-5 offset-lg-1 order-1 order-lg-2">
-        {{ product.featured_image | image_url: width: 800 | image_tag: srcset: nil, class: "product-image" }}
+        <div class="swiper__fade">
+          <div class="swiper-wrapper">
+            {% for image in product.images %}
+              <div class="swiper-slide">
+                {{ image | image_url: width: 800 | image_tag: srcset: nil, class: "product-image" }}
+              </div>
+            {% endfor %}
+          </div>
+        </div>
       </div>
     </div>
   </div>

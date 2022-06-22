@@ -1,7 +1,8 @@
-import Swiper, { Autoplay } from "swiper";
+import Swiper, { Autoplay, EffectFade } from "swiper";
 
 export const initSwiper = () => {
-  Swiper.use(Autoplay);
+  Swiper.use([Autoplay, EffectFade]);
+
   new Swiper(".swiper", {
     effect: "flip",
     loop: true,
@@ -26,6 +27,14 @@ export const initSwiper = () => {
         slidesPerView: 4,
         spaceBetween: 24,
       },
+    },
+  });
+
+  new Swiper(".swiper__fade", {
+    effect: "fade",
+    loop: true,
+    autoplay: {
+      delay: 2000,
     },
   });
 };
