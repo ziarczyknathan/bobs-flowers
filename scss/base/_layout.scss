@@ -2,6 +2,10 @@ body {
   min-height: 100vh;
   height: max-content;
   position: relative;
+
+  &#recharge-novum #recharge-te{
+    background: initial;
+  }
 }
 
 #rc_login {
