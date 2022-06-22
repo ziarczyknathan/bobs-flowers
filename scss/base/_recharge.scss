@@ -9,3 +9,13 @@ body#recharge-novum #recharge-te{
 .rc-subscription-details {
   display: none !important;
 }
+
+.rc_manage_subscription_container {
+  .right-content {
+    display: none !important;
+  }
+
+  .edit_subscription_info--wrapper {
+    margin: 0 auto !important;
+  }
+}
