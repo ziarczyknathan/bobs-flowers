@@ -5,20 +5,17 @@ body.home {
     left: 0;
     right: 0;
     z-index: 3;
+
+    .logo img {
+      -webkit-filter: invert(100%); /* Safari/Chrome */
+      filter: invert(100%) drop-shadow(1px 1px 0 black);
+    }
   }
 }
 body:not(.home) {
   .header-wrapper {
     background-color: $base-red;
     font-size: 72px;
-    .logo,
-    .logo * {
-      color: $text-black;
-    }
-
-    svg {
-      color: $text-black;
-    }
   }
 }
 .header-wrapper {
@@ -41,9 +38,12 @@ body:not(.home) {
     }
 
     .logo {
-      svg {
-        width: 7.5rem;
-        height: auto;
+      img {
+        width: 100px;
+
+        @include break-max(sm) {
+          width: 75px;
+        }
       }
     }
 
