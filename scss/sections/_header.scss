@@ -16,6 +16,10 @@ body:not(.home) {
   .header-wrapper {
     background-color: $base-red;
     font-size: 72px;
+
+    svg {
+      color: $text-black;
+    }
   }
 }
 .header-wrapper {
@@ -32,12 +36,11 @@ body:not(.home) {
     justify-content: space-between;
     position: relative;
 
-    svg {
-      width: 1.75rem;
-      height: auto;
-    }
-
     .logo {
+      svg {
+        width: 7.5rem;
+        height: auto;
+      }
       img {
         width: 100px;
 
