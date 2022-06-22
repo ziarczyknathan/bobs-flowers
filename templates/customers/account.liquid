@@ -6,8 +6,12 @@
     <div class="row">
       <div class="col-12 mb-3">
         <div class="buttons">
-          <a href="/tools/recurring/portal/{{customer.metafields.subscriptions.customer_string}}/subscriptions" class="text-link btn">Bekijk mijn abonnementen</a>
-          <a href="/account/logout" class="btn secondary">{{ "customer.log_out" | t }}</a>
+          {% assign hasSubbed = false %}
+          {% if customer.metafields.subscriptions.customer_string != blank %}
+            {% assign hasSubbed = true %}
+            <a href="/tools/recurring/portal/{{customer.metafields.subscriptions.customer_string}}/subscriptions" class="text-link btn">Bekijk mijn abonnementen</a>
+          {% endif %}
+          <a href="/account/logout" class="btn {% if hasSubbed %}secondary{%else%}primary{%endif%}">{{ "customer.log_out" | t }}</a>
         </div>
       </div>
     </div>
