@@ -234,7 +234,7 @@
     "cart": {
       "title": "Je winkelwagen",
       "caption": "Artikelen in winkelwagen",
-      "remove_title": "{{ title }} verwijderen",
+      "remove_title": "Verwijderen",
       "subtotal": "Subtotaal",
       "new_subtotal": "Nieuw subtotaal",
       "note": "Speciale instructies voor bestelling",
