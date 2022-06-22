@@ -430,7 +430,10 @@
   "shopify": {
     "checkout": {
       "general": {
-        "page_title": "Afrekenen"
+        "page_title": "Afrekenen",
+        "checkout_context": {
+          "step_one": "Afrekenen"
+        }
       }
     }
   }
