@@ -1,21 +1,41 @@
 {
   "sections": {
-    "1650448290ac26f17f": {
-      "type": "page-header",
-      "settings": {
-        "title": "Jouw abonnementen",
-        "description": "<p>Onze bloemen worden altijd op vrijdag geleverd. De datum die weergegeven wordt in het portaal is de datum waarop de bestelling bij ons binnenkomt. Jouw boeket wordt op vrijdag van dezelfde week geleverd.<\/p>",
-        "theme": "green"
-      }
-    },
     "main": {
       "type": "main-page",
       "settings": {
       }
+    },
+    "1650448290ac26f17f": {
+      "type": "page-header",
+      "settings": {
+        "title": "Boeketten",
+        "description": "<p>Onze bloemen worden altijd op vrijdag geleverd. De datum die weergegeven wordt in het portaal is de datum waarop de bestelling bij ons binnenkomt. Jouw boeket wordt op vrijdag van dezelfde week geleverd.<\/p>",
+        "theme": "green"
+      }
+    },
+    "166377917463b1de47": {
+      "type": "products",
+      "blocks": {
+        "87c79528-1fc7-48ff-a8d6-f16d64e02ad9": {
+          "type": "product",
+          "settings": {
+            "product": "veldboeket"
+          }
+        }
+      },
+      "block_order": [
+        "87c79528-1fc7-48ff-a8d6-f16d64e02ad9"
+      ],
+      "settings": {
+        "theme": "default",
+        "title": "",
+        "per_row": 4
+      }
     }
   },
   "order": [
+    "main",
     "1650448290ac26f17f",
-    "main"
+    "166377917463b1de47"
   ]
 }
