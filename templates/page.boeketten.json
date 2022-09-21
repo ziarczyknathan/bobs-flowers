@@ -1,0 +1,21 @@
+{
+  "sections": {
+    "1650448290ac26f17f": {
+      "type": "page-header",
+      "settings": {
+        "title": "Jouw abonnementen",
+        "description": "<p>Onze bloemen worden altijd op vrijdag geleverd. De datum die weergegeven wordt in het portaal is de datum waarop de bestelling bij ons binnenkomt. Jouw boeket wordt op vrijdag van dezelfde week geleverd.<\/p>",
+        "theme": "green"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "1650448290ac26f17f",
+    "main"
+  ]
+}
