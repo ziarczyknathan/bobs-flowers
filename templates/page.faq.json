@@ -14,12 +14,13 @@
         "30ec80a9-a5ba-4950-941e-2c7be9e5beb6": {
           "type": "faq",
           "settings": {
-            "question": "<p>Waarom zijn we met Bob’s Flowers begonnen?<\/p>",
-            "answer": "<p>Onze klanten in onze fysieke winkel - Boutique Botanique in Lokeren - vroegen ons steeds vaker om hen regelmatig verse bloemen aan huis te leveren. Bob’s Flowers was dan ook een logische volgende stap.<\/p>"
+            "question": "<p>Waarom zijn we met een bloemenabonnement begonnen?<\/p>",
+            "answer": "<p>Onze klanten in onze fysieke winkel - Boutique Botanique in Lokeren - vroegen ons steeds vaker om hen regelmatig verse bloemen aan huis te leveren. Het bloemenabonnement was dan ook een logische volgende stap.<\/p>"
           }
         },
         "515968fd-c552-4807-98fc-a52721b92893": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "question": "<p>Waar komt de naam ‘Bob’s Flowers’ vandaan?<\/p>",
             "answer": "<p>‘Bob’ is een acroniem van onze fysieke winkel in Lokeren: ‘Boutique Botanique’.<\/p>"
@@ -77,8 +78,8 @@
         "b086401d-5c2e-4fe1-97a1-d3c1e7075423": {
           "type": "faq",
           "settings": {
-            "question": "<p>Zijn er vacatures bij Bob’s Flowers?<\/p>",
-            "answer": "<p>Wil je graag bij Bob’s Flowers werken? Stuur dan een e-mail met je cv en een woordje over je ambities naar hello@bobsflowers.be.<\/p>"
+            "question": "<p>Zijn er vacatures bij Boutique Botanique?<\/p>",
+            "answer": "<p>Wil je graag bij ons werken? Stuur dan een e-mail met je cv en een woordje over je ambities naar info@boutiquebotanique.be<\/p>"
           }
         },
         "8aee2d22-d99d-4e61-a33b-170fa26ad854": {
@@ -113,7 +114,7 @@
           "type": "faq",
           "settings": {
             "question": "<p>Welke vaas is geschikt voor mijn bloemen?<\/p>",
-            "answer": "<p>Tijdens het afsluiten van je abonnement kun je enkele extra's selecteren. Onze Bob's Vaas is ideaal om je verse boeket in te schikken. De vaas is 22,50 cm hoog, met een opening van 15 cm.<\/p>"
+            "answer": "<p>Tijdens het afsluiten van je abonnement kun je enkele extra's selecteren. Onze Boutique Botanique Vaas is ideaal om je verse boeket in te schikken. De vaas is 22,50 cm hoog, met een opening van 15 cm.<\/p>"
           }
         }
       },
