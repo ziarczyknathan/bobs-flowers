@@ -3,7 +3,7 @@
     "social_twitter_link": "",
     "social_facebook_link": "",
     "social_instagram_link": "",
-    "logo": "shopify:\/\/shop_images\/BobsFlowers_logo_uitgesneden.png",
+    "logo": "shopify:\/\/shop_images\/cropped-favicon-boutique-1-192x192_1.png",
     "favicon": "shopify:\/\/shop_images\/BobsFlowers_logo.png",
     "Bold API key": "c9ZPGWsbYNttAs8L89OgVyHOVUmdZ1PT",
     "sections": {
@@ -16,7 +16,7 @@
         "type": "hero",
         "settings": {
           "image": "shopify:\/\/shop_images\/2022_03_03_Boutique_Botanique-311-25_Groot.jpg",
-          "title": "Bob's Flowers",
+          "title": "Boutique Botanique",
           "subtitle": "Dé Belgische bloemendoos met 10 dagen versgarantie, thuis geleverd.",
           "button_link": "shopify:\/\/products\/bloemen-abonnement",
           "button_label": "Start jouw abonnement vandaag nog!"
