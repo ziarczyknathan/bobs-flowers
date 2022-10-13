@@ -89,6 +89,12 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/2022_03_03_Boutique_Botanique-164-14.jpg"
           }
+        },
+        "db5b30fe-74d9-4d47-9d3f-2fa08483a429": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/BOEKET_1-031.jpg"
+          }
         }
       },
       "block_order": [
@@ -98,7 +104,8 @@
         "adbd7b25-860d-45bc-b652-ad1950c1108d",
         "c1887d7d-a8f6-4d4a-9775-e95b6ba195df",
         "d86d23e5-dd44-493e-b69c-a8729d6d2b43",
-        "da2ed4c0-36d9-424c-a05a-f11266d0314e"
+        "da2ed4c0-36d9-424c-a05a-f11266d0314e",
+        "db5b30fe-74d9-4d47-9d3f-2fa08483a429"
       ],
       "settings": {
         "theme": "default",
