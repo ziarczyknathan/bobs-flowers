@@ -97,16 +97,16 @@
             "image": "shopify:\/\/shop_images\/2022_03_03_Boutique_Botanique-164-14.jpg"
           }
         },
-        "339c6d48-f430-48fd-8c1b-8f4adaeb37bd": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/BOEKET_6-078_Groot.jpg"
-          }
-        },
         "d6e1ea89-913c-4807-b67b-ac344a93ad26": {
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/BOEKET_3_WEBSIZE-052_Groot.jpg"
+          }
+        },
+        "339c6d48-f430-48fd-8c1b-8f4adaeb37bd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/BOEKET_6-078_Groot.jpg"
           }
         },
         "4103ce03-7032-4351-b3b2-1478deea965f": {
@@ -148,8 +148,8 @@
         "c1887d7d-a8f6-4d4a-9775-e95b6ba195df",
         "d86d23e5-dd44-493e-b69c-a8729d6d2b43",
         "da2ed4c0-36d9-424c-a05a-f11266d0314e",
-        "339c6d48-f430-48fd-8c1b-8f4adaeb37bd",
         "d6e1ea89-913c-4807-b67b-ac344a93ad26",
+        "339c6d48-f430-48fd-8c1b-8f4adaeb37bd",
         "4103ce03-7032-4351-b3b2-1478deea965f",
         "092277e2-bffa-4bc9-9a8c-56f2e4b964ea",
         "649a9741-5ca0-4dfc-9a99-04f5b8177b07",
